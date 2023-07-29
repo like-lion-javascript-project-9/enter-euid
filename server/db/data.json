@@ -17,6 +17,77 @@
         "alt": "비누"
       }
     },
+     {
+      "id": "product-2",
+      "name": "2020 nickon 카메라",
+      "description": "기능 및 외관상태가 좋은 캐논 카메라 dsla eos-100d 블랙 컬러입니다.",
+      "price": 6500,
+      "temperature": 36.5,
+      "category": "appliance",
+      "user": {
+        "name": "신현우",
+        "adress": "서울시 강남구"
+      },
+      "image": {
+        "thumbnai_l": "client/asstes/images/data_img_camera_3.jpg",
+        "thumbnai_2": "client/asstes/images/data_img_camera_4.jpg",
+        "alt": "카메라"
+      }
+    },
+
+    {
+      "id": "product-3",
+      "name": "스니커즈 여자 운동화",
+      "description": "새상품입니다. 245인데 편하게 신을분은 240신는분도 괜찮을것같아요.",
+      "price": 6000,
+      "temperature": 99.0,
+      "category": "shoes",
+      "user": {
+        "name": "이지은",
+        "adress": "부천시 약대동"
+      },
+      "image": {
+        "thumbnai_l": "client/asstes/images/data_img_shoes_5.jpg",
+        "thumbnai_2": "client/asstes/images/data_img_shoes_6.jpg",
+        "alt": "신발"
+      }
+    },
+
+    {
+      "id": "product-4",
+      "name": "갈색병 세럼 에스티 로더 갈색병",
+      "description": "에스티 로더 갈색병 세럼 30ml + 7ml 미개봉 새상품입니다.",
+      "price": 59000,
+      "temperature": 29.9,
+      "category": "beauty",
+      "user": {
+        "name": "차수지",
+        "adress": "동구 범일동"
+      },
+      "image": {
+        "thumbnai_l": "client/asstes/images/data_img_cosmetic_7.jpg",
+        "thumbnai_2": "client/asstes/images/data_img_cosmetic_8.jpg",
+        "alt": "화장품"
+      }
+    },
+
+    {
+      "id": "product-5",
+      "name": "기념일 생일선물 남여공용향수",
+      "description": "새제품이라 교환, 환불은 어려운 점 이해 부탁드려요. 택배 착불입니다.",
+      "price": 150000,
+      "temperature": 38.7,
+      "category": "beauty",
+      "user": {
+        "name": "김지혜",
+        "adress": "의정부시 용현동"
+      },
+      "image": {
+        "thumbnai_l": "client/asstes/images/data_img_perfume_9.jpg",
+        "thumbnai_2": "client/asstes/images/data_img_perfume_10.jpg",
+        "alt": "향수"
+      }
+    },
     {
       "id": "product-6",
       "name": "피시스조이 사무용의자 CH4000A",
@@ -25,7 +96,7 @@
       "temperature": 42.1,
       "category": "beauty",
       "user" : {
-        "name" : "솔빈",
+        "name" : "김희성",
         "adress":"서울시 금천구"
       },
       "image": {
@@ -42,7 +113,7 @@
       "temperature": 42.1,
       "category": "degital",
       "user" : {
-        "name" : "레피다",
+        "name" : "신영화",
         "adress":"부산시 사상구"
       },
       "image": {
@@ -59,7 +130,7 @@
       "temperature": 42.1,
       "category": "sport",
       "user" : {
-        "name" : "태정태세문단속",
+        "name" : "한시원",
         "adress":"경기도 시흥시"
       },
       "image": {
@@ -70,13 +141,13 @@
     },
     {
       "id": "product-9",
-      "name": "탑솔리드 EQ 오동나무 통기타 절반가에 팝니다",
+      "name": "탑솔리드 EQ 오동나무 통기타 절반가에 팝니다 ",
       "description": "안녕하세요 새제품 탑솔리드 오동나무 어쿠스틱 통기타 2종을 절반가에 팝니다.(탑솔리드는 상판이 원목으로 제작되어 시간이 지날수록 에이징이 되어 더욱 좋은 소리가 납니다), 일반적으로 드래드넛은 중저음이 좋고 가장 널리 쓰이는 바디이고, GA는 바디가 유연하여 연주가 쉽고 중저/고음의 밸런스가 맞다는 의견이 있습니다만,사람마다 느끼는것이 다르고 바디간의 우열이 있는것이 아니니 본인의 취향에 따라 직접 선택해 주시면 감사하겠습니다.",
       "price": 249000,
       "temperature": 42.1,
       "category": "instrument",
       "user" : {
-        "name" : "위버",
+        "name" : "하도혁",
         "adress":"경기도 평택시"
       },
       "image": {
@@ -93,7 +164,7 @@
       "temperature": 42.1,
       "category": "fassion",
       "user" : {
-        "name" : "카라독",
+        "name" : "송진주",
         "adress":"경기도 안성시"
       },
       "image": {
