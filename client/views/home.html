@@ -1,63 +1,86 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko-KR">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="module" src="../js/home.js"></script>
-    <title>home</title>
+    <meta property="og:title" content="enter-euid-team9" />
+    <meta property="og:url" content="https://enter-euid-team9.netlify.app/" />
+    <meta property="og:image" content="url" />
+    <meta property="og:image:alt" content="" />
+    <meta property="og:author" content="JS9haejo" />
+    <meta property="og:description" content="설명" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="icon" href="/assets/favicon/favicon.ico" type="image/x-icon" />
+    <title>enter-euid-team9</title>
+
+    <script src="/js/main.js" type="module"></script>
   </head>
-  <body>
-    <header></header>
 
-    <!-- main -->
-    <main class="container">
-      <!-- location -->
-      <div class="location">
-        <div class="location-dropdown">
-          <h1>남가좌제 2동</h1>
-          <img src="/client/assets/icons/direction.svg" alt="dropdown" />
-        </div>
-        <a href="/" class="location-search">
-          <img src="/client/assets/icons/search.svg" alt="search" />
-        </a>
-      </div>
-      <!-- banner -->
-      <figure class="banner">
-        <img
-          src="../assets/images/data_img_camera_3.jpg"
-          alt="banner"
-          width="360px"
-        />
-        <figcaption>
-          <h1 class="banner-title">
-            풀리지 않는 버그 속<br />개발자로 살아남기
-          </h1>
-          <span class="banner-description">자세히 보기</span>
-          <div class="banner-swiper-indicator">01-03</div>
-        </figcaption>
-      </figure>
-      <!-- contents -->
-      <!-- ul.contents>li>a>figure -->
-      <ul class="contents">
-        <li>
-          <a href="/" class="list">
-            <figure>
-              <img
-                src="../assets/images/data_img_soap_1.jpg"
-                alt="soap"
-                width="120px"
-              />
-              <figcaption>
-                <h1 class="list-name">2017 mac pro</h1>
-                <span class="list-description">마포구 신수동 • 44분전</span>
-                <strong class="list-price">800,000원</strong>
-              </figcaption>
-            </figure>
+  <body class="bg-gray-200">
+    <div
+      class="absolute left-1/2 top-1/2 h-screen max-h-[690px] min-w-[320px] max-w-max -translate-x-1/2 -translate-y-1/2 bg-white"
+    >
+      <!-- 공통 header -->
+      <header class="flex h-9 items-center justify-between pl-6 pr-6">
+        <time datetime="" class="text-sm">14:29</time>
+        <ul class="flex items-center">
+          <li class="bg-signal h-3 w-6 bg-bottom bg-no-repeat"></li>
+          <li class="bg-lte h-3 w-6 bg-left-bottom bg-no-repeat"></li>
+          <li class="bg-battery h-3 w-6 bg-left-bottom bg-no-repeat"></li>
+        </ul>
+      </header>
+
+      <!-- 여기서부터 작업 -->
+
+      <!-- main -->
+      <main class="container">
+        <!-- location -->
+        <div class="location flex justify-between p-2">
+          <div class="location-dropdown flex flex-wrap gap-2 bg-gray-400">
+            <h1>남가좌제 2동</h1>
+            <img src="../assets/icons/direction.svg" alt="dropdown" />
+          </div>
+          <a href="/" class="location-search">
+            <img src="../assets/icons/search.svg" alt="search" />
           </a>
-        </li>
-      </ul>
-    </main>
-
-    <nav></nav>
+        </div>
+        <!-- banner -->
+        <figure class="banner relative">
+          <figcaption class="absolute p-4">
+            <h1 class="banner-title">
+              풀리지 않는 버그 속<br />개발자로 살아남기
+            </h1>
+            <span class="banner-description">자세히 보기</span>
+            <div class="banner-swiper-indicator">01-03</div>
+          </figcaption>
+          <img
+            src="../assets/images/data_img_camera_3.jpg"
+            alt="banner"
+            width="360px"
+          />
+        </figure>
+        <!-- contents -->
+        <!-- ul.contents>li>a>figure -->
+        <ul class="contents">
+          <li>
+            <a href="/" class="list">
+              <figure>
+                <img
+                  src="../assets/images/data_img_soap_1.jpg"
+                  alt="soap"
+                  class="h-36 w-36 object-cover"
+                />
+                <figcaption>
+                  <h1 class="list-name">2017 mac pro</h1>
+                  <span class="list-description">마포구 신수동 • 44분전</span>
+                  <strong class="list-price">800,000원</strong>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+        </ul>
+      </main>
+    </div>
   </body>
 </html>
