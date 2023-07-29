@@ -16,9 +16,9 @@
     <script src="/js/main.js" type="module"></script>
   </head>
 
-  <body>
+  <body class="bg-gray-200">
     <div
-      class="absolute left-1/2 top-1/2 h-screen max-h-[690px] min-w-[320px] max-w-max -translate-x-1/2 -translate-y-1/2 bg-slate-300"
+      class="absolute left-1/2 top-1/2 h-screen max-h-[690px] min-w-[320px] max-w-max -translate-x-1/2 -translate-y-1/2 bg-white"
     >
       <header class="flex h-9 items-center justify-between pl-6 pr-6">
         <time datetime="" class="text-sm">14:29</time>
@@ -40,10 +40,10 @@
       </div>
 
       <!-- 사용자 정보 및 매너온도 섹션-->
-      <section class="userInfo flex py-3">
+      <section class="userInfo flex py-3 pl-3 pr-3">
         <div class="userInfoProfile flex flex-grow">
           <img
-            src="/assets/images/data_img_camera_1.jpg"
+            src="./../assets/images/data_img_camera_3.jpg"
             alt="infoThumbnail"
             class="userInfo__thumbnail h-[40px] w-[40px] rounded-[50%]"
           />
@@ -53,14 +53,16 @@
           </div>
         </div>
         <div class="userInfoManner">
-          <span class="userInfoManner__temperature">41.2C</span>
+          <span class="userInfoManner__temperature text-secondary">41.2C</span>
           <span class="userInfoManner__emoji">😀</span>
-          <span class="userInfoManner__mannerTemperature block">매너온도</span>
+          <span class="userInfoManner__mannerTemperature block text-xs"
+            >매너온도</span
+          >
         </div>
       </section>
 
       <!-- 상품 설명 섹션-->
-      <section class="productDetail pl-3 pr-3 pt-3">
+      <section class="productDetail pl-3 pr-3">
         <div class="productInformation">
           <h2 class="productDetail__title pb-1 text-lg font-bold">
             2020 MacBook Air M1
@@ -69,7 +71,9 @@
             컴퓨터 17분전
           </div>
           <div class="productDetail__description h-[6.75rem] max-h-56">
-            상태 깨끗하고 좋아요
+            상태 깨끗하고 좋아요<br />
+            왜냐하면 맥을 사용할 줄 몰라서 넷플릭스용으로만 봤어요. 집근처에서
+            거래 희망합니다.
           </div>
         </div>
         <div class="productDetailPriceWrppaer flex pb-9">
