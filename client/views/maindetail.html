@@ -10,7 +10,7 @@
     <meta property="og:image:alt" content="" />
     <meta property="og:author" content="JS9haejo" />
     <meta property="og:description" content="설명" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./../css/main.css" />
     <link rel="icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
     <title>enter-euid-team9</title>
 
@@ -18,7 +18,54 @@
   </head>
 
   <body>
-    <!-- <span class="text-4xl font-normal">normal</span> -->
-    <!-- <div class="h-6 bg-search bg-no-repeat"></div> -->
+    <header></header>
+
+    <!-- 상단 스와이퍼 이미지 구간-->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper productWrapper">
+        <!-- Slides -->
+        <div class="swiper-slide product__item">Slide 1</div>
+        <div class="swiper-slide product__item">Slide 2</div>
+      </div>
+      <div class="swiper-pagination"></div>
+
+      <!-- 사용자 정보 및 매너온도 섹션-->
+      <section class="userInfo">
+        <div class="userInfoProfile">
+          <img src="#" alt="infoThumbnail" class="userInfo__thumbnail" />
+          <span class="userInfoProfile__name"></span>
+          <span class="userInfoProfile__adreess"></span>
+        </div>
+        <div class="userInfoManner">
+          <span class="userInfoManner__temperature"></span>
+          <span class="userInfoManner__emoji"></span>
+          <span class="userInfoManner__mannerTemperature">매너온도</span>
+        </div>
+      </section>
+
+      <!-- 상품 설명 섹션-->
+      <section class="productDetail">
+        <div class="productInformation">
+          <h2 class="productDetail__title"></h2>
+          <div class="productDetail__category"></div>
+          <div class="productDetail__description"></div>
+        </div>
+        <div class="productDetailPriceWrppaer">
+          <div class="heart-ico is-active"></div>
+          <div class="productDetailPrice">
+            <div class="productDetailPrice__proposal"></div>
+          </div>
+          <button class="productDetailPrice__chattingButton">채팅하기</button>
+        </div>
+      </section>
+
+      <!-- 이글과 함께 봤어요 섹션-->
+      <div class="userTogether">
+        <h2 class="userTogether__title">이 글과 함께 봤어요</h2>
+        <ul class="userTogether__list"></ul>
+      </div>
+
+
   </body>
 </html>
