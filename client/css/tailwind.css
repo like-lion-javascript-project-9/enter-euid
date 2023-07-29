@@ -27,3 +27,9 @@
     font-family: "pretendard", system-ui, sans-serif;
   }
 }
+
+@media (min-width: 769px) {
+  html {
+    font-size: 20px;
+  }
+}
