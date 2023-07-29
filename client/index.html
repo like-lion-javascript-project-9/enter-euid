@@ -10,38 +10,49 @@
     <meta property="og:image:alt" content="" />
     <meta property="og:author" content="JS9haejo" />
     <meta property="og:description" content="설명" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="icon" href="/assets/favicon/favicon.ico" type="image/x-icon" />
     <title>enter-euid-team9</title>
 
-    <script src="./js/main.js" type="module"></script>
+    <script src="/js/main.js" type="module"></script>
   </head>
 
-  <body>
-    <div>
-      <img src="./assets/images/logo.png" alt="이듬 브랜드 로고" />
-      <div>
-        <h2 class="primary text-xl font-bold text-primary">
-          당신 곁에 엔터이듬
-        </h2>
-        <p class="text-primary">With EUID's 함께 성장하기</p>
-        <p class="text-primary">함께 배우고 적용하며 성장해보세요!</p>
-      </div>
-    </div>
+  <body class="bg-gray-200">
+    <div
+      class="absolute left-1/2 top-1/2 h-screen max-h-[690px] min-w-[320px] max-w-max -translate-x-1/2 -translate-y-1/2 bg-white"
+    >
+      <header class="flex h-9 items-center justify-between pl-6 pr-6">
+        <time datetime="" class="text-sm">14:29</time>
 
-    <div>
-      <button
-        class="px-15 px-34 px-30 px-30 rounded border border-primary bg-primary px-24 py-2 font-bold text-white hover:bg-secondary"
-      >
-        시작하기
-      </button>
-      <div>
-        <span class="text-gray3">이미 계정이 있나요?</span>
-        <a href="" class="font-bold text-primary">로그인</a>
-      </div>
-    </div>
+        <div>
+          <img src="./assets/images/logo.png" alt="이듬 브랜드 로고" />
+          <div>
+            <h2 class="primary text-xl font-bold text-primary">
+              당신 곁에 엔터이듬
+            </h2>
+            <p class="text-primary">With EUID's 함께 성장하기</p>
+            <p class="text-primary">함께 배우고 적용하며 성장해보세요!</p>
+          </div>
+        </div>
 
-    <!-- <span class="text-4xl font-normal">normal</span> -->
-    <!-- <div class="h-6 bg-search bg-no-repeat"></div> -->
+        <div>
+          <button
+            class="px-15 px-34 px-30 px-30 rounded border border-primary bg-primary px-24 py-2 font-bold text-white hover:bg-secondary"
+          >
+            시작하기
+          </button>
+          <div>
+            <span class="text-gray3">이미 계정이 있나요?</span>
+            <a href="" class="font-bold text-primary">로그인</a>
+          </div>
+        </div>
+
+        <ul class="flex items-center">
+          <li class="h-3 w-6 bg-signal bg-bottom bg-no-repeat"></li>
+          <li class="h-3 w-6 bg-lte bg-left-bottom bg-no-repeat"></li>
+          <li class="h-3 w-6 bg-battery bg-left-bottom bg-no-repeat"></li>
+        </ul>
+      </header>
+    </div>
   </body>
 </html>
