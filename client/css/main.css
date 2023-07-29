@@ -605,6 +605,10 @@ html {
   display: contents;
 }
 
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
 .h-3 {
   height: 0.75rem;
 }
@@ -637,6 +641,10 @@ html {
   height: 32px;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .max-h-56 {
   max-height: 14rem;
 }
@@ -657,6 +665,10 @@ html {
   max-height: 780px;
 }
 
+.max-h-\[1080px\] {
+  max-height: 1080px;
+}
+
 .w-6 {
   width: 1.5rem;
 }
@@ -667,6 +679,15 @@ html {
 
 .w-\[1px\] {
   width: 1px;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .min-w-\[320px\] {
@@ -752,6 +773,11 @@ html {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-slate-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
 .bg-battery {
   background-image: url('/assets/icons/battery.svg');
 }
@@ -778,6 +804,11 @@ html {
 
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .px-3 {

@@ -10,12 +10,12 @@
       "user": {
         "name": "최가온",
         "adress": "서울시 관악구",
-        "src":"client/assets/images/data_img_profile1",
+        "src":"/assets/images/data_img_profile1",
         "alt":"최가온 유저 프로필"
       },
       "image": {
-        "thumbnai_l": "client/asstes/images/data_img_soap_1.jpg",
-        "thumbnai_2": "client/asstes/images/data_img_soap_2.jpg",
+        "thumbnail_l": "/asstes/images/data_img_soap_1.jpg",
+        "thumbnail_2": "/asstes/images/data_img_soap_2.jpg",
         "alt": "비누"
       }
     },
@@ -33,8 +33,8 @@
         "alt":"신현우 유저 프로필"
       },
       "image": {
-        "thumbnai_l": "client/asstes/images/data_img_camera_3.jpg",
-        "thumbnai_2": "client/asstes/images/data_img_camera_4.jpg",
+        "thumbnail_l": "client/asstes/images/data_img_camera_3.jpg",
+        "thumbnail_2": "client/asstes/images/data_img_camera_4.jpg",
         "alt": "카메라"
       }
     },
@@ -53,8 +53,8 @@
         "alt":"이지은 유저 프로필"
       },
       "image": {
-        "thumbnai_l": "client/asstes/images/data_img_shoes_5.jpg",
-        "thumbnai_2": "client/asstes/images/data_img_shoes_6.jpg",
+        "thumbnail_l": "client/asstes/images/data_img_shoes_5.jpg",
+        "thumbnail_2": "client/asstes/images/data_img_shoes_6.jpg",
         "alt": "신발"
       }
     },
@@ -73,8 +73,8 @@
         "alt":"차수지 유저 프로필"
       },
       "image": {
-        "thumbnai_l": "client/asstes/images/data_img_cosmetic_7.jpg",
-        "thumbnai_2": "client/asstes/images/data_img_cosmetic_8.jpg",
+        "thumbnail_l": "client/asstes/images/data_img_cosmetic_7.jpg",
+        "thumbnail_2": "client/asstes/images/data_img_cosmetic_8.jpg",
         "alt": "화장품"
       }
     },
@@ -93,8 +93,8 @@
         "alt":"김지혜 유저 프로필"
       },
       "image": {
-        "thumbnai_l": "client/asstes/images/data_img_perfume_9.jpg",
-        "thumbnai_2": "client/asstes/images/data_img_perfume_10.jpg",
+        "thumbnail_l": "client/asstes/images/data_img_perfume_9.jpg",
+        "thumbnail_2": "client/asstes/images/data_img_perfume_10.jpg",
         "alt": "향수"
       }
     },
@@ -112,8 +112,8 @@
         "alt":"김희성 유저 프로필"
       },
       "image": {
-        "thumbnai_l": "client/asstes/images/data_img_chair_11.jpg",
-        "thumbnai_2": "client/asstes/images/data_img_chair_12.jpg",
+        "thumbnail_l": "client/asstes/images/data_img_chair_11.jpg",
+        "thumbnail_2": "client/asstes/images/data_img_chair_12.jpg",
         "alt": "사무용의자"
       }
     },
@@ -131,8 +131,8 @@
         "alt":"신영화 유저 프로필"
       },
       "image": {
-        "thumbnai_l": "client/asstes/images/data_img_imac_13.jpg",
-        "thumbnai_2": "client/asstes/images/data_img_imac_14.jpg",
+        "thumbnail_l": "client/asstes/images/data_img_imac_13.jpg",
+        "thumbnail_2": "client/asstes/images/data_img_imac_14.jpg",
         "alt": "아이맥"
       }
     },
@@ -150,8 +150,8 @@
         "alt":"한시원 유저 프로필"
       },
       "image": {
-        "thumbnai_l": "client/asstes/images/data_img_cycle_15.jpg",
-        "thumbnai_2": "client/asstes/images/data_img_cycle_16.jpg",
+        "thumbnail_l": "client/asstes/images/data_img_cycle_15.jpg",
+        "thumbnail_2": "client/asstes/images/data_img_cycle_16.jpg",
         "alt": "자전거"
       }
     },
@@ -169,8 +169,8 @@
         "alt":"하도혁 유저 프로필"
       },
       "image": {
-        "thumbnai_l": "client/asstes/images/data_img_guitar_17.jpg",
-        "thumbnai_2": "client/asstes/images/data_img_guitar_18.jpg",
+        "thumbnail_l": "client/asstes/images/data_img_guitar_17.jpg",
+        "thumbnail_2": "client/asstes/images/data_img_guitar_18.jpg",
         "alt": "기타"
       }
     },
@@ -188,8 +188,8 @@
         "alt":"송진주 유저 프로필"
       },
       "image": {
-        "thumbnai_l": "client/asstes/images/data_img_cap_19.jpg",
-        "thumbnai_2": "client/asstes/images/data_img_cap_20.jpg",
+        "thumbnail_l": "client/asstes/images/data_img_cap_19.jpg",
+        "thumbnail_2": "client/asstes/images/data_img_cap_20.jpg",
         "alt": "볼캡"
       }
     }
