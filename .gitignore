@@ -335,4 +335,4 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/macos,node,visualstudiocode,webstorm,windows
 
 # main.css
-main.css/
+client/css/main.css
