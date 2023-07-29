@@ -10,51 +10,73 @@
     <meta property="og:image:alt" content="" />
     <meta property="og:author" content="JS9haejo" />
     <meta property="og:description" content="설명" />
-    <link rel="stylesheet" href="./../css/main.css" />
+    <link rel="stylesheet" href="/css/main.css" />
     <link rel="icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
     <title>enter-euid-team9</title>
-
-    <script src="./../js/maindetail/main.js" type="module"></script>
+    <script src="/js/main.js" type="module"></script>
   </head>
 
   <body>
-    <header></header>
-
-    <!-- 상단 스와이퍼 이미지 구간-->
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper productWrapper">
-        <!-- Slides -->
-        <div class="swiper-slide product__item">Slide 1</div>
-        <div class="swiper-slide product__item">Slide 2</div>
+    <div
+      class="absolute left-1/2 top-1/2 h-screen max-h-[690px] min-w-[320px] max-w-max -translate-x-1/2 -translate-y-1/2 bg-slate-300"
+    >
+      <header class="flex h-9 items-center justify-between pl-6 pr-6">
+        <time datetime="" class="text-sm">14:29</time>
+        <ul class="flex items-center">
+          <li class="h-3 w-6 bg-signal bg-bottom bg-no-repeat"></li>
+          <li class="h-3 w-6 bg-lte bg-left-bottom bg-no-repeat"></li>
+          <li class="h-3 w-6 bg-battery bg-left-bottom bg-no-repeat"></li>
+        </ul>
+      </header>
+      <!-- 상단 스와이퍼 이미지 구간-->
+      <div class="swiper productSwiperimage h-[300px] bg-gray-600">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper productWrapper">
+          <!-- Slides -->
+          <div class="swiper-slide product__item">Slide 1</div>
+          <div class="swiper-slide product__item">Slide 2</div>
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
-      <div class="swiper-pagination"></div>
 
       <!-- 사용자 정보 및 매너온도 섹션-->
-      <section class="userInfo">
-        <div class="userInfoProfile">
-          <img src="#" alt="infoThumbnail" class="userInfo__thumbnail" />
-          <span class="userInfoProfile__name"></span>
-          <span class="userInfoProfile__adreess"></span>
+      <section class="userInfo flex py-3">
+        <div class="userInfoProfile flex flex-grow">
+          <img
+            src="/assets/images/data_img_camera_1.jpg"
+            alt="infoThumbnail"
+            class="userInfo__thumbnail h-[40px] w-[40px] rounded-[50%]"
+          />
+          <div class="flex flex-col">
+            <span class="userInfoProfile__name">맥이뜸</span>
+            <span class="userInfoProfile__adreess">응암동</span>
+          </div>
         </div>
         <div class="userInfoManner">
-          <span class="userInfoManner__temperature"></span>
-          <span class="userInfoManner__emoji"></span>
-          <span class="userInfoManner__mannerTemperature">매너온도</span>
+          <span class="userInfoManner__temperature">41.2C</span>
+          <span class="userInfoManner__emoji">😀</span>
+          <span class="userInfoManner__mannerTemperature block">매너온도</span>
         </div>
       </section>
 
       <!-- 상품 설명 섹션-->
-      <section class="productDetail">
+      <section class="productDetail pl-3 pr-3 pt-3">
         <div class="productInformation">
-          <h2 class="productDetail__title"></h2>
-          <div class="productDetail__category"></div>
-          <div class="productDetail__description"></div>
+          <h2 class="productDetail__title pb-1 text-lg font-bold">
+            2020 MacBook Air M1
+          </h2>
+          <div class="productDetail__category pb-3 text-sm text-gray4">
+            컴퓨터 17분전
+          </div>
+          <div class="productDetail__description h-[6.75rem] max-h-56">
+            상태 깨끗하고 좋아요
+          </div>
         </div>
-        <div class="productDetailPriceWrppaer">
-          <div class="heart-ico is-active"></div>
-          <div class="productDetailPrice">
-            <div class="productDetailPrice__proposal"></div>
+        <div class="productDetailPriceWrppaer flex pb-9">
+          <div class="heart-ico is-active">🤍</div>
+          <div class="productDetailPrice flex-grow">
+            820,000원
+            <div class="productDetailPrice__proposal">가격 제안하기</div>
           </div>
           <button class="productDetailPrice__chattingButton">채팅하기</button>
         </div>
@@ -65,7 +87,6 @@
         <h2 class="userTogether__title">이 글과 함께 봤어요</h2>
         <ul class="userTogether__list"></ul>
       </div>
-
-
+    </div>
   </body>
 </html>
