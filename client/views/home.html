@@ -15,6 +15,12 @@
     <title>enter-euid-team9</title>
 
     <script src="/js/main.js" type="module"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
   </head>
 
   <body class="bg-gray-200">
@@ -36,9 +42,9 @@
       <!-- main -->
       <main class="container">
         <!-- location -->
-        <div class="location flex justify-between p-2">
-          <div class="location-dropdown flex flex-wrap gap-2 bg-gray-400">
-            <h1>남가좌제 2동</h1>
+        <div class="location flex h-10 justify-between p-2">
+          <div class="location-dropdown flex flex-wrap gap-2">
+            <h1 class="font-bold">남가좌제 2동</h1>
             <img src="../assets/icons/direction.svg" alt="dropdown" />
           </div>
           <a href="/" class="location-search">
@@ -46,35 +52,92 @@
           </a>
         </div>
         <!-- banner -->
+
         <figure class="banner relative">
-          <figcaption class="absolute p-4">
-            <h1 class="banner-title">
+          <figcaption class="absolute z-50 p-4">
+            <h1 class="banner-title text-lg font-bold">
               풀리지 않는 버그 속<br />개발자로 살아남기
             </h1>
             <span class="banner-description">자세히 보기</span>
             <div class="banner-swiper-indicator">01-03</div>
           </figcaption>
-          <img
-            src="../assets/images/data_img_camera_3.jpg"
-            alt="banner"
-            width="360px"
-          />
+
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="../assets/images/data_img_perfume_9.jpg"
+                  alt="banner"
+                  class="h-56 w-screen object-cover"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="../assets/images/data_img_perfume_10.jpg"
+                  alt="banner"
+                  class="h-56 w-screen object-cover"
+                />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
         </figure>
         <!-- contents -->
         <!-- ul.contents>li>a>figure -->
-        <ul class="contents">
+        <ul class="grid grid-cols-2 gap-4 bg-gray-100 p-4">
           <li>
-            <a href="/" class="list">
+            <a href="/" class="list w-36">
               <figure>
                 <img
                   src="../assets/images/data_img_soap_1.jpg"
                   alt="soap"
-                  class="h-36 w-36 object-cover"
+                  class="h-24 w-full rounded object-cover"
                 />
                 <figcaption>
-                  <h1 class="list-name">2017 mac pro</h1>
-                  <span class="list-description">마포구 신수동 • 44분전</span>
-                  <strong class="list-price">800,000원</strong>
+                  <h1 class="list-name">2017 mac pro 2017 mac pro</h1>
+                  <p class="list-description text-sm text-gray-500">
+                    마포구 신수동 • 44분전 마포구 신수동 • 44분전
+                  </p>
+                  <strong class="list-price font-bold">800,000원</strong>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+
+          <li>
+            <a href="/" class="list w-36">
+              <figure>
+                <img
+                  src="../assets/images/data_img_soap_1.jpg"
+                  alt="soap"
+                  class="h-24 w-full rounded object-cover"
+                />
+                <figcaption>
+                  <h1 class="list-name">2017 mac pro 2017 mac pro</h1>
+                  <p class="list-description text-sm text-gray-500">
+                    마포구 신수동 • 44분전 마포구 신수동 • 44분전
+                  </p>
+                  <strong class="list-price font-bold">800,000원</strong>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+
+          <li>
+            <a href="/" class="list w-36">
+              <figure>
+                <img
+                  src="../assets/images/data_img_soap_1.jpg"
+                  alt="soap"
+                  class="h-24 w-full rounded object-cover"
+                />
+                <figcaption>
+                  <h1 class="list-name">2017 mac pro 2017 mac pro</h1>
+                  <p class="list-description text-sm text-gray-500">
+                    마포구 신수동 • 44분전 마포구 신수동 • 44분전
+                  </p>
+                  <strong class="list-price font-bold">800,000원</strong>
                 </figcaption>
               </figure>
             </a>
@@ -82,5 +145,18 @@
         </ul>
       </main>
     </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+      });
+    </script>
   </body>
 </html>
