@@ -11,6 +11,6 @@
   "tailwindCSS.experimental.configFile": "./tailwind.config.js",
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
-  },
+    "editor.formatOnSave": true
+  }
 }
