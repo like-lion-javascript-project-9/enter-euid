@@ -1,84 +1,177 @@
 {
   "products": [
     {
-      "id": "product-rksk",
-      "name": "[대구 반할만떡] 유부호만두",
-      "description": "유부로 속을 든든히 채운 군만두",
-      "price": 6900,
-      "saleRatio": 0.24,
-      "salePrice": 5244,
-      "image": {
-        "thumbnail": "ubuho/thumbnail.jpg",
-        "view": "ubuho/detail_view.jpg",
-        "banner": "ubuho/detail_banner.jpg",
-        "info": "ubuho/detail_info.jpg",
-        "alt": "유부호 만두"
+      "id": "product-1",
+      "name": "포르투갈 천년 비누",
+      "description": "2020년 12월 스페인 포르푸갈 여행 때 기념으로 산 천년 비누 입니다^^ 상자 보관 그대로 새상품 입니다😀",
+      "price": 6500,
+      "temperature": 42.1,
+      "category": "beauty",
+      "user" : {
+        "name" : "최가온",
+        "adress":"서울시 관악구"
       },
-      "stock": 5
+      "image": {
+        "thumbnai_l": "client/asstes/images/data_img_soap_1.jpg",
+        "thumbnai_2": "client/asstes/images/data_img_soap_2.jpg",
+        "alt": "비누"
+      }
+    },
+     {
+      "id": "product-2",
+      "name": "2020 nickon 카메라",
+      "description": "기능 및 외관상태가 좋은 캐논 카메라 dsla eos-100d 블랙 컬러입니다.",
+      "price": 6500,
+      "temperature": 36.5,
+      "category": "appliance",
+      "user": {
+        "name": "신현우",
+        "adress": "서울시 강남구"
+      },
+      "image": {
+        "thumbnai_l": "client/asstes/images/data_img_camera_3.jpg",
+        "thumbnai_2": "client/asstes/images/data_img_camera_4.jpg",
+        "alt": "카메라"
+      }
+    },
+
+    {
+      "id": "product-3",
+      "name": "스니커즈 여자 운동화",
+      "description": "새상품입니다. 245인데 편하게 신을분은 240신는분도 괜찮을것같아요.",
+      "price": 6000,
+      "temperature": 99.0,
+      "category": "shoes",
+      "user": {
+        "name": "이지은",
+        "adress": "부천시 약대동"
+      },
+      "image": {
+        "thumbnai_l": "client/asstes/images/data_img_shoes_5.jpg",
+        "thumbnai_2": "client/asstes/images/data_img_shoes_6.jpg",
+        "alt": "신발"
+      }
+    },
+
+    {
+      "id": "product-4",
+      "name": "갈색병 세럼 에스티 로더 갈색병",
+      "description": "에스티 로더 갈색병 세럼 30ml + 7ml 미개봉 새상품입니다.",
+      "price": 59000,
+      "temperature": 29.9,
+      "category": "beauty",
+      "user": {
+        "name": "차수지",
+        "adress": "동구 범일동"
+      },
+      "image": {
+        "thumbnai_l": "client/asstes/images/data_img_cosmetic_7.jpg",
+        "thumbnai_2": "client/asstes/images/data_img_cosmetic_8.jpg",
+        "alt": "화장품"
+      }
+    },
+
+    {
+      "id": "product-5",
+      "name": "기념일 생일선물 남여공용향수",
+      "description": "새제품이라 교환, 환불은 어려운 점 이해 부탁드려요. 택배 착불입니다.",
+      "price": 150000,
+      "temperature": 38.7,
+      "category": "beauty",
+      "user": {
+        "name": "김지혜",
+        "adress": "의정부시 용현동"
+      },
+      "image": {
+        "thumbnai_l": "client/asstes/images/data_img_perfume_9.jpg",
+        "thumbnai_2": "client/asstes/images/data_img_perfume_10.jpg",
+        "alt": "향수"
+      }
     },
     {
-      "id": "product-ekfk",
-      "name": "[풀무원] 탱탱쫄면 (4개입)",
-      "description": "튀기지 않아 부드럽고 매콤한",
-      "price": 4980,
-      "saleRatio": 0,
-      "salePrice": 0,
-      "image": {
-        "thumbnail": "tangtang/thumbnail.jpg",
-        "view": "tangtang/detail_view.jpg",
-        "banner": "tangtang/detail_banner.jpg",
-        "info": "tangtang/detail_info.jpg",
-        "alt": "풀무원 탱탱쫄면"
+      "id": "product-6",
+      "name": "피시스조이 사무용의자 CH4000A",
+      "description": "여러 기능 있고요, 기능 이상 없습니다. 생활 사용감 있으니 예민 하신분 NoNo 효성초등학교 인근입니다",
+      "price": 49000,
+      "temperature": 42.1,
+      "category": "beauty",
+      "user" : {
+        "name" : "김희성",
+        "adress":"서울시 금천구"
       },
-      "stock": 10
+      "image": {
+        "thumbnai_l": "client/asstes/images/data_img_chair_11.jpg",
+        "thumbnai_2": "client/asstes/images/data_img_chair_12.jpg",
+        "alt": "사무용의자"
+      }
     },
     {
-      "id": "product-akqk",
-      "name": "[홍대주꾸미] 주꾸미 볶음 300g (냉동)",
-      "description": "매콤달콤한 마력의 밥도둑",
-      "price": 7900,
-      "saleRatio": 0.13,
-      "salePrice": 6800,
-      "image": {
-        "thumbnail": "jukkumi/thumbnail.jpg",
-        "view": "jukkumi/detail_view.jpg",
-        "banner": "jukkumi/detail_banner.jpg",
-        "info": "jukkumi/detail_info.jpg",
-        "alt": "홍대 주꾸미"
+      "id": "product-7",
+      "name": "아이맥m1 고급형 8코어 램16G SSD512GB",
+      "description": "작년 7월 경 구입한 최고급형입니다. 실 사용기간 몇일 안되고, 집에 모셔만 뒀습니다. 기존 키보드에서 매직터치 10키로 변경했습니다.(미개봉상태) 부산 사상구에서 직거래 희망하며, 타지역은 택배로 보내드립니다. 별도 추가 질문 있으면 문의남겨주세요.",
+      "price": 1650000,
+      "temperature": 42.1,
+      "category": "degital",
+      "user" : {
+        "name" : "신영화",
+        "adress":"부산시 사상구"
       },
-      "stock": 8
+      "image": {
+        "thumbnai_l": "client/asstes/images/data_img_imac_13.jpg",
+        "thumbnai_2": "client/asstes/images/data_img_imac_14.jpg",
+        "alt": "아이맥"
+      }
     },
     {
-      "id": "product-tkwk",
-      "name": "[강남면옥] 소갈비찜",
-      "description": "보는 맛과 먹는 맛 모두 푸짐",
-      "price": 29800,
-      "saleRatio": 0,
-      "salePrice": 0,
-      "image": {
-        "thumbnail": "kangnam/thumbnail.jpg",
-        "view": "kangnam/detail_view.jpg",
-        "banner": "kangnam/detail_banner.jpg",
-        "info": "kangnam/detail_info.jpg",
-        "alt": "강남면옥 소갈비찜"
+      "id": "product-8",
+      "name": "자전거 첼로 2023 700C 디오 D2 24단 하이브리드 자전거",
+      "description": "이번에 새로 구입한 첼로 디오 D2 M사이즈 다크카멜레온 입니다. 원래목적은 강아지 바스켓을달고 강아지와 함께탈 목적이었으나 포지션상 1인용에 더 적합한것같아 기변을 위해 손해보고 판매합니다.",
+      "price": 500000,
+      "temperature": 42.1,
+      "category": "sport",
+      "user" : {
+        "name" : "한시원",
+        "adress":"경기도 시흥시"
       },
-      "stock": 2
+      "image": {
+        "thumbnai_l": "client/asstes/images/data_img_cycle_15.jpg",
+        "thumbnai_2": "client/asstes/images/data_img_cycle_16.jpg",
+        "alt": "자전거"
+      }
     },
     {
-      "id": "product-ckzk",
-      "name": "[Kalry's] 한돈 삼겹 베이컨",
-      "description": "무항생제 한돈 삼겹살의 고소한 풍미 그대로",
-      "price": 4500,
-      "saleRatio": 0.25,
-      "salePrice": 3375,
-      "image": {
-        "thumbnail": "bacon/thumbnail.jpg",
-        "view": "bacon/detail_view.jpg",
-        "banner": "bacon/detail_banner.jpg",
-        "info": "bacon/detail_info.jpg",
-        "alt": "칼리 한돈 삼겹 베이컨"
+      "id": "product-9",
+      "name": "탑솔리드 EQ 오동나무 통기타 절반가에 팝니다 ",
+      "description": "안녕하세요 새제품 탑솔리드 오동나무 어쿠스틱 통기타 2종을 절반가에 팝니다.(탑솔리드는 상판이 원목으로 제작되어 시간이 지날수록 에이징이 되어 더욱 좋은 소리가 납니다), 일반적으로 드래드넛은 중저음이 좋고 가장 널리 쓰이는 바디이고, GA는 바디가 유연하여 연주가 쉽고 중저/고음의 밸런스가 맞다는 의견이 있습니다만,사람마다 느끼는것이 다르고 바디간의 우열이 있는것이 아니니 본인의 취향에 따라 직접 선택해 주시면 감사하겠습니다.",
+      "price": 249000,
+      "temperature": 42.1,
+      "category": "instrument",
+      "user" : {
+        "name" : "하도혁",
+        "adress":"경기도 평택시"
       },
-      "stock": 13
+      "image": {
+        "thumbnai_l": "client/asstes/images/data_img_guitar_17.jpg",
+        "thumbnai_2": "client/asstes/images/data_img_guitar_18.jpg",
+        "alt": "기타"
+      }
+    },
+    {
+      "id": "product-10",
+      "name": "그램아운스파운드 볼캡 모자",
+      "description": "그램아운스파운드 볼캡모자 사이즈 는 여성분들도 착용가능하며 핏감 이쁩니다! 착용한적 없는 새상품들 재고 정리로 소량 저렴하게 판매 합니다! 재고 수량 컬러별 10개정도 남았네요~ 컬러는 핑크 ,민트 ,검정 3컬러 입니다 택까지 달려있는 정품이며 택배거래 가능합니다(CJ대한통운 3000원) 직거래시 동대문역사공원역 7번출구 쪽 가능합니다",
+      "price": 13000,
+      "temperature": 42.1,
+      "category": "fassion",
+      "user" : {
+        "name" : "송진주",
+        "adress":"경기도 안성시"
+      },
+      "image": {
+        "thumbnai_l": "client/asstes/images/data_img_cap_19.jpg",
+        "thumbnai_2": "client/asstes/images/data_img_cap_20.jpg",
+        "alt": "볼캡"
+      }
     }
   ]
 }
