@@ -636,10 +636,6 @@ html {
   width: 1.5rem;
 }
 
-.w-\[320px\] {
-  width: 320px;
-}
-
 .w-\[40px\] {
   width: 40px;
 }
@@ -651,10 +647,6 @@ html {
 .max-w-max {
   max-width: -moz-max-content;
   max-width: max-content;
-}
-
-.max-w-xs {
-  max-width: 20rem;
 }
 
 .flex-grow {
@@ -698,19 +690,19 @@ html {
 }
 
 .bg-battery {
-  background-image: url('../assets/icons/battery.svg');
+  background-image: url('/assets/icons/battery.svg');
 }
 
 .bg-lte {
-  background-image: url('../assets/icons/lte.svg');
+  background-image: url('/assets/icons/lte.svg');
 }
 
 .bg-search {
-  background-image: url('../assets/icons/search.svg');
+  background-image: url('/assets/icons/search.svg');
 }
 
 .bg-signal {
-  background-image: url('../assets/icons/signal.svg');
+  background-image: url('/assets/icons/signal.svg');
 }
 
 .bg-bottom {
