@@ -33,3 +33,16 @@
     font-size: 20px;
   }
 }
+
+.is-active {
+background-color: #373F67;
+
+} 
+
+.is-active .category-button-title {
+  color:white;
+}
+
+.is-active .category-button-img {
+  background-image: url("../assets/images/check.png");
+}

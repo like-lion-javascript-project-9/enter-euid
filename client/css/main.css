@@ -588,10 +588,6 @@ html {
   margin: 0.5rem;
 }
 
-.m-4 {
-  margin: 1rem;
-}
-
 .m-6 {
   margin: 1.5rem;
 }
@@ -601,12 +597,16 @@ html {
   margin-right: 0.75rem;
 }
 
+.-ml-1 {
+  margin-left: -0.25rem;
+}
+
 .-ml-10 {
   margin-left: -2.5rem;
 }
 
-.-ml-12 {
-  margin-left: -3rem;
+.-ml-2 {
+  margin-left: -0.5rem;
 }
 
 .-ml-4 {
@@ -615,10 +615,6 @@ html {
 
 .-ml-6 {
   margin-left: -1.5rem;
-}
-
-.-ml-7 {
-  margin-left: -1.75rem;
 }
 
 .-ml-8 {
@@ -669,56 +665,16 @@ html {
   margin-top: 0.5rem;
 }
 
-.mt-28 {
-  margin-top: 7rem;
+.mt-24 {
+  margin-top: 6rem;
 }
 
 .mt-4 {
   margin-top: 1rem;
 }
 
-.mt-40 {
-  margin-top: 10rem;
-}
-
-.mt-32 {
-  margin-top: 8rem;
-}
-
-.mt-36 {
-  margin-top: 9rem;
-}
-
-.mt-24 {
-  margin-top: 6rem;
-}
-
 .mt-44 {
   margin-top: 11rem;
-}
-
-.mb-1 {
-  margin-bottom: 0.25rem;
-}
-
-.-mt-2 {
-  margin-top: -0.5rem;
-}
-
-.ml-6 {
-  margin-left: 1.5rem;
-}
-
-.mr-6 {
-  margin-right: 1.5rem;
-}
-
-.-ml-2 {
-  margin-left: -0.5rem;
-}
-
-.-ml-1 {
-  margin-left: -0.25rem;
 }
 
 .block {
@@ -749,6 +705,10 @@ html {
   height: 0.75rem;
 }
 
+.h-4 {
+  height: 1rem;
+}
+
 .h-9 {
   height: 2.25rem;
 }
@@ -775,10 +735,6 @@ html {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-4 {
-  height: 1rem;
 }
 
 .max-h-56 {
@@ -819,30 +775,6 @@ html {
 
 .w-full {
   width: 100%;
-}
-
-.w-48 {
-  width: 12rem;
-}
-
-.w-52 {
-  width: 13rem;
-}
-
-.w-3 {
-  width: 0.75rem;
-}
-
-.w-44 {
-  width: 11rem;
-}
-
-.w-5 {
-  width: 1.25rem;
-}
-
-.w-60 {
-  width: 15rem;
 }
 
 .min-w-\[320px\] {
@@ -993,11 +925,6 @@ html {
   padding-right: 0.5rem;
 }
 
-.px-24 {
-  padding-left: 6rem;
-  padding-right: 6rem;
-}
-
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1021,11 +948,6 @@ html {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.px-28 {
-  padding-left: 7rem;
-  padding-right: 7rem;
 }
 
 .pb-1 {
@@ -1085,11 +1007,6 @@ html {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .text-xs {
@@ -1168,6 +1085,18 @@ html {
   html {
     font-size: 20px;
   }
+}
+
+.is-active {
+  background-color: #373F67;
+}
+
+.is-active .category-button-title {
+  color:white;
+}
+
+.is-active .category-button-img {
+  background-image: url("../assets/images/check.png");
 }
 
 .hover\:bg-secondary:hover {

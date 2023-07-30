@@ -14,7 +14,7 @@
     <link rel="icon" href="/assets/favicon/favicon.ico" type="image/x-icon" />
     <title>enter-euid-team9</title>
 
-    <script src="/js/main.js" type="module"></script>
+    <script src="../js/category.js" type="module"></script>
   </head>
 
   <body class="bg-gray-200">
@@ -34,7 +34,7 @@
 
       <!--이름으로 검색하기 -->
       <div class="mt-2 inline-flex ml-4 items-center justify-center" >
-        <a href=""><img class="ml-4" src="../assets/icons/direction-left.svg" alt="뒤로 가기" /></a>
+        <a href=""><img class=" ml-4" src="../assets/icons/direction-left.svg" alt="뒤로 가기" /></a>
       <div class="ml-2 border-b">
         <span><img class="h-4 inline-flex" src="../assets/icons/search.svg" alt="돋보기 모양" /></span>
         <input class="text-sm w-56" type="text" placeholder="분야 (이름)로 검색 (ex. 프론트)"></input>
@@ -50,23 +50,24 @@
   </div>
   
   <!-- 분야 버튼 그룹 -->
-  <div class="flex-col justify-around items-center w-72 m-6 mt-2 mb-2">
+  <div class="buttons flex-col justify-around items-center w-72 m-6 mt-2 mb-2">
   
         
         <div class="flex justify-between mb-4">
-          <button class="bg-gray4 w-36 h-14 mr-2 rounded pr-2 pl-2 flex justify-between items-center">
+          <button class="category-button bg-gray4 w-36 h-14 mr-2 rounded pr-2 pl-2 flex justify-between items-center">
             <div class="flex-col">
               <p class="text-white text-xs -ml-4">프로그래밍</p>
-              <p class="text-black text-base font-bold">프론트엔드</p>
+              <p class="category-button-title text-black text-base font-bold">프론트엔드</p>
             </div>
-            <img src="../assets/icons/plus.svg" alt="플러스 모양의 버튼" />
+            <img class="category-button-img" src="../assets/icons/plus.svg" alt="플러스 모양의 버튼" />
           </button>
-          <button class="bg-gray4 w-36 h-14 rounded pr-2 pl-2 flex justify-between items-center">
+
+          <button class="category-button bg-gray4 w-36 h-14 rounded pr-2 pl-2 flex justify-between items-center">
             <div>
               <p class="text-white text-xs ml-1">프로그래밍</p>
-              <p class="text-black text-base font-bold ">백 엔드</p>
+              <p class="category-button-title text-black text-base font-bold ">백 엔드</p>
             </div>
-            <img src="../assets/icons/plus.svg" alt="플러스 모양의 버튼" />
+            <img class="category-button-img" src="../assets/icons/plus.svg" alt="플러스 모양의 버튼" />
           </button>
         </div>
     
@@ -75,14 +76,14 @@
       <button class="bg-gray4 w-36 h-14 rounded pr-2 pl-2 mr-2 flex justify-between items-center">
         <div>
           <p class="text-white text-xs">프로그래밍</p>
-          <p class="text-black text-base font-bold -ml-2">리액트</p>
+          <p class="category-button-title text-black text-base font-bold -ml-2">리액트</p>
         </div>
         <img src="../assets/icons/plus.svg" alt="플러스 모양의 버튼" />
       </button>
       <button class="bg-gray4 w-36 h-14 rounded pr-2 pl-2 flex justify-between items-center">
         <div>
           <p class="text-white text-xs">프로그래밍</p>
-          <p class="text-black text-base font-bold -ml-2">풀스택</p>
+          <p class="category-button-title text-black text-base font-bold -ml-2">풀스택</p>
         </div>
         <img src="../assets/icons/plus.svg" alt="플러스 모양의 버튼" />
       </button>
@@ -93,14 +94,14 @@
       <button class="bg-gray4 w-36 h-14 rounded pr-2  mr-2 pl-2 flex justify-between items-center">
         <div>
           <p class="text-white text-xs -ml-1">프로그래밍</p>
-          <p class="text-black text-base font-bold">알고리즘</p>
+          <p class="category-button-title text-black text-base font-bold">알고리즘</p>
         </div>
         <img src="../assets/icons/plus.svg" alt="플러스 모양의 버튼" />
       </button>
       <button class="bg-gray4 w-36 h-14 rounded pr-2 pl-2 flex justify-between items-center">
         <div>
           <p class="text-white text-xs -ml-1">프로그래밍</p>
-          <p class="text-black text-base font-bold">기초지식</p>
+          <p class="category-button-title text-black text-base font-bold">기초지식</p>
         </div>
         <img src="../assets/icons/plus.svg" alt="플러스 모양의 버튼" />
       </button>
@@ -111,14 +112,14 @@
       <button class="bg-gray4 w-36 h-14 rounded pr-2 mr-2  pl-2 flex justify-between items-center">
         <div>
           <p class="text-white text-xs -ml-6">디자인</p>
-          <p class="text-black text-base font-bold">UI디자인</p>
+          <p class="category-button-title text-black text-base font-bold">UI디자인</p>
         </div>
         <img src="../assets/icons/plus.svg" alt="플러스 모양의 버튼" />
       </button>
       <button class="bg-gray4 w-36 h-14 rounded pr-2 pl-2 flex justify-between items-center">
         <div>
           <p class="text-white text-xs -ml-8">디자인</p>
-          <p class="text-black text-base font-bold">UX디자인</p>
+          <p class="category-button-title text-black text-base font-bold">UX디자인</p>
         </div>
         <img src="../assets/icons/plus.svg" alt="플러스 모양의 버튼" />
       </button>
@@ -128,14 +129,14 @@
       <button class="bg-gray4 w-36 h-14 rounded pr-2 mr-2  pl-2 flex justify-between items-center">
         <div>
           <p class="text-white text-xs -ml-4">디자인</p>
-          <p class="text-black text-base font-bold">UI·UX</p>
+          <p class="category-button-title text-black text-base font-bold">UI·UX</p>
         </div>
         <img src="../assets/icons/plus.svg" alt="플러스 모양의 버튼" />
       </button>
       <button class="bg-gray4 w-36 h-14 rounded pr-2 pl-2 flex justify-between items-center">
         <div>
           <p class="text-white text-xs -ml-10">데이터</p>
-          <p class="text-black text-base font-bold">데이터분석</p>
+          <p class="category-button-title text-black text-base font-bold">데이터분석</p>
         </div>
         <img src="../assets/icons/plus.svg" alt="플러스 모양의 버튼" />
       </button>
@@ -145,14 +146,14 @@
       <button class="bg-gray4 w-36 h-14 rounded pr-2 pl-2  mr-2 flex justify-between items-center">
         <div>
           <p class="text-white text-xs -ml-6">데이터</p>
-          <p class="text-black text-base font-bold">통계분석</p>
+          <p class="category-button-title text-black text-base font-bold">통계분석</p>
         </div>
         <img src="../assets/icons/plus.svg" alt="플러스 모양의 버튼" />
       </button>
       <button class="bg-gray4 w-36 h-14 rounded pr-2 pl-2 flex justify-between items-center">
         <div>
           <p class="text-white text-xs -ml-2">데이터</p>
-          <p class="text-black text-base font-bold">시각화</p>
+          <p class="category-button-title text-black text-base font-bold">시각화</p>
         </div>
         <img src="../assets/icons/plus.svg" alt="플러스 모양의 버튼" />
       </button>
@@ -166,7 +167,7 @@
   
   <div class="flex items-center justify-center">
     <button
-      class="ml-2 rounded border border-primary bg-primary w-72 py-1 text-sm text-white">
+      class="rounded border border-primary bg-primary w-72 py-1 text-sm text-white">
       이대로 저장할래요
     </button>
   
