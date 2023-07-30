@@ -621,8 +621,8 @@ html {
   height: 2.25rem;
 }
 
-.h-\[300px\] {
-  height: 300px;
+.h-\[284px\] {
+  height: 284px;
 }
 
 .h-\[32px\] {
@@ -663,6 +663,10 @@ html {
 
 .w-\[1px\] {
   width: 1px;
+}
+
+.w-\[320px\] {
+  width: 320px;
 }
 
 .w-\[40px\] {

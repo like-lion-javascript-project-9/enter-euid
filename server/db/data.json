@@ -10,8 +10,9 @@
       "user": {
         "name": "최가온",
         "address": "서울시 관악구",
-        "src":"assets/images/data_img_profile1",
+        "src":"assets/images/data_img_profile1.jpg",
         "alt":"최가온 유저 프로필"
+        
       },
       "image": {
         "thumbnail_l": "assets/images/data_img_soap_1.jpg",
@@ -29,7 +30,7 @@
       "user": {
         "name": "신현우",
         "address": "서울시 강남구",
-        "src":"assets/images/data_img_profile2",
+        "src":"assets/images/data_img_profile2.jpg",
         "alt":"신현우 유저 프로필"
       },
       "image": {
@@ -49,7 +50,7 @@
       "user": {
         "name": "이지은",
         "address": "부천시 약대동",
-        "src":"assets/images/data_img_profile3",
+        "src":"assets/images/data_img_profile3.jpg",
         "alt":"이지은 유저 프로필"
       },
       "image": {
@@ -69,7 +70,7 @@
       "user": {
         "name": "차수지",
         "address": "동구 범일동",
-        "src":"assets/images/data_img_profile4",
+        "src":"assets/images/data_img_profile4.jpg",
         "alt":"차수지 유저 프로필"
       },
       "image": {
@@ -89,7 +90,7 @@
       "user": {
         "name": "김지혜",
         "address": "의정부시 용현동",
-        "src":"assets/images/data_img_profile5",
+        "src":"assets/images/data_img_profile5.jpg",
         "alt":"김지혜 유저 프로필"
       },
       "image": {
@@ -108,7 +109,7 @@
       "user": {
         "name": "김희성",
         "address": "서울시 금천구",
-        "src":"assets/images/data_img_profile6",
+        "src":"assets/images/data_img_profile6.jpg",
         "alt":"김희성 유저 프로필"
       },
       "image": {
@@ -127,7 +128,7 @@
       "user": {
         "name": "신영화",
         "address": "부산시 사상구",
-        "src":"assets/images/data_img_profile7",
+        "src":"assets/images/data_img_profile7.jpg",
         "alt":"신영화 유저 프로필"
       },
       "image": {
@@ -146,7 +147,7 @@
       "user": {
         "name": "한시원",
         "address": "경기도 시흥시",
-        "src":"assets/images/data_img_profile8",
+        "src":"assets/images/data_img_profile8.jpg",
         "alt":"한시원 유저 프로필"
       },
       "image": {
@@ -165,7 +166,7 @@
       "user": {
         "name": "하도혁",
         "address": "경기도 평택시",
-        "src":"assets/images/data_img_profile9",
+        "src":"assets/images/data_img_profile9.jpg",
         "alt":"하도혁 유저 프로필"
       },
       "image": {
@@ -184,7 +185,7 @@
       "user": {
         "name": "송진주",
         "address": "경기도 안성시",
-        "src":"assets/images/data_img_profile10",
+        "src":"assets/images/data_img_profile10.jpg",
         "alt":"송진주 유저 프로필"
       },
       "image": {
