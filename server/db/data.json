@@ -9,7 +9,7 @@
       "category": "beauty",
       "user": {
         "name": "최가온",
-        "adress": "서울시 관악구",
+        "address": "서울시 관악구",
         "src":"assets/images/data_img_profile1",
         "alt":"최가온 유저 프로필"
       },
@@ -28,7 +28,7 @@
       "category": "appliance",
       "user": {
         "name": "신현우",
-        "adress": "서울시 강남구",
+        "address": "서울시 강남구",
         "src":"assets/images/data_img_profile2",
         "alt":"신현우 유저 프로필"
       },
@@ -48,7 +48,7 @@
       "category": "shoes",
       "user": {
         "name": "이지은",
-        "adress": "부천시 약대동",
+        "address": "부천시 약대동",
         "src":"assets/images/data_img_profile3",
         "alt":"이지은 유저 프로필"
       },
@@ -68,7 +68,7 @@
       "category": "beauty",
       "user": {
         "name": "차수지",
-        "adress": "동구 범일동",
+        "address": "동구 범일동",
         "src":"assets/images/data_img_profile4",
         "alt":"차수지 유저 프로필"
       },
@@ -88,7 +88,7 @@
       "category": "beauty",
       "user": {
         "name": "김지혜",
-        "adress": "의정부시 용현동",
+        "address": "의정부시 용현동",
         "src":"assets/images/data_img_profile5",
         "alt":"김지혜 유저 프로필"
       },
@@ -107,7 +107,7 @@
       "category": "beauty",
       "user": {
         "name": "김희성",
-        "adress": "서울시 금천구",
+        "address": "서울시 금천구",
         "src":"assets/images/data_img_profile6",
         "alt":"김희성 유저 프로필"
       },
@@ -126,7 +126,7 @@
       "category": "degital",
       "user": {
         "name": "신영화",
-        "adress": "부산시 사상구",
+        "address": "부산시 사상구",
         "src":"assets/images/data_img_profile7",
         "alt":"신영화 유저 프로필"
       },
@@ -145,7 +145,7 @@
       "category": "sport",
       "user": {
         "name": "한시원",
-        "adress": "경기도 시흥시",
+        "address": "경기도 시흥시",
         "src":"assets/images/data_img_profile8",
         "alt":"한시원 유저 프로필"
       },
@@ -164,7 +164,7 @@
       "category": "instrument",
       "user": {
         "name": "하도혁",
-        "adress": "경기도 평택시",
+        "address": "경기도 평택시",
         "src":"assets/images/data_img_profile9",
         "alt":"하도혁 유저 프로필"
       },
@@ -183,7 +183,7 @@
       "category": "fassion",
       "user": {
         "name": "송진주",
-        "adress": "경기도 안성시",
+        "address": "경기도 안성시",
         "src":"assets/images/data_img_profile10",
         "alt":"송진주 유저 프로필"
       },

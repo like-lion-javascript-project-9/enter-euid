@@ -11,17 +11,18 @@ const URL = "http://localhost:3000/products";
 const response = await tiger.get(URL);
 const itemlist = response.data;
 console.log(itemlist);
-const rnadomIdx = getRandom(itemlist.length - 1);
+
+const randomIdx = getRandom(itemlist.length - 1);
 const productWrapper = getNode(".productWrapper");
 const productDetail__title = getNode(".productDetail__title");
 const detailTemplate = `
         <h2 class="productDetail__title pb-1 text-lg font-bold">
-        ${itemlist[rnadomIdx].name}
+        ${itemlist[randomIdx].name}
         </h2>
 `;
 
 const itemTemp = `
-<img class="swiper-slide product__item1" src="${itemlist[rnadomIdx].image.thumbnail_2}" alt=${itemlist[0].image.alt}></div>
+<img class="swiper-slide product__item1" src="/${itemlist[randomIdx].image.thumbnail_2}" alt=${itemlist[0].image.alt}></div>
 `;
 
 const render = () => {
