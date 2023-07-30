@@ -3,11 +3,8 @@ import { getNode, insertFirst, tiger } from "./lib/index.js";
 console.log("home main js");
 
 const list = getNode(".list");
-// const name = document.querySelector(".list-name");
 const name = getNode(".list-name");
-// const location = document.querySelector(".list-description");
-const location = getNode(".list-description");
-// const price = document.querySelector(".list-price");
+const location = getNode(".list-location");
 const price = getNode(".list-price");
 
 // tiger.js 유틸 함수로 localhost:3000 를 불러와서 insertadjacentHTML 하여 html 에 넣어준다. 이때 insertadjacentHTML 는 insertAfter insertLast 유틸 함수로 대체 사용 가능하다.
@@ -21,10 +18,11 @@ const itemlist = response.data;
 console.log(itemlist);
 console.log(itemlist[0].name);
 console.log(itemlist[0].price);
+console.log(itemlist[0].user.address);
 
 const render = () => {
   insertFirst(name, itemlist[0].name);
-  // insertFirst(location, itemlist[0].user.address);
+  insertFirst(location, itemlist[0].user.address);
   insertFirst(price, `${itemlist[0].price}원`);
 };
 
