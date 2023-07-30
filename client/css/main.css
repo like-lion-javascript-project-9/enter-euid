@@ -576,10 +576,6 @@ html {
   position: absolute;
 }
 
-.relative {
-  position: relative;
-}
-
 .left-1\/2 {
   left: 50%;
 }
@@ -588,40 +584,33 @@ html {
   top: 50%;
 }
 
-.z-50 {
-  z-index: 50;
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
   display: flex;
 }
 
-.grid {
-  display: grid;
-}
-
 .contents {
   display: contents;
 }
 
-.h-10 {
-  height: 2.5rem;
-}
-
-.h-24 {
-  height: 6rem;
+.aspect-square {
+  aspect-ratio: 1 / 1;
 }
 
 .h-3 {
   height: 0.75rem;
-}
-
-.h-5 {
-  height: 1.25rem;
-}
-
-.h-56 {
-  height: 14rem;
 }
 
 .h-6 {
@@ -632,45 +621,73 @@ html {
   height: 2.25rem;
 }
 
+.h-\[300px\] {
+  height: 300px;
+}
+
+.h-\[32px\] {
+  height: 32px;
+}
+
+.h-\[40px\] {
+  height: 40px;
+}
+
+.h-\[6\.75rem\] {
+  height: 6.75rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
 .h-screen {
   height: 100vh;
+}
+
+.max-h-56 {
+  max-height: 14rem;
+}
+
+.max-h-\[1080px\] {
+  max-height: 1080px;
 }
 
 .max-h-\[690px\] {
   max-height: 690px;
 }
 
-.w-36 {
-  width: 9rem;
-}
-
-.w-5 {
-  width: 1.25rem;
-}
-
 .w-6 {
   width: 1.5rem;
 }
 
-.w-80 {
-  width: 20rem;
+.w-\[1px\] {
+  width: 1px;
+}
+
+.w-\[40px\] {
+  width: 40px;
 }
 
 .w-full {
   width: 100%;
 }
 
-.w-screen {
-  width: 100vw;
-}
-
 .min-w-\[320px\] {
   min-width: 320px;
+}
+
+.max-w-\[380px\] {
+  max-width: 380px;
 }
 
 .max-w-max {
   max-width: -moz-max-content;
   max-width: max-content;
+}
+
+.flex-grow {
+  flex-grow: 1;
 }
 
 .-translate-x-1\/2 {
@@ -683,32 +700,36 @@ html {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
+.flex-col {
+  flex-direction: column;
 }
 
 .items-center {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
 
-.gap-2 {
-  gap: 0.5rem;
+.rounded-\[50\%\] {
+  border-radius: 50%;
 }
 
-.gap-4 {
-  gap: 1rem;
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
-.rounded {
-  border-radius: 0.25rem;
+.border {
+  border-width: 1px;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
 }
 
 .bg-gray-200 {
@@ -716,17 +737,30 @@ html {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
+.bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(90 133 238 / var(--tw-bg-opacity));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-direction {
-  background-image: url('../assets/icons/direction.svg');
+.bg-battery {
+  background-image: url('/assets/icons/battery.svg');
+}
+
+.bg-lte {
+  background-image: url('/assets/icons/lte.svg');
 }
 
 .bg-search {
-  background-image: url('../assets/icons/search.svg');
+  background-image: url('/assets/icons/search.svg');
+}
+
+.bg-signal {
+  background-image: url('/assets/icons/signal.svg');
 }
 
 .bg-bottom {
@@ -746,16 +780,52 @@ html {
      object-fit: cover;
 }
 
-.p-2 {
-  padding: 0.5rem;
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
-.p-4 {
-  padding: 1rem;
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
+.pb-9 {
+  padding-bottom: 2.25rem;
+}
+
+.pl-3 {
+  padding-left: 0.75rem;
 }
 
 .pl-6 {
   padding-left: 1.5rem;
+}
+
+.pl-\[0\.375rem\] {
+  padding-left: 0.375rem;
+}
+
+.pr-3 {
+  padding-right: 0.75rem;
 }
 
 .pr-6 {
@@ -765,6 +835,10 @@ html {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-\[0\.625rem\] {
+  font-size: 0.625rem;
 }
 
 .text-lg {
@@ -777,6 +851,11 @@ html {
   line-height: 1.25rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-bold {
   font-weight: 600;
 }
@@ -785,9 +864,24 @@ html {
   font-weight: 400;
 }
 
-.text-gray-500 {
+.text-\[\#919191\] {
   --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
+  color: rgb(145 145 145 / var(--tw-text-opacity));
+}
+
+.text-gray4 {
+  --tw-text-opacity: 1;
+  color: rgb(189 189 189 / var(--tw-text-opacity));
+}
+
+.text-secondary {
+  --tw-text-opacity: 1;
+  color: rgb(90 133 238 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @font-face {
@@ -812,4 +906,10 @@ html {
   src: url("../assets/fonts/Pretendard-Regular.woff2") format("woff2");
 
   font-weight: 400;
+}
+
+@media (min-width: 769px)  {
+  html {
+    font-size: 20px;
+  }
 }

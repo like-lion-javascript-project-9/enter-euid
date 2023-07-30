@@ -4,8 +4,22 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: (theme) => ({
+<<<<<<< HEAD
         search: "url('../assets/icons/search.svg')",
         direction: "url('../assets/icons/direction.svg')",
+=======
+        search: "url('/assets/icons/search.svg')",
+        battery: "url('/assets/icons/battery.svg')",
+        lte: "url('/assets/icons/lte.svg')",
+        signal: "url('/assets/icons/signal.svg')",
+        "home-nofill": "url('/assets/icons/home-nofill.svg')",
+        "home-fill": "url('/assets/icons/home-fill.svg')",
+        "location-nofill": "url('/assets/icons/location-nofill.svg')",
+        "location-fill": "url('/assets/icons/location-fill.svg')",
+        board: "url('/assets/icons/board.svg')",
+        chat: "url('/assets/icons/chat.svg')",
+        my: "url('/assets/icons/my.svg')",
+>>>>>>> develop
       }),
       colors: {
         white: "#ffffff",
