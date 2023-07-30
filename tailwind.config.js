@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       backgroundImage: (theme) => ({
         search: "url('../assets/icons/search.svg')",
+        direction: "url('../assets/icons/direction.svg')",
       }),
       colors: {
         white: "#ffffff",

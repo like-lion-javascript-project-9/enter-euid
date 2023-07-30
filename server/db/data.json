@@ -9,7 +9,7 @@
       "category": "beauty",
       "user": {
         "name": "최가온",
-        "adress": "서울시 관악구"
+        "address": "서울시 관악구"
       },
       "image": {
         "thumbnai_l": "client/asstes/images/data_img_soap_1.jpg",
@@ -26,7 +26,7 @@
       "category": "appliance",
       "user": {
         "name": "신현우",
-        "adress": "서울시 강남구"
+        "address": "서울시 강남구"
       },
       "image": {
         "thumbnai_l": "client/asstes/images/data_img_camera_3.jpg",
@@ -44,7 +44,7 @@
       "category": "shoes",
       "user": {
         "name": "이지은",
-        "adress": "부천시 약대동"
+        "address": "부천시 약대동"
       },
       "image": {
         "thumbnai_l": "client/asstes/images/data_img_shoes_5.jpg",
@@ -62,7 +62,7 @@
       "category": "beauty",
       "user": {
         "name": "차수지",
-        "adress": "동구 범일동"
+        "address": "동구 범일동"
       },
       "image": {
         "thumbnai_l": "client/asstes/images/data_img_cosmetic_7.jpg",
@@ -80,7 +80,7 @@
       "category": "beauty",
       "user": {
         "name": "김지혜",
-        "adress": "의정부시 용현동"
+        "address": "의정부시 용현동"
       },
       "image": {
         "thumbnai_l": "client/asstes/images/data_img_perfume_9.jpg",
@@ -97,7 +97,7 @@
       "category": "beauty",
       "user": {
         "name": "김희성",
-        "adress": "서울시 금천구"
+        "address": "서울시 금천구"
       },
       "image": {
         "thumbnai_l": "client/asstes/images/data_img_chair_11.jpg",
@@ -114,7 +114,7 @@
       "category": "degital",
       "user": {
         "name": "신영화",
-        "adress": "부산시 사상구"
+        "address": "부산시 사상구"
       },
       "image": {
         "thumbnai_l": "client/asstes/images/data_img_imac_13.jpg",
@@ -131,7 +131,7 @@
       "category": "sport",
       "user": {
         "name": "한시원",
-        "adress": "경기도 시흥시"
+        "address": "경기도 시흥시"
       },
       "image": {
         "thumbnai_l": "client/asstes/images/data_img_cycle_15.jpg",
@@ -148,7 +148,7 @@
       "category": "instrument",
       "user": {
         "name": "하도혁",
-        "adress": "경기도 평택시"
+        "address": "경기도 평택시"
       },
       "image": {
         "thumbnai_l": "client/asstes/images/data_img_guitar_17.jpg",
@@ -165,7 +165,7 @@
       "category": "fassion",
       "user": {
         "name": "송진주",
-        "adress": "경기도 안성시"
+        "address": "경기도 안성시"
       },
       "image": {
         "thumbnai_l": "client/asstes/images/data_img_cap_19.jpg",
