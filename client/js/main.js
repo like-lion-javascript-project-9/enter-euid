@@ -1,4 +1,6 @@
 
+import {} from "./layout/index.js";
+
 import { getNode } from "./lib/index.js";
 
 const startButton = getNode(".startButton");

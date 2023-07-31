@@ -689,6 +689,10 @@ html {
   display: block;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
 }
@@ -777,6 +781,10 @@ html {
   max-height: 1080px;
 }
 
+.max-h-\[44rem\] {
+  max-height: 44rem;
+}
+
 .max-h-\[690px\] {
   max-height: 690px;
 }
@@ -852,12 +860,20 @@ html {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-col {
   flex-direction: column;
 }
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
 }
 
 .items-center {
@@ -1531,16 +1547,6 @@ html {
   color:white;
 }
 
-.is-active {
-  background-color: #373F67;
+.is-active .category-button-img {
+  background-image: url("../assets/images/check.png");
 }
-
-.is-active .category-button-title {
-  color:white;
-}
-
-.hover\:bg-secondary:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(90 133 238 / var(--tw-bg-opacity));
-}
-

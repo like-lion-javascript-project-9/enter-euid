@@ -1,46 +1,34 @@
-import { getNode, getNodes } from "./lib/dom/getNode.js";
+import { getNode, getNodes } from "./lib/dom/index.js";
+import {} from "./layout/index.js";
 
-const buttons =getNode(".buttons")
-const categoryButton = getNode(".category-button")
-const buttonTitle =  getNode(".category-button-title")         
-const buttonImage = getNode(".category-button-img")
+//버튼 클릭 기능
+const buttons = getNode(".buttons");
 
-let isClicked = false;
+const handleClick = (event) => {
+  const clicked = "is-active";
+  const target = event.target.closest("button");
 
-const handleClick = (event)=>{
- 
- const target = event.target.closest("button")
-const imgtarget = event.target.closest("button img")
-const texttarget = event.target.closest(".category-button-title")
-
-  if(!target)
-  return 
-
-if (isClicked){
-    target.classList.remove("is-active")
-    // imgtarget.setAttribute("src","../assets/icons/plus.svg");
-  }
-  else{
-    target.classList.add("is-active")
-   
-    // imgtarget.setAttribute("src", "../assets/images/check.png");
+  if (!target) {
+    return;
   }
 
-  isClicked = !isClicked
-}
-
+  if (target.classList.contains(clicked)) {
+    target.classList.remove(clicked);
+    const image = target.querySelector("img");
+    image.setAttribute("src", "../assets/icons/plus.svg");
+  } else {
+    target.classList.add(clicked);
+    const image = target.querySelector("img");
+    image.setAttribute("src", "../assets/images/check.png");
+  }
+};
 buttons.addEventListener("click", handleClick);
 
-function setImage(name,alt) {
-  const visualImage = getNode('.visual img')
-  const lowername = name.toLowerCase()
-  attr(visualImage, "src", `./assets/${lowername}.jpeg`);
-  attr(visualImage, "alt", `./assets/${alt}.jpeg`);;
+// 뒤로가기 기능
+const backButton = getNode(".backLink");
+
+const handleBackClick = event => {
+event.preventDefault();
+window.location.href="http://localhost:5500/";
 }
-
-
-
-
-
-
-
+backButton.addEventListener("click", handleBackClick);
