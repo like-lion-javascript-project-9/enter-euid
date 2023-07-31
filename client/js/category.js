@@ -31,7 +31,12 @@ if (isClicked){
 
 buttons.addEventListener("click", handleClick);
 
-
+function setImage(name,alt) {
+  const visualImage = getNode('.visual img')
+  const lowername = name.toLowerCase()
+  attr(visualImage, "src", `./assets/${lowername}.jpeg`);
+  attr(visualImage, "alt", `./assets/${alt}.jpeg`);;
+}
 
 
 
