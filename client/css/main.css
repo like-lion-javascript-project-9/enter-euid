@@ -605,6 +605,11 @@ html {
   margin-right: 0.75rem;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .-ml-1 {
   margin-left: -0.25rem;
 }
@@ -769,6 +774,14 @@ html {
   height: 100vh;
 }
 
+.h-40 {
+  height: 10rem;
+}
+
+.h-80 {
+  height: 20rem;
+}
+
 .max-h-56 {
   max-height: 14rem;
 }
@@ -884,6 +897,14 @@ html {
   gap: 1rem;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -984,6 +1005,10 @@ html {
   background-position: left bottom;
 }
 
+.bg-center {
+  background-position: center;
+}
+
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
@@ -993,12 +1018,31 @@ html {
      object-fit: cover;
 }
 
+.object-none {
+  -o-object-fit: none;
+     object-fit: none;
+}
+
+.object-center {
+  -o-object-position: center;
+     object-position: center;
+}
+
+.object-right-bottom {
+  -o-object-position: right bottom;
+     object-position: right bottom;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .px-2 {
@@ -1029,6 +1073,11 @@ html {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .pb-1 {
@@ -1069,6 +1118,14 @@ html {
 
 .pr-6 {
   padding-right: 1.5rem;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .text-\[0\.625rem\] {
