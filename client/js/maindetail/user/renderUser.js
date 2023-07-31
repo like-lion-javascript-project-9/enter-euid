@@ -4,14 +4,14 @@ import {
   insertFirst,
   insertLast,
 } from "../../lib/index.js";
-import { createUserMannerTemperature, createUserProfile } from "./creatUser.js";
+import { createUserMannerTemperature } from "./creatUser.js";
 
-export const renderUserProfile = (src, alt, name, address) => {
-  const userInfo = getNode(".userInfo");
-  insertFirst(userInfo, createUserProfile(src, alt, name, address));
-};
+// export const renderUserProfile = (src, alt, name, address) => {
+//   const userInfo = getNode(".userInfoInner");
+//   insertFirst(userInfo, createUserProfile(src, alt, name, address));
+// };
 
 export const renderUserManner = (temerature) => {
-  const userInfo = getNode(".userInfoManner");
-  insertLast(userInfo, createUserMannerTemperature(temerature));
+  const userInfoManner = getNode(".userInfoManner");
+  insertFirst(userInfoManner, createUserMannerTemperature(temerature));
 };

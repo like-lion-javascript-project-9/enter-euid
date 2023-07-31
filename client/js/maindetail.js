@@ -6,7 +6,7 @@ import {
 } from "./maindetail/product/index.js";
 import {
   renderUserManner,
-  renderUserProfile,
+  // renderUserProfile,
 } from "./maindetail/user/renderUser.js";
 
 const URL = "http://localhost:3000/products";
@@ -38,5 +38,5 @@ renderProductInforamtion(productName, category, productDesctiption);
 renderProductPrice(price);
 
 //유저 렌더링
-renderUserProfile(userSrc, userAlt, userName, userAddress);
+// renderUserProfile(userSrc, userAlt, userName, userAddress);
 renderUserManner(userManner);
