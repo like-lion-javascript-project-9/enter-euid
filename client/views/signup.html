@@ -28,9 +28,9 @@
         <p class="mb-5 text-xs">
           휴대폰 번호는 안전하게 보관되며 서로에게 공개되지 않아요.
         </p>
-        <form action="">
+        <form>
           <fieldset>
-            <div class="flex flex-col gap-3">
+            <div class="flex flex-col gap-3" id="form">
               <legend class="sr-only">회원가입 폼</legend>
               <div>
                 <label for="phoneNumber" class="sr-only">휴대폰 번호</label>
@@ -46,6 +46,8 @@
               <button
                 type="submit"
                 class="w-full rounded border border-gray-300 p-2 text-sm text-gray-400"
+                id="authBtn"
+                disabled
               >
                 인증문자 받기
               </button>
