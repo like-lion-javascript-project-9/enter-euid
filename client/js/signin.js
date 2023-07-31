@@ -1,1 +1,3 @@
-import {} from "./layout/index.js";
+import { renderPhoneIndicator } from "./layout/index.js";
+
+renderPhoneIndicator();
