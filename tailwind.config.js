@@ -15,7 +15,8 @@ module.exports = {
         board: "url('/assets/icons/board.svg')",
         chat: "url('/assets/icons/chat.svg')",
         my: "url('/assets/icons/my.svg')",
-        direction: "url('../assets/icons/direction.svg')",
+        direction: "url('/assets/icons/direction.svg')",
+        "direction-left": "url('/assets/icons/direction-left.svg')",
       }),
       colors: {
         white: '#ffffff',

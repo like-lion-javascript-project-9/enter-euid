@@ -12,93 +12,50 @@
     <meta property="og:description" content="설명" />
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
-    <script src="./../js/maindetail/main.js" type="module"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./../js/maindetail.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <title>enter-euid-team9</title>
   </head>
 
   <body class="bg-gray-200">
-    <!-- <img src="./../" alt="" /> -->
     <div
-      class="absolute left-1/2 top-1/2 h-screen max-h-[1080px] min-w-[320px] max-w-[380px] -translate-x-1/2 -translate-y-1/2 bg-white"
+      id="container"
+      class="absolute left-1/2 top-1/2 h-screen max-h-fit min-w-[320px] max-w-[380px] -translate-x-1/2 -translate-y-1/2 bg-white"
     >
-      <header class="flex h-9 items-center justify-between pl-6 pr-6">
-        <time datetime="" class="text-sm">14:29</time>
-        <ul class="flex items-center">
-          <li class="h-3 w-6 bg-signal bg-bottom bg-no-repeat"></li>
-          <li class="h-3 w-6 bg-lte bg-left-bottom bg-no-repeat"></li>
-          <li class="h-3 w-6 bg-battery bg-left-bottom bg-no-repeat"></li>
-        </ul>
-      </header>
       <!-- 상단 스와이퍼 이미지 구간-->
-      <div class="swiper productSwiperimage h-[300px]">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper productWrapper">
+      <div class="swiper productSwiperimage h-[284px]">
+        <div class="swiper-wrapper productWrapper h-[284px]">
           <!-- Slides -->
-          <!-- 동적으로 생성되어야 할 이미지 -->
+          <!-- 동적으로 생성되어야 할 아이템이미지 -->
           <!-- <div class="swiper-slide product__item1"></div>
           <div class="swiper-slide product__item2"></div> -->
-          <img src="" alt="" />
+          <!-- <img src="" alt="" /> -->
         </div>
         <div class="swiper-pagination"></div>
       </div>
 
       <!-- 사용자 정보 및 매너온도 섹션-->
       <section class="userInfo flex py-3 pl-3 pr-3">
-        <div class="userInfoProfile flex flex-grow">
-          <!-- 동적으로 생성되어야 할 이미지 -->
-          <div class="userInfoInner aspect-square h-[40px] w-[40px]">
-            <img
-              src="./../assets/images/data_img_camera_3.jpg"
-              alt="infoThumbnail"
-              class="userInfo__thumbnail h-full w-full rounded-[50%] object-cover"
-            />
-          </div>
-          <div class="userInfoProfileWrppaer flex flex-col pl-[0.375rem]">
-            <!-- 동적으로 생성되어야 할 유저프로필/주소 -->
-            <span class="userInfoProfile__name text-sm font-bold">맥이뜸</span>
-            <span class="userInfoProfile__adreess text-[0.625rem]">응암동</span>
-          </div>
-        </div>
-        <div class="userInfoManner">
-          <!-- 동적으로 생성되어야 할 매너온도 -->
-          <span
-            class="userInfoManner__temperature text-sm font-bold text-secondary"
-            >41.2C</span
-          >
-          <span class="userInfoManner__emoji">😀</span>
-          <span
-            class="userInfoManner__mannerTemperature ml-4 block text-xs text-[#919191]"
-            >매너온도</span
-          >
-        </div>
+        <div class="userInfoManner"></div>
       </section>
 
       <!-- 상품 설명 섹션-->
       <section class="productDetail border-b-2 pl-3 pr-3">
         <div class="productInformation">
           <!-- 동적으로 생성되어야 할 아이템 이름 -->
-          <h2 class="productDetail__title pb-1 text-lg font-bold">
-            <!-- 2020 MacBook Air M1 -->
-          </h2>
-          <!-- 동적으로 생성되어야 할 아이템 카테고리 -->
-          <div class="productDetail__category pb-3 text-sm text-gray4">
-            컴퓨터 • 17분전
-          </div>
-          <!-- 동적으로 생성되어야 할 아이템 설명 -->
-          <div class="productDetail__description h-[6.75rem] max-h-56 text-sm">
-            상태 깨끗하고 좋아요<br />
-            왜냐하면 맥을 사용할 줄 몰라서 넷플릭스용으로만 봤어요. 집근처에서
-            거래 희망합니다.
-          </div>
         </div>
         <div
           class="productDetailPriceWrppaer flex items-center justify-center pb-9 text-sm"
         >
-          <div class="heart-ico is-active">🤍</div>
+          <div class="heart cursor-pointer"></div>
           <div class="line mx-3 h-[32px] w-[1px] border"></div>
           <div class="productDetailPrice flex-grow">
-            <!-- 동적으로 생성되어야 할 가격 -->
-            <span class="font-bold">820000원</span>
             <div
               class="productDetailPrice__proposal text-[0.625rem] font-bold text-secondary"
             >
@@ -114,27 +71,11 @@
       </section>
 
       <!-- 이글과 함께 봤어요 섹션-->
-      <div class="userTogether px-3 py-4 text-sm font-bold">
-        <h2 class="userTogether__title">이 글과 함께 봤어요</h2>
-        <ul class="userTogether__list">
-          <!-- 동적으로 생성되어야 할 영역 -->
-          <!-- <li class="userTogetherItem">
-            <h3 class="userTogetherItem__title"></h3>
-            <h3 class="userTogetherItem__price"></h3>
-          </li>
-          <li class="userTogetherItem">
-            <h3 class="userTogetherItem__title"></h3>
-            <h3 class="userTogetherItem__price"></h3>
-          </li>
-          <li class="userTogetherItem">
-            <h3 class="userTogetherItem__title"></h3>
-            <h3 class="userTogetherItem__price"></h3>
-          </li>
-          <li class="userTogetherItem">
-            <h3 class="userTogetherItem__title"></h3>
-            <h3 class="userTogetherItem__price"></h3>
-          </li> -->
-        </ul>
+      <div
+        class="userTogether h-[400px] overflow-auto px-3 py-4 text-sm font-bold"
+      >
+        <h2 class="userTogether__title px-3 py-[14px]">이 글과 함께 봤어요</h2>
+        <ul class="userTogether__list flex flex-wrap"></ul>
       </div>
     </div>
   </body>

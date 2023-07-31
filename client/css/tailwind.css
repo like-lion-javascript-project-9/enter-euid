@@ -28,7 +28,7 @@
   }
 }
 
-@media (min-width: 769px)  {
+@media (min-width: 769px) {
   html {
     font-size: 20px;
   }
@@ -195,7 +195,7 @@
 }
 
 .indicator {
-  @apply flex h-9 items-center justify-between pl-6 pr-6;
+  @apply flex h-9 items-center justify-between pl-4 pr-4;
 }
 
 .time {
@@ -258,22 +258,12 @@
   @apply text-xs text-gray-300;
 }
 
-.is-active {
-background-color: #373F67;
 
-} 
+.is-active .category-button-title {
+  color: white;
+}
+
 
 .is-active .category-button-title {
   color:white;
 }
-
-
-.is-active {
-background-color: #373F67;
-
-} 
-
-.is-active .category-button-title {
-  color:white;
-}
-
