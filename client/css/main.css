@@ -22,7 +22,7 @@
 
 ::before,
 ::after {
-  --tw-content: "";
+  --tw-content: '';
 }
 
 /*
@@ -42,23 +42,9 @@ html {
   -moz-tab-size: 4;
   /* 3 */
   -o-tab-size: 4;
-  tab-size: 4;
+     tab-size: 4;
   /* 3 */
-  font-family:
-    ui-sans-serif,
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    "Helvetica Neue",
-    Arial,
-    "Noto Sans",
-    sans-serif,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Noto Color Emoji";
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -99,7 +85,7 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 
 abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
+          text-decoration: underline dotted;
 }
 
 /*
@@ -143,8 +129,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -239,9 +224,9 @@ select {
 */
 
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type='button'],
+[type='reset'],
+[type='submit'] {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -288,7 +273,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 2. Correct the outline style in Safari.
 */
 
-[type="search"] {
+[type='search'] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -381,8 +366,7 @@ textarea {
 2. Set the default placeholder color to the user's configured gray 400 color.
 */
 
-input::-moz-placeholder,
-textarea::-moz-placeholder {
+input::-moz-placeholder, textarea::-moz-placeholder {
   opacity: 1;
   /* 1 */
   color: #9ca3af;
@@ -454,9 +438,7 @@ html {
   font-family: "pretendard", system-ui, sans-serif;
 }
 
-*,
-::before,
-::after {
+*, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -710,16 +692,12 @@ html {
 
 .-translate-x-1\/2 {
   --tw-translate-x: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .-translate-y-1\/2 {
   --tw-translate-y: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .flex-col {
@@ -770,19 +748,19 @@ html {
 }
 
 .bg-battery {
-  background-image: url("/assets/icons/battery.svg");
+  background-image: url('/assets/icons/battery.svg');
 }
 
 .bg-lte {
-  background-image: url("/assets/icons/lte.svg");
+  background-image: url('/assets/icons/lte.svg');
 }
 
 .bg-search {
-  background-image: url("/assets/icons/search.svg");
+  background-image: url('/assets/icons/search.svg');
 }
 
 .bg-signal {
-  background-image: url("/assets/icons/signal.svg");
+  background-image: url('/assets/icons/signal.svg');
 }
 
 .bg-bottom {
@@ -799,7 +777,7 @@ html {
 
 .object-cover {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .px-3 {
@@ -930,8 +908,183 @@ html {
   font-weight: 400;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 769px)  {
   html {
     font-size: 20px;
   }
+}
+
+.bg-battery {
+  background-image: url("/assets/icons/battery.svg");
+}
+
+.bg-lte {
+  background-image: url("/assets/icons/lte.svg");
+}
+
+.bg-search {
+  background-image: url("/assets/icons/search.svg");
+}
+
+.bg-signal {
+  background-image: url("/assets/icons/signal.svg");
+}
+
+.bg-board {
+  background-image: url("/assets/icons/board.svg");
+}
+
+.bg-chat {
+  background-image: url("/assets/icons/chat.svg");
+}
+
+.bg-home-fill {
+  background-image: url("/assets/icons/home-fill.svg");
+}
+
+.bg-location-nofill {
+  background-image: url("/assets/icons/location-nofill.svg");
+}
+
+.bg-my {
+  background-image: url("/assets/icons/my.svg");
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.indicator {
+  display: flex;
+  height: 2.25rem;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.time {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.signal {
+  height: 0.75rem;
+  width: 1.5rem;
+  background-image: url('/assets/icons/signal.svg');
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-image: url("/assets/icons/signal.svg");
+}
+
+.lte {
+  height: 0.75rem;
+  width: 1.5rem;
+  background-image: url('/assets/icons/lte.svg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: url("/assets/icons/lte.svg");
+}
+
+.battery {
+  height: 0.75rem;
+  width: 1.5rem;
+  background-image: url('/assets/icons/battery.svg');
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-image: url("/assets/icons/battery.svg");
+}
+
+.navigator {
+  position: fixed;
+  bottom: 0px;
+  height: 70px;
+  width: 100%;
+  border-top-width: 1px;
+  padding-bottom: 1.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.75rem;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.home {
+  height: 1.25rem;
+  width: 1.25rem;
+  background-image: url('/assets/icons/home-fill.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/icons/home-fill.svg");
+}
+
+.board {
+  height: 1.25rem;
+  width: 1.25rem;
+  background-image: url('/assets/icons/board.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/icons/board.svg");
+}
+
+.location {
+  height: 1.25rem;
+  width: 1.25rem;
+  background-image: url('/assets/icons/location-nofill.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/icons/location-nofill.svg");
+}
+
+.chat {
+  height: 1.25rem;
+  width: 1.25rem;
+  background-image: url('/assets/icons/chat.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/icons/chat.svg");
+}
+
+.my {
+  height: 1.25rem;
+  width: 1.25rem;
+  background-image: url('/assets/icons/my.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/icons/my.svg");
+}
+
+.menu-enabled {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.menu-disabled {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
 }
