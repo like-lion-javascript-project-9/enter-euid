@@ -2,7 +2,7 @@ import { getNode, insertFirst } from "../lib/index.js";
 
 const today = new Date();
 const hours = today.getHours();
-const minutes = today.getMinutes();
+const minutes = ("0" + today.getMinutes()).slice(-2);
 
 const createPhoneIndicator = () => {
   const template = /* html */ `
@@ -54,13 +54,10 @@ const createNavigator = () => {
   return template;
 };
 
-const renderPhoneIndicator = () => {
+export const renderPhoneIndicator = () => {
   insertFirst(getNode("#container"), createPhoneIndicator());
 };
 
-const renderNavigator = () => {
+export const renderNavigator = () => {
   insertFirst(getNode("#container"), createNavigator());
 };
-
-renderNavigator();
-renderPhoneIndicator();

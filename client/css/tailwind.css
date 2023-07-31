@@ -28,7 +28,7 @@
   }
 }
 
-@media (min-width: 769px)  {
+@media (min-width: 769px) {
   html {
     font-size: 20px;
   }
@@ -195,7 +195,7 @@
 }
 
 .indicator {
-  @apply flex h-9 items-center justify-between pl-6 pr-6;
+  @apply flex h-9 items-center justify-between pl-4 pr-4;
 }
 
 .time {
@@ -260,11 +260,10 @@
 
 
 .is-active .category-button-title {
-  color:white;
+  color: white;
 }
 
 
 .is-active .category-button-title {
   color:white;
 }
-
