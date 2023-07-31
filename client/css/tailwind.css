@@ -277,3 +277,6 @@ background-color: #373F67;
   color:white;
 }
 
+.is-active .category-button-img {
+  background-image: url("/assets/image/check.png");
+}

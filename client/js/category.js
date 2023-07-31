@@ -16,8 +16,6 @@ const texttarget = event.target.closest(".category-button-title")
   if(!target)
   return 
 
-
-
 if (isClicked){
     target.classList.remove("is-active")
     // imgtarget.setAttribute("src","../assets/icons/plus.svg");
