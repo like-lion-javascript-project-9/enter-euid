@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="icon" href="/assets/favicon/favicon.ico" type="image/x-icon" />
+    <title>enter-euid-team9:인증하기</title>
+    <script src="/js/certificate.js" type="module"></script>
+  </head>
+
+  <body class="bg-gray-200">
+    <div
+      id="container"
+      class="absolute left-1/2 top-1/2 h-screen max-h-[44rem] min-w-[320px] max-w-max -translate-x-1/2 -translate-y-1/2 bg-white pl-3 pr-3"
+    >
+      <h1 class="sr-only">인증 페이지</h1>
+      <header class="mt-1">
+        <h2 class="sr-only">뒤로가기</h2>
+        <a href="/" class="inline-block h-5 w-5 bg-direction-left"></a>
+      </header>
+      <section>
+        <form action="">
+          <fieldset>
+            <div class="flex flex-col gap-3">
+              <legend class="sr-only">인증 폼</legend>
+              <div>
+                <label for="phoneNumber" class="sr-only">휴대폰 번호</label>
+                <input
+                  type="text"
+                  id="phoneNumber"
+                  name="phoneNumber"
+                  class="w-full rounded border border-gray-400 p-2 text-sm focus:outline-none"
+                  readonly
+                />
+              </div>
+              <button
+                type="submit"
+                class="w-full rounded border border-gray-300 p-2 text-sm"
+              >
+                인증문자 다시 받기()
+              </button>
+              <div>
+                <label for="authNumber" class="sr-only">인증 번호</label>
+                <input
+                  type="text"
+                  id="authNumber"
+                  name="authNumber"
+                  class="w-full rounded border border-gray-300 p-2 text-sm outline-none focus:border-black"
+                  placeholder="인증 번호 입력"
+                  required
+                />
+                <p class="mt-1 text-xs font-thin text-gray-500">
+                  어떤 경우에도 타인에게 공유하지마세요!
+                </p>
+              </div>
+              <button
+                type="submit"
+                class="w-full rounded-md border-none bg-[#919191] p-3 text-sm text-white"
+              >
+                동의하고 시작하기
+              </button>
+              <a href="" class="text-center text-xs text-gray-400 underline"
+                >인증번호가 오지 않나요?</a
+              >
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
