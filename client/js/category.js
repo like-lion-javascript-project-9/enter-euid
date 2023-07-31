@@ -32,3 +32,17 @@ event.preventDefault();
 window.location.href="http://localhost:5500/";
 }
 backButton.addEventListener("click", handleBackClick);
+
+//저장하기 버튼 기능
+
+const submitButton = getNode(".submit-button")
+
+
+function handleBackClick(event) {
+  event.preventDefault()
+  
+
+} 
+
+
+submitButton.addEventListener("click",handleSubmitCick)
