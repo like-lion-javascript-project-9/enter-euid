@@ -38,18 +38,3 @@ const render = () => {
 };
 
 render();
-
-const add = () => {
-  for (let i = 0; i < itemlist.length; i++) {
-    // const json = itemlist[i];
-    const ul = getNode(".ul");
-    const li = getNode(".li");
-
-    insertLast(ul, li);
-    // ul.appendChild(li);
-    console.log("add");
-    // console.log(ul);
-    console.log(li);
-  }
-};
-add();
