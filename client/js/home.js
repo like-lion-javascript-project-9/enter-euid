@@ -1,7 +1,8 @@
-import { getNode, insertFirst, tiger } from "./lib/index.js";
+import { getNode, insertFirst, insertLast, tiger } from "./lib/index.js";
 
 console.log("home main js");
 
+const image = getNode(".image");
 const list = getNode(".list");
 const name = getNode(".list-name");
 const location = getNode(".list-location");
@@ -19,11 +20,36 @@ console.log(itemlist);
 console.log(itemlist[0].name);
 console.log(itemlist[0].price);
 console.log(itemlist[0].user.address);
+console.log(itemlist[2].image.thumbnail_l);
+console.log(itemlist[2].image.alt);
 
 const render = () => {
-  insertFirst(name, itemlist[0].name);
-  insertFirst(location, itemlist[0].user.address);
-  insertFirst(price, `${itemlist[0].price}원`);
+  for (let i = 0; i < itemlist.length; i++) {
+    image.src = itemlist[i].image.thumbnail_l;
+    image.alt = itemlist[i].image.alt;
+    insertFirst(name, itemlist[i].name);
+    insertFirst(location, itemlist[i].user.address);
+    insertFirst(price, `${itemlist[i].price}원`);
+    console.log("render");
+
+    // 한번 돌고 멈추고
+    return;
+  }
 };
 
 render();
+
+const add = () => {
+  for (let i = 0; i < itemlist.length; i++) {
+    // const json = itemlist[i];
+    const ul = getNode(".ul");
+    const li = getNode(".li");
+
+    insertLast(ul, li);
+    // ul.appendChild(li);
+    console.log("add");
+    // console.log(ul);
+    console.log(li);
+  }
+};
+add();
