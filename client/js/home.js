@@ -1,8 +1,11 @@
-import { getNode, insertFirst, insertLast, tiger } from './lib/index.js';
-import {} from './layout/index.js';
+import { getNode, insertLast, tiger } from './lib/index.js';
+import { renderPhoneIndicator } from './layout/index.js';
+renderPhoneIndicator();
 
 console.log('home main js');
 
+const ul = getNode('.ul');
+const li = getNode('.li');
 const list = getNode('.list');
 const figure = getNode('.figure');
 const name = getNode('.list-name');
@@ -57,22 +60,21 @@ console.log(itemlist[2].image.alt);
 /* -------------------------------------------------------------------------- */
 const liElements = await itemlist.map(async (itemlist) => {
   // map 이 자동으로 순환하기 때문에 차례대로 데이터가 나옴
-  const ul = getNode('.ul');
 
   // 빈 내용 map 함수로 넣기
   const divTemplate = `
     <li class="li">
-      <a href="/" class="list w-36">
+      <a href="maindetail.html" class="list w-36">
         <figure class="figure">
           <img
-          src="../${itemlist.image.thumbnail_l}"
+          src="../${itemlist.image.thumbnail_l}.webp"
           alt="../${itemlist.image.alt}"
           class="image h-24 w-full rounded object-cover"
           />
           <figcaption class="list">
             <h1 class="list-name">${itemlist.name}</h1>
             <p class="list-location text-sm text-gray-500">${itemlist.user.address}</p>
-            <strong class="list-price font-bold">${itemlist.price}</strong>
+            <strong class="list-price font-bold">${itemlist.price}원</strong>
           </figcaption>
         </figure>
       </a>
@@ -85,3 +87,4 @@ const liElements = await itemlist.map(async (itemlist) => {
   return;
 });
 console.log(liElements);
+/* -------------------------------------------------------------------------- */
