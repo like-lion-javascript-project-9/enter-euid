@@ -18,28 +18,32 @@
       <h1 class="sr-only">인증 페이지</h1>
       <header class="mt-1">
         <h2 class="sr-only">뒤로가기</h2>
-        <a href="/" class="inline-block h-5 w-5 bg-direction-left"></a>
+        <a
+          href="http://localhost:5500/views/signup.html"
+          class="inline-block h-5 w-5 bg-direction-left"
+        ></a>
       </header>
       <section>
-        <form action="">
+        <form>
           <fieldset>
+            <legend class="sr-only">인증 폼</legend>
             <div class="flex flex-col gap-3">
-              <legend class="sr-only">인증 폼</legend>
               <div>
                 <label for="phoneNumber" class="sr-only">휴대폰 번호</label>
                 <input
                   type="text"
                   id="phoneNumber"
                   name="phoneNumber"
-                  class="w-full rounded border border-gray-400 p-2 text-sm focus:outline-none"
+                  class="w-full rounded border border-gray-400 p-2 text-sm text-gray-400 focus:outline-none"
                   readonly
                 />
               </div>
               <button
+                id="againBtn"
                 type="submit"
                 class="w-full rounded border border-gray-300 p-2 text-sm"
               >
-                인증문자 다시 받기()
+                인증문자 다시 받기(03분 00초)
               </button>
               <div>
                 <label for="authNumber" class="sr-only">인증 번호</label>
@@ -58,10 +62,14 @@
               <button
                 type="submit"
                 class="w-full rounded-md border-none bg-[#919191] p-3 text-sm text-white"
+                id="authBtn"
+                disabled
               >
                 동의하고 시작하기
               </button>
-              <a href="" class="text-center text-xs text-gray-400 underline"
+              <a
+                href="http://localhost:5500/views/signup.html"
+                class="text-center text-xs text-gray-400 underline"
                 >인증번호가 오지 않나요?</a
               >
             </div>
