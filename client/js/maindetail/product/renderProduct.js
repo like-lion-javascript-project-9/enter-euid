@@ -1,10 +1,24 @@
-import { insertLast, getNode } from "./../../lib/index.js";
+import { getNode, insertLast } from "../../lib/index.js";
 import {
-  createProductDescription,
-  createProductName,
+  createProductInfomation,
+  createProductPrice,
   createSwiperProduct,
 } from "./createProduct.js";
 
-export const render = (target, callback) => {
-  insertLast(target, callback);
+export const renderProductSwiperImage = (src1, src2, alt) => {
+  const productWrapper = getNode(".productWrapper");
+  insertLast(productWrapper, createSwiperProduct(src1, src2, alt));
+};
+
+export const renderProductInforamtion = (name, category, summary) => {
+  const infomationSection = getNode(".productInformation");
+  infomationSection.insertAdjacentHTML(
+    "beforeend",
+    createProductInfomation(name, category, summary),
+  );
+};
+
+export const renderProductPrice = (price) => {
+  const productPrice = getNode(".productDetailPrice");
+  insertLast(productPrice, createProductPrice(price));
 };

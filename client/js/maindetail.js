@@ -1,36 +1,42 @@
-import { getNode, tiger } from "./lib/index.js";
-import { createSwiperProduct } from "./maindetail/product/createProduct.js";
-import { render } from "./maindetail/product/renderProduct.js";
-import { createUserProfile } from "./maindetail/user/index.js";
+import { getNode, getRandom, tiger } from "./lib/index.js";
+import {
+  renderProductInforamtion,
+  renderProductPrice,
+  renderProductSwiperImage,
+} from "./maindetail/product/index.js";
+import {
+  renderUserManner,
+  renderUserProfile,
+} from "./maindetail/user/renderUser.js";
 
 const URL = "http://localhost:3000/products";
 const response = await tiger.get(URL);
 const productList = response.data;
-const swiperProductSrc = productList[0].image;
-const productDesctiption = productList[0].description;
-const productName = productList[0].name;
+const randomIdx = getRandom(productList.length - 1);
+const swiperProductSrc = productList[randomIdx].image;
+const productName = productList[randomIdx].name;
+const category = productList[randomIdx].category;
+const price = productList[randomIdx].price;
+const productDesctiption = productList[randomIdx].description;
 console.log(swiperProductSrc);
 console.log(productList);
 
 //유저
-const userList = productList[0].user;
+const userList = productList[randomIdx].user;
 console.log(userList);
-const name = userList.name;
+const userName = userList.name;
 const userSrc = userList.src;
 const userAlt = userList.alt;
-const userAddress = userList.alt;
+const userAddress = userList.address;
+const userManner = productList[randomIdx].temperature;
 
 const { thumbnail_l, thumbnail_2, alt } = swiperProductSrc;
 
-const renderSwiperProduct = () => {
-  const productWrppaer = getNode(".productWrapper");
-  render(productWrppaer, createSwiperProduct(thumbnail_l, thumbnail_2, alt));
-};
+//프로덕트 렌더링
+renderProductSwiperImage(thumbnail_l, thumbnail_2, alt);
+renderProductInforamtion(productName, category, productDesctiption);
+renderProductPrice(price);
 
-const renderUser = () => {
-  const userInfoInner = getNode(".userInfoInner");
-  render(userInfoInner, createUserProfile(userSrc));
-};
-
-renderSwiperProduct();
-renderUser();
+//유저 렌더링
+renderUserProfile(userSrc, userAlt, userName, userAddress);
+renderUserManner(userManner);

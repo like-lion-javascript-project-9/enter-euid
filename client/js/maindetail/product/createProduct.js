@@ -1,8 +1,3 @@
-/**
- *
- * @param {object} thumbnail1의 주소값 alt값 thumbnail2의주소값 alt값 param0
- * @returns template
- */
 export const createSwiperProduct = (src1, src2, alt) => {
   const template = `
         <div class="swiper-slide product__item1">
@@ -15,24 +10,25 @@ export const createSwiperProduct = (src1, src2, alt) => {
   return template;
 };
 
-export const createProductName = (name) => {
+export const createProductInfomation = (name, category, summary) => {
   const template = `
+    <h2 class="productDetail__title pb-1 text-lg font-bold">
             ${name}
-    `;
-  return template;
-};
-
-export const createProductDescription = (summary) => {
-  const template = `
-              ${summary}
-      `;
+    </h2>
+    <div class="productDetail__category pb-3 text-sm text-gray4">
+        ${category} • 17분전
+    </div>
+    <div class="productDetail__description h-[6.75rem] max-h-56 text-sm">
+          ${summary}
+    </div>
+  `;
 
   return template;
 };
 
 export const createProductPrice = (price) => {
   const template = `
-                ${price}
+        <span class="product__price font-bold">${price}원</span>
         `;
 
   return template;
