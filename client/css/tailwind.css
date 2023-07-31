@@ -258,20 +258,11 @@
   @apply text-xs text-gray-300;
 }
 
-.is-active {
-background-color: #373F67;
-
-} 
 
 .is-active .category-button-title {
   color:white;
 }
 
-
-.is-active {
-background-color: #373F67;
-
-} 
 
 .is-active .category-button-title {
   color:white;

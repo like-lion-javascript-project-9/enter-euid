@@ -1,5 +1,6 @@
-import { getNode, getRandom, tiger } from "./lib/index.js";
+import { delayP, getNode, getRandom, tiger } from "./lib/index.js";
 import {
+  rederTogetherProduct,
   renderProductInforamtion,
   renderProductPrice,
   renderProductSwiperImage,
@@ -9,34 +10,56 @@ import {
   renderUserProfile,
 } from "./maindetail/user/renderUser.js";
 
-const URL = "http://localhost:3000/products";
-const response = await tiger.get(URL);
-const productList = response.data;
+import {} from "./layout/index.js";
+
+import { swiper } from "./maindetail/swiper.js";
+import { getProductList, getUserList } from "./maindetail/async.js";
+import { renderSpinner } from "./maindetail/spiner.js";
+import { handleHeart } from "./maindetail/event/heartico.js";
+
+const productList = await getProductList();
+console.log(productList);
 const randomIdx = getRandom(productList.length - 1);
-const swiperProductSrc = productList[randomIdx].image;
+const swiperProductSrc = productList[2].image;
 const productName = productList[randomIdx].name;
 const category = productList[randomIdx].category;
 const price = productList[randomIdx].price;
-const productDesctiption = productList[randomIdx].description;
-console.log(swiperProductSrc);
-console.log(productList);
+const productDesctiption = productList[3].description;
 
-//유저
-const userList = productList[randomIdx].user;
+const userLists = await getUserList();
+const userList = userLists[randomIdx];
 console.log(userList);
 const userName = userList.name;
 const userSrc = userList.src;
+console.log(userSrc);
 const userAlt = userList.alt;
 const userAddress = userList.address;
 const userManner = productList[randomIdx].temperature;
 
 const { thumbnail_l, thumbnail_2, alt } = swiperProductSrc;
 
-//프로덕트 렌더링
-renderProductSwiperImage(thumbnail_l, thumbnail_2, alt);
-renderProductInforamtion(productName, category, productDesctiption);
-renderProductPrice(price);
+const renderList = async () => {
+  renderSpinner("#container");
+  try {
+    await delayP({ timeout: 2000 });
 
-//유저 렌더링
-renderUserProfile(userSrc, userAlt, userName, userAddress);
-renderUserManner(userManner);
+    gsap.to(".loadingSpinner", {
+      opacity: 0,
+      onComplete() {
+        getNode(".loadingSpinner").remove();
+      },
+    });
+
+    renderProductSwiperImage(thumbnail_l, thumbnail_2, alt);
+    renderProductInforamtion(productName, category, productDesctiption);
+    renderProductPrice(price);
+    rederTogetherProduct(thumbnail_2, productName, price);
+    renderUserProfile(userSrc, userAlt, userName, userAddress);
+    renderUserManner(userManner);
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+renderList();
+handleHeart();

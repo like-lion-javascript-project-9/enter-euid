@@ -1,9 +1,8 @@
 export const createUserProfile = (src, alt, name, address) => {
   const template = `
   <div class="userInfoProfile flex flex-grow">
-  <div class="userInfoInner ml-3 aspect-square h-[40px] w-[40px]">
-    <img
-      src="/${src}"
+  <div class="userInfoInner aspect-square h-[40px] w-[40px]">
+    <img src="/${src}.webp"
       alt="${alt}"
       class="userInfo__thumbnail h-full w-full rounded-[50%] object-cover"
     />
@@ -18,7 +17,7 @@ export const createUserProfile = (src, alt, name, address) => {
 };
 
 export const createUserMannerTemperature = (temerature) => {
-  let emoji = temerature >= 50 ? "😀" : "🤔";
+  let emoji = temerature >= 50 ? '😀' : '🤔';
 
   return `
   <span

@@ -1,6 +1,4 @@
-const swiper = new Swiper(".swiper", {
-  loop: true,
-  autoplay: true,
+export const swiper = new Swiper(".swiper", {
   autoHeight: true,
 
   pagination: {
