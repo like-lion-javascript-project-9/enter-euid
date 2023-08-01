@@ -1,3 +1,4 @@
+import { getRandom } from '../../lib/index.js';
 import { getProductList } from '../async.js';
 
 export const createSwiperProduct = (src1, src2, alt) => {

@@ -16,7 +16,6 @@ if (!target) {
 
 const image = target.querySelector("img");
 const buttonTitle = target.querySelector(".category-button-title")
-const buttonText = target.querySelector(".category-button-text")
 const clicked = "is-active";
 const buttonValue = buttonTitle.innerText;
 const buttonkey = target.id;
@@ -44,3 +43,12 @@ window.location.href="http://localhost:5500/";
 }
 backButton.addEventListener("click", handleBackClick);
 
+//이대로 저장할래요 버튼 이동 기능
+
+const savedButton = getNode(".saved-button");
+
+const handleSavedClick = event => {
+event.preventDefault();
+window.location.href="http://localhost:5500/views/signUp.html";
+}
+savedButton.addEventListener("click", handleSavedClick);
