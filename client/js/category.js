@@ -16,7 +16,6 @@ if (!target) {
 
 const image = target.querySelector("img");
 const buttonTitle = target.querySelector(".category-button-title")
-const buttonText = target.querySelector(".category-button-text")
 const clicked = "is-active";
 const buttonValue = buttonTitle.innerText;
 const buttonkey = target.id;
