@@ -18,20 +18,27 @@ import { handleHeart } from './maindetail/event/heartico.js';
 import { renderPhoneIndicator, renderNavigator } from './layout/index.js';
 
 const productList = await getProductList();
+
+//getItem 기능 구현 개발
+
+const productId = localStorage.getItem('id');
+console.log(+productId.slice(9, -1));
+const productIndex = +productId.slice(9, -1);
+
 const randomIdx = getRandom(productList.length - 1);
-const swiperProductSrc = productList[randomIdx].image;
-const productName = productList[randomIdx].name;
-const category = productList[randomIdx].category;
-const price = productList[randomIdx].price;
-const productDesctiption = productList[randomIdx].description;
+const swiperProductSrc = productList[productIndex].image;
+const productName = productList[productIndex].name;
+const category = productList[productIndex].category;
+const price = productList[productIndex].price;
+const productDesctiption = productList[productIndex].description;
 
 const userLists = await getUserList();
-const userList = userLists[randomIdx];
+const userList = userLists[productIndex];
 const userName = userList.name;
 const userSrc = userList.src;
 const userAlt = userList.alt;
 const userAddress = userList.address;
-const userManner = productList[randomIdx].temperature;
+const userManner = productList[productIndex].temperature;
 
 const { thumbnail_l, thumbnail_2, alt } = swiperProductSrc;
 
