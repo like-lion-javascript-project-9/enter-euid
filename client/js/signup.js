@@ -3,13 +3,13 @@ import {
   addClass,
   clearContents,
   getNode,
+  goToBack,
   loadStorage,
   randomNumber,
   removeClass,
   saveStorage,
 } from "./lib/index.js";
 
-const phoneNumber = getNode("#phoneNumber");
 const authBtn = getNode("#authBtn");
 const form = getNode("#form");
 let valueObj = {};
@@ -50,6 +50,7 @@ const handleAuth = (e) => {
 };
 
 renderPhoneIndicator();
+goToBack("#back");
 phoneArrPush();
 
 phoneNumber.addEventListener("input", handleInput);

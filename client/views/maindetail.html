@@ -20,29 +20,37 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./../js/maindetail.js" type="module"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <title>enter-euid-team9</title>
+    <title>Enter-euid</title>
   </head>
 
   <body class="bg-gray-200">
     <div
       id="container"
-      class="absolute left-1/2 top-1/2 h-screen max-h-fit min-w-[320px] max-w-[380px] -translate-x-1/2 -translate-y-1/2 bg-white"
+      class="absolute left-1/2 top-1/2 min-w-[320px] max-w-[380px] -translate-x-1/2 -translate-y-1/2 bg-white"
     >
+      <nav class="menubar relative flex items-center px-4 py-4">
+        <div class="menubar__left flex flex-grow items-center">
+          <button
+            class="menubar__direction h-5 w-5 bg-direction-left bg-no-repeat"
+          ></button>
+          <button
+            class="menubar__home h-5 w-5 bg-home-nofill bg-no-repeat pl-3"
+          ></button>
+        </div>
+        <div class="menubar__right flex items-center">
+          <button class="mr-1 h-5 w-5 bg-share"></button>
+          <button class="h-5 w-5 bg-more"></button>
+        </div>
+      </nav>
       <!-- 상단 스와이퍼 이미지 구간-->
       <div class="swiper productSwiperimage h-[284px]">
-        <div class="swiper-wrapper productWrapper h-[284px]">
-          <!-- Slides -->
-          <!-- 동적으로 생성되어야 할 아이템이미지 -->
-          <!-- <div class="swiper-slide product__item1"></div>
-          <div class="swiper-slide product__item2"></div> -->
-          <!-- <img src="" alt="" /> -->
-        </div>
+        <div class="swiper-wrapper productWrapper"></div>
         <div class="swiper-pagination"></div>
       </div>
 
       <!-- 사용자 정보 및 매너온도 섹션-->
       <section class="userInfo flex py-3 pl-3 pr-3">
-        <div class="userInfoManner"></div>
+        <div class="userInfoManner block"></div>
       </section>
 
       <!-- 상품 설명 섹션-->
@@ -51,7 +59,7 @@
           <!-- 동적으로 생성되어야 할 아이템 이름 -->
         </div>
         <div
-          class="productDetailPriceWrppaer flex items-center justify-center pb-9 text-sm"
+          class="productDetailPriceWrppaer flex items-center justify-center pb-9 pt-9 text-sm"
         >
           <div class="heart cursor-pointer"></div>
           <div class="line mx-3 h-[32px] w-[1px] border"></div>
@@ -71,11 +79,11 @@
       </section>
 
       <!-- 이글과 함께 봤어요 섹션-->
-      <div
-        class="userTogether h-[400px] overflow-auto px-3 py-4 text-sm font-bold"
-      >
+      <div class="userTogether overflow-auto px-3 py-4 text-sm font-bold">
         <h2 class="userTogether__title px-3 py-[14px]">이 글과 함께 봤어요</h2>
-        <ul class="userTogether__list flex flex-wrap"></ul>
+        <ul
+          class="userTogether__list grid max-h-[21.125rem] grid-cols-2 gap-3 overflow-auto"
+        ></ul>
       </div>
     </div>
   </body>

@@ -64,6 +64,7 @@
   background-image: url("/assets/icons/my.svg");
 }
 
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -101,7 +102,7 @@
 }
 
 .navigator {
-  @apply fixed bottom-0 h-[70px] w-full border-t pb-5 pl-3 pr-3 pt-3;
+  @apply fixed bottom-0 h-[70px] w-full border-t bg-white pb-5 pl-3 pr-3 pt-3;
 }
 
 .menu-list {
@@ -148,4 +149,20 @@
   color: white;
 }
 
+.is-active .category-button-title {
+  color: white;
+}
 
+.render-bullet {
+  background-color: #82828282;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 1;
+  margin-right: 8px;
+}
+
+.render-bullet.is-active {
+  background-color: #373f67;
+}
