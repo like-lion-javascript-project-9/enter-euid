@@ -27,37 +27,27 @@
     <div
       class="absolute left-1/2 top-1/2 h-screen max-h-[690px] min-w-[320px] max-w-max -translate-x-1/2 -translate-y-1/2 bg-white"
     >
-      <!-- 공통 header -->
-      <header class="flex h-9 items-center justify-between pl-6 pr-6">
-        <time datetime="" class="text-sm">14:29</time>
-        <ul class="flex items-center">
-          <li class="h-3 w-6 bg-signal bg-bottom bg-no-repeat"></li>
-          <li class="h-3 w-6 bg-lte bg-left-bottom bg-no-repeat"></li>
-          <li class="h-3 w-6 bg-battery bg-left-bottom bg-no-repeat"></li>
-        </ul>
-      </header>
-
       <!-- 여기서부터 작업 -->
 
       <!-- main -->
-      <main class="container">
+      <main class="container" id="container">
         <!-- location -->
-        <div class="location flex h-10 justify-between p-2">
-          <div class="location-dropdown flex flex-wrap gap-2">
+        <div class="flex h-10 justify-between p-2">
+          <div class="flex flex-wrap gap-2">
             <h1 class="font-bold">남가좌제 2동</h1>
-            <div
-              class="h-5 w-5 bg-slate-100 bg-direction bg-no-repeat p-4"
-            ></div>
-            <!-- <img src="../assets/icons/direction.svg" alt="dropdown" /> -->
+
+            <button class="h-5 w-5 bg-direction bg-center bg-no-repeat p-3">
+              <!-- direction icon /> -->
+            </button>
           </div>
-          <a href="/" class="location-search">
+          <a href="search.html" class="location-search">
             <div class="h-6 w-6 bg-search bg-no-repeat"></div>
-            <!-- <img src="../assets/icons/search.svg" alt="search" /> -->
+            <!-- search icon /> -->
           </a>
         </div>
         <!-- banner -->
 
-        <figure class="banner relative">
+        <figure class="banner relative h-56 w-full">
           <figcaption class="absolute z-50 p-4">
             <h1 class="banner-title text-lg font-bold">
               풀리지 않는 버그 속<br />개발자로 살아남기
@@ -66,20 +56,20 @@
           </figcaption>
 
           <!-- Swiper -->
-          <div class="swiper mySwiper w-80">
-            <div class="swiper-wrapper">
+          <div class="swiper mySwiper h-56 w-80">
+            <div class="swiper-wrapper w-full">
               <div class="swiper-slide">
                 <img
-                  src="../assets/images/data_img_perfume_9.jpg"
+                  src="../assets/images/data_img_perfume_9.webp"
                   alt="banner"
                   class="h-56 w-screen object-cover"
                 />
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide bg-test2 h-56 w-80 object-cover">
                 <img
-                  src="../assets/images/data_img_perfume_10.jpg"
+                  src="../assets/images/data_img_perfume_10.webp"
                   alt="banner"
-                  class="h-56 w-screen object-cover"
+                  class="w-80 object-cover"
                 />
               </div>
             </div>
@@ -88,10 +78,10 @@
         </figure>
         <!-- contents -->
         <!-- ul.contents>li>a>figure -->
-        <ul class="ul grid grid-cols-2 gap-4 p-4">
-          <li class="li">
+        <ul class="ul grid h-80 grid-cols-2 gap-4 overflow-scroll p-4">
+          <!-- <li class="li">
             <a href="/" class="list w-36">
-              <figure>
+              <figure class="figure">
                 <img
                   src="../assets/images/data_img_soap_1.jpg"
                   alt="soap"
@@ -104,24 +94,7 @@
                 </figcaption>
               </figure>
             </a>
-          </li>
-
-          <li>
-            <a href="/" class="list w-36">
-              <figure>
-                <img
-                  src="../assets/images/data_img_soap_1.jpg"
-                  alt="soap"
-                  class="h-24 w-full rounded object-cover"
-                />
-                <figcaption class="list">
-                  <h1 class="list-name"></h1>
-                  <p class="list-location text-sm text-gray-500"></p>
-                  <strong class="list-price font-bold"></strong>
-                </figcaption>
-              </figure>
-            </a>
-          </li>
+          </li> -->
         </ul>
       </main>
     </div>
@@ -131,9 +104,9 @@
 
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {
+      var swiper = new Swiper('.mySwiper', {
         pagination: {
-          el: ".swiper-pagination",
+          el: '.swiper-pagination',
           dynamicBullets: true,
         },
       });
