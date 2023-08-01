@@ -6,6 +6,7 @@ import {
   goToBack,
   loadStorage,
   removeClass,
+  saveStorage,
 } from "./lib/index.js";
 
 const phoneNumber = getNode("#phoneNumber");
@@ -43,6 +44,7 @@ const handleLogin = async (e) => {
   for (const obj of phoneArr) {
     const id = obj.id;
     if (id === inputValue) {
+      saveStorage("login", inputValue);
       location.href = "http://localhost:5500/views/home.html";
       clearContents(phoneNumber);
       changeDisabled(true);
