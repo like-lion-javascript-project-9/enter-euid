@@ -29,6 +29,6 @@ export const rederTogetherProduct = async () => {
   const templatePromise = createProductTogether();
   const template = await templatePromise;
   template.forEach((item) => {
-    insertFirst(userTogether, item);
+    insertLast(userTogether, item);
   });
 };
