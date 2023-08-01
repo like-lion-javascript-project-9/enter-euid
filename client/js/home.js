@@ -1,23 +1,23 @@
-import { getNode, insertLast, tiger, saveStorage } from './lib/index.js';
-import { renderPhoneIndicator, renderNavigator } from './layout/index.js';
+import { getNode, insertLast, tiger, saveStorage } from "./lib/index.js";
+import { renderPhoneIndicator, renderNavigator } from "./layout/index.js";
 renderPhoneIndicator();
 renderNavigator();
 
-console.log('home main js');
+console.log("home main js");
 
-const ul = getNode('.ul');
-const li = getNode('.li');
-const list = getNode('.list');
-const figure = getNode('.figure');
-const name = getNode('.list-name');
-const location = getNode('.list-location');
-const price = getNode('.list-price');
+const ul = getNode(".ul");
+const li = getNode(".li");
+const list = getNode(".list");
+const figure = getNode(".figure");
+const name = getNode(".list-name");
+const location = getNode(".list-location");
+const price = getNode(".list-price");
 
 // tiger.js 유틸 함수로 localhost:3000 를 불러와서 insertadjacentHTML 하여 html 에 넣어준다. 이때 insertadjacentHTML 는 insertAfter insertLast 유틸 함수로 대체 사용 가능하다.
 // response[0-9].name 으로 확인 가능하다.
 // 불러온 data 는 수기로 삽입 후 추후 반복문으로 변경할 예정입니다.
 
-const URL = ' http://localhost:3000/products';
+const URL = " http://localhost:3000/products";
 
 const response = await tiger.get(URL);
 const itemlist = response.data;
@@ -100,7 +100,7 @@ const handleSetLocalstorage = (e) => {
   // e.preventDefault();
 
   // closest
-  const target = e.target.closest('li');
+  const target = e.target.closest("li");
   if (!target) {
     return;
   }
@@ -116,9 +116,9 @@ const handleSetLocalstorage = (e) => {
 
   // 가져온 itemlist.id 를 localstorage에 set 으로 입력하기
   // unload 페이지 디테일로 이동할때 로컬 스토리저장이 안되기 떄문에 넘어갈때 같이 저장될수있도록
-  window.unload(saveStorage('id', itemlist[index].id));
+  window.unload(saveStorage("id", itemlist[index].id));
 };
 
-ul.addEventListener('click', handleSetLocalstorage);
+ul.addEventListener("click", handleSetLocalstorage);
 
 /* -------------------------------------------------------------------------- */
