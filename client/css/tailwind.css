@@ -30,7 +30,7 @@
 
 @media (min-width: 769px) {
   html {
-    font-size: 20px;
+    /* font-size: 20px; */
   }
 }
 
@@ -267,3 +267,4 @@
 .is-active .category-button-title {
   color:white;
 }
+

@@ -1,52 +1,68 @@
-import { delayP, getNode, getRandom, tiger } from "./lib/index.js";
+import { delayP, getNode, getRandom, tiger } from './lib/index.js';
 import {
   rederTogetherProduct,
   renderProductInforamtion,
   renderProductPrice,
   renderProductSwiperImage,
-} from "./maindetail/product/index.js";
+} from './maindetail/product/index.js';
 import {
   renderUserManner,
   renderUserProfile,
-} from "./maindetail/user/renderUser.js";
+} from './maindetail/user/renderUser.js';
 
-import {} from "./layout/index.js";
+import { swiper } from './maindetail/swiper.js';
+import { getProductList, getUserList } from './maindetail/async.js';
+import { renderSpinner } from './maindetail/spiner.js';
+import { handleHeart } from './maindetail/event/heartico.js';
 
-import { swiper } from "./maindetail/swiper.js";
-import { getProductList, getUserList } from "./maindetail/async.js";
-import { renderSpinner } from "./maindetail/spiner.js";
-import { handleHeart } from "./maindetail/event/heartico.js";
+import { renderPhoneIndicator, renderNavigator } from './layout/index.js';
 
 const productList = await getProductList();
-console.log(productList);
 const randomIdx = getRandom(productList.length - 1);
-const swiperProductSrc = productList[2].image;
+const swiperProductSrc = productList[randomIdx].image;
 const productName = productList[randomIdx].name;
 const category = productList[randomIdx].category;
 const price = productList[randomIdx].price;
-const productDesctiption = productList[3].description;
+const productDesctiption = productList[randomIdx].description;
 
 const userLists = await getUserList();
 const userList = userLists[randomIdx];
-console.log(userList);
 const userName = userList.name;
 const userSrc = userList.src;
-console.log(userSrc);
 const userAlt = userList.alt;
 const userAddress = userList.address;
 const userManner = productList[randomIdx].temperature;
 
 const { thumbnail_l, thumbnail_2, alt } = swiperProductSrc;
 
-const renderList = async () => {
-  renderSpinner("#container");
-  try {
-    await delayP({ timeout: 2000 });
+const hideBodyContent = () => {
+  document.body.style.opacity = '0';
+};
 
-    gsap.to(".loadingSpinner", {
+const showBodyContent = () => {
+  document.body.style.opacity = '1';
+};
+
+const spinerPosition = () => {
+  const spinner = getNode('.loadingSpinner');
+  spinner.style.position = 'fixed';
+  spinner.style.top = '50%';
+  spinner.style.left = '50%';
+  spinner.style.transform = 'translate(-50%, -50%)';
+};
+
+const renderList = async () => {
+  hideBodyContent();
+  renderSpinner('#container');
+  spinerPosition();
+  await delayP({ timeout: 2000 });
+
+  try {
+    gsap.to('.loadingSpinner', {
       opacity: 0,
       onComplete() {
-        getNode(".loadingSpinner").remove();
+        getNode('.loadingSpinner').remove();
+        showBodyContent();
       },
     });
 
@@ -61,5 +77,9 @@ const renderList = async () => {
   }
 };
 
-renderList();
-handleHeart();
+window.addEventListener('DOMContentLoaded', async () => {
+  await renderList();
+  handleHeart();
+  renderPhoneIndicator();
+  renderNavigator();
+});

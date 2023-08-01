@@ -701,6 +701,10 @@ html {
   margin-top: 11rem;
 }
 
+.block {
+  display: block;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -765,12 +769,12 @@ html {
   height: 32px;
 }
 
-.h-\[400px\] {
-  height: 400px;
-}
-
 .h-screen {
   height: 100vh;
+}
+
+.max-h-\[21\.125rem\] {
+  max-height: 21.125rem;
 }
 
 .max-h-\[44rem\] {
@@ -779,11 +783,6 @@ html {
 
 .max-h-\[690px\] {
   max-height: 690px;
-}
-
-.max-h-fit {
-  max-height: -moz-fit-content;
-  max-height: fit-content;
 }
 
 .w-36 {
@@ -1104,6 +1103,10 @@ html {
   padding-right: 1.5rem;
 }
 
+.pt-9 {
+  padding-top: 2.25rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1214,7 +1217,7 @@ html {
 
 @media (min-width: 769px) {
   html {
-    font-size: 20px;
+    /* font-size: 20px; */
   }
 }
 
@@ -1586,3 +1589,4 @@ html {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
+
