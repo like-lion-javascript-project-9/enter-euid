@@ -36,6 +36,7 @@ const userManner = productList[randomIdx].temperature;
 const { thumbnail_l, thumbnail_2, alt } = swiperProductSrc;
 
 const hideBodyContent = () => {
+  renderSpinner('#container');
   document.body.style.opacity = '0';
 };
 
@@ -43,21 +44,11 @@ const showBodyContent = () => {
   document.body.style.opacity = '1';
 };
 
-const spinerPosition = () => {
-  const spinner = getNode('.loadingSpinner');
-  spinner.style.position = 'fixed';
-  spinner.style.top = '50%';
-  spinner.style.left = '50%';
-  spinner.style.transform = 'translate(-50%, -50%)';
-};
-
 const renderList = async () => {
   hideBodyContent();
-  renderSpinner('#container');
-  spinerPosition();
-  await delayP({ timeout: 2000 });
 
   try {
+    await delayP({ timeout: 2000 });
     gsap.to('.loadingSpinner', {
       opacity: 0,
       onComplete() {
@@ -77,9 +68,14 @@ const renderList = async () => {
   }
 };
 
-window.addEventListener('DOMContentLoaded', async () => {
-  await renderList();
-  handleHeart();
-  renderPhoneIndicator();
-  renderNavigator();
-});
+renderList();
+handleHeart();
+renderPhoneIndicator();
+renderNavigator();
+
+// window.addEventListener('DOMContentLoaded', async () => {
+//   renderList();
+//   handleHeart();
+//   renderPhoneIndicator();
+//   renderNavigator();
+// });

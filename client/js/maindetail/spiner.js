@@ -1,4 +1,4 @@
-import { insertLast } from '../lib/index.js';
+import { insertLast, getNode } from '../lib/index.js';
 
 const cretateSpinner = () => {
   const template = `
@@ -27,6 +27,15 @@ const cretateSpinner = () => {
   return template;
 };
 
+const spinerPosition = () => {
+  const spinner = getNode('.loadingSpinner');
+  spinner.style.position = 'fixed';
+  spinner.style.top = '50%';
+  spinner.style.left = '50%';
+  spinner.style.transform = 'translate(-50%, -50%)';
+};
+
 export const renderSpinner = (target) => {
   insertLast(target, cretateSpinner());
+  spinerPosition();
 };
