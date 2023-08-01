@@ -4,7 +4,7 @@ import { renderPhoneIndicator } from "./layout/index.js";
 renderPhoneIndicator();
 
 import { getNode } from "./lib/index.js";
-import { getProductList } from './maindetail/async';
+// import { getProductList } from './maindetail/async';
 
 const searchInput = getNode(".search-form")
 
@@ -12,7 +12,7 @@ const searchInput = getNode(".search-form")
 
 const handleInputClick= () => {
 
-  const productList = await getProductList();
+  // const productList = await getProductList();
   // 필터로 데이더 이름
 
 }
