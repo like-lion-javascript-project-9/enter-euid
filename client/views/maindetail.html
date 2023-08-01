@@ -20,7 +20,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./../js/maindetail.js" type="module"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <title>enter-euid-team9-메인디테일</title>
+    <title>Enter-euid</title>
   </head>
 
   <body class="bg-gray-200">
@@ -28,6 +28,20 @@
       id="container"
       class="absolute left-1/2 top-1/2 min-w-[320px] max-w-[380px] -translate-x-1/2 -translate-y-1/2 bg-white"
     >
+      <nav class="menubar relative flex items-center px-4 py-4">
+        <div class="menubar__left flex flex-grow items-center">
+          <button
+            class="menubar__direction h-5 w-5 bg-direction-left bg-no-repeat"
+          ></button>
+          <button
+            class="menubar__home h-5 w-5 bg-home-nofill bg-no-repeat pl-3"
+          ></button>
+        </div>
+        <div class="menubar__right flex items-center">
+          <button class="mr-1 h-5 w-5 bg-share"></button>
+          <button class="h-5 w-5 bg-more"></button>
+        </div>
+      </nav>
       <!-- 상단 스와이퍼 이미지 구간-->
       <div class="swiper productSwiperimage h-[284px]">
         <div class="swiper-wrapper productWrapper"></div>

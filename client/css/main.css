@@ -990,8 +990,20 @@ html {
   background-image: url('/assets/icons/direction-left.svg');
 }
 
+.bg-home-nofill {
+  background-image: url('/assets/icons/home-nofill.svg');
+}
+
+.bg-more {
+  background-image: url('/assets/icons/more.svg');
+}
+
 .bg-search {
   background-image: url('/assets/icons/search.svg');
+}
+
+.bg-share {
+  background-image: url('/assets/icons/share.svg');
 }
 
 .bg-center {
@@ -1019,6 +1031,10 @@ html {
   padding: 1rem;
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1027,6 +1043,11 @@ html {
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .py-1 {
@@ -1286,6 +1307,8 @@ html {
   height: 70px;
   width: 100%;
   border-top-width: 1px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding-bottom: 1.25rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1382,8 +1405,8 @@ html {
   margin-right: 8px;
 }
 
-.render-bullet.is-active{
-  background-color: #373F67;
+.render-bullet.is-active {
+  background-color: #373f67;
 }
 
 .hover\:bg-secondary:hover {
