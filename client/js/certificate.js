@@ -103,6 +103,7 @@ const handleAuth = (e) => {
       filter[0]
         ? saveStorage("phoneArr", filter)
         : saveStorage("phoneArr", phoneArr);
+      saveStorage("login", phoneNumber.value.split(" ").join(""));
       location.href = "http://localhost:5500/views/home.html";
       return;
     }
