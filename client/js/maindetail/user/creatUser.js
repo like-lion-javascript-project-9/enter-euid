@@ -1,11 +1,10 @@
 export const createUserProfile = (src, alt, name, address) => {
   const template = `
   <div class="userInfoProfile flex flex-grow">
-  <div class="userInfoInner aspect-square h-[40px] w-[40px]">
+  <div class="userInfoInner flex flex-shrink-0 pr-2">
     <img src="/${src}.webp"
       alt="${alt}"
-      class="userInfo__thumbnail h-full w-full rounded-[50%] object-cover"
-    />
+      class="userInfo__thumbnail w-10 h-10 object-cover rounded-full"/>
   </div>
   <div class="userInfoProfileWrppaer flex flex-col pl-[0.375rem]">
     <span class="userInfoProfile__name text-sm font-bold">${name}</span>
@@ -22,7 +21,7 @@ export const createUserMannerTemperature = (temerature) => {
   return `
   <span
   class="userInfoManner__temperature text-sm font-bold text-secondary"
-  >${temerature}</span>
+  >${temerature}℃</span>
 <span class="userInfoManner__emoji">${emoji}</span>
 <span
   class="userInfoManner__mannerTemperature ml-4 block text-xs text-[#919191]"
