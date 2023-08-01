@@ -16,24 +16,28 @@ import { renderSpinner } from './maindetail/spiner.js';
 import { handleHeart } from './maindetail/event/heartico.js';
 
 import { renderPhoneIndicator, renderNavigator } from './layout/index.js';
+import {} from './maindetail/event/index.js';
 
 const productList = await getProductList();
-const randomIdx = getRandom(productList.length - 1);
-const swiperProductSrc = productList[randomIdx].image;
-const productName = productList[randomIdx].name;
-const category = productList[randomIdx].category;
-const price = productList[randomIdx].price;
-const productDesctiption = productList[randomIdx].description;
 
-const userLists = await getUserList();
-const userList = userLists[randomIdx];
+const productId = localStorage.getItem('id');
+const productIndex = +productId.slice(9, -1) - 1;
+
+const swiperProductSrc = productList[productIndex].image;
+const { thumbnail_l, thumbnail_2, alt } = swiperProductSrc;
+
+const productName = productList[productIndex].name;
+const productCategory = productList[productIndex].category;
+const productPrice = productList[productIndex].price;
+const productDesctiption = productList[productIndex].description;
+
+const userData = await getUserList();
+const userList = userData[productIndex];
 const userName = userList.name;
-const userSrc = userList.src;
+const userImage = userList.src;
 const userAlt = userList.alt;
 const userAddress = userList.address;
-const userManner = productList[randomIdx].temperature;
-
-const { thumbnail_l, thumbnail_2, alt } = swiperProductSrc;
+const userManner = productList[productIndex].temperature;
 
 const hideBodyContent = () => {
   const container = getNode('#container');
@@ -45,7 +49,7 @@ const renderList = async () => {
 
   try {
     renderSpinner('body');
-    await delayP({ timeout: 2000 });
+    // await delayP({ timeout: 2000 });
 
     gsap.to('.loadingSpinner', {
       opacity: 0,
@@ -58,10 +62,10 @@ const renderList = async () => {
     });
 
     renderProductSwiperImage(thumbnail_l, thumbnail_2, alt);
-    renderProductInforamtion(productName, category, productDesctiption);
-    renderProductPrice(price);
-    rederTogetherProduct(thumbnail_2, productName, price);
-    renderUserProfile(userSrc, userAlt, userName, userAddress);
+    renderProductInforamtion(productName, productCategory, productDesctiption);
+    renderProductPrice(productPrice);
+    rederTogetherProduct();
+    renderUserProfile(userImage, userAlt, userName, userAddress);
     renderUserManner(userManner);
   } catch (error) {
     console.log(error);
