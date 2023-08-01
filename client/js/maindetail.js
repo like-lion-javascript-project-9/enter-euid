@@ -37,20 +37,14 @@ const { thumbnail_l, thumbnail_2, alt } = swiperProductSrc;
 
 const hideBodyContent = () => {
   const container = getNode('#container');
-  // renderSpinner('#container');
   container.style.opacity = '0';
-};
-
-const showBodyContent = () => {
-  const container = getNode('#container');
-  container.style.opacity = '1';
 };
 
 const renderList = async () => {
   hideBodyContent();
-  renderSpinner('body');
 
   try {
+    renderSpinner('body');
     await delayP({ timeout: 2000 });
 
     gsap.to('.loadingSpinner', {
