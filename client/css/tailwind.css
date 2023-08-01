@@ -184,7 +184,7 @@
 }
 
 .productDetail__description{
-  @apply pt-4
+  @apply pt-4 flex flex-col gap-3
 }
 
 .userInfo__thumbnail{
