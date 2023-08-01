@@ -49,7 +49,7 @@ const renderList = async () => {
 
   try {
     renderSpinner('body');
-    // await delayP({ timeout: 2000 });
+    await delayP({ timeout: 2000 });
 
     gsap.to('.loadingSpinner', {
       opacity: 0,

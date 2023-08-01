@@ -44,7 +44,7 @@ export const createProductTogether = async () => {
     return ` 
     <li class="userTogetherItem px-3 cursor-pointer">
     <div class="mb-5">
-    <div class="list__thumbnail object-cover aspect-square w-[138px] h-[138px] overflow-auto">
+    <div class="list__thumbnail object-cover aspect-square w-[8.625rem] h-[8.625rem] overflow-auto rounded-[8px]">
       <img
         src="/${item.image.thumbnail_2}.webp"
         class="w-full h-24 pb-3"
