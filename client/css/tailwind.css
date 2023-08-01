@@ -28,12 +28,6 @@
   }
 }
 
-@media (min-width: 769px) {
-  html {
-    /* font-size: 20px; */
-  }
-}
-
 .bg-battery {
   background-image: url("/assets/icons/battery.svg");
 }
@@ -146,125 +140,15 @@
   @apply text-xs text-gray-300;
 }
 
-.bg-battery {
-  background-image: url("/assets/icons/battery.svg");
+.is-active {
+  @apply bg-primary text-white;
 }
-
-.bg-lte {
-  background-image: url("/assets/icons/lte.svg");
-}
-
-.bg-search {
-  background-image: url("/assets/icons/search.svg");
-}
-
-.bg-signal {
-  background-image: url("/assets/icons/signal.svg");
-}
-
-.bg-board {
-  background-image: url("/assets/icons/board.svg");
-}
-
-.bg-chat {
-  background-image: url("/assets/icons/chat.svg");
-}
-
-.bg-home-fill {
-  background-image: url("/assets/icons/home-fill.svg");
-}
-
-.bg-location-nofill {
-  background-image: url("/assets/icons/location-nofill.svg");
-}
-
-.bg-my {
-  background-image: url("/assets/icons/my.svg");
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
-
-.indicator {
-  @apply flex h-9 items-center justify-between pl-4 pr-4;
-}
-
-.time {
-  @apply text-sm;
-}
-
-.icon-container {
-  @apply flex items-center;
-}
-
-.signal {
-  @apply h-3 w-6 bg-signal bg-right-bottom bg-no-repeat;
-}
-
-.lte {
-  @apply h-3 w-6 bg-lte bg-bottom bg-no-repeat;
-}
-
-.battery {
-  @apply h-3 w-6 bg-battery bg-right-bottom bg-no-repeat;
-}
-
-.navigator {
-  @apply fixed bottom-0 h-[70px] w-full border-t pb-5 pl-3 pr-3 pt-3;
-}
-
-.menu-list {
-  @apply flex justify-between;
-}
-
-.menu-wrapper {
-  @apply flex flex-col items-center gap-1;
-}
-
-.home {
-  @apply h-5 w-5 bg-home-fill bg-center bg-no-repeat;
-}
-
-.board {
-  @apply h-5 w-5 bg-board bg-center bg-no-repeat;
-}
-
-.location {
-  @apply h-5 w-5 bg-location-nofill bg-center bg-no-repeat;
-}
-
-.chat {
-  @apply h-5 w-5 bg-chat bg-center bg-no-repeat;
-}
-
-.my {
-  @apply h-5 w-5 bg-my bg-center bg-no-repeat;
-}
-
-.menu-enabled {
-  @apply text-xs;
-}
-
-.menu-disabled {
-  @apply text-xs text-gray-300;
-}
-
 
 .is-active .category-button-title {
   color: white;
 }
 
-
 .is-active .category-button-title {
-  color:white;
+  color: white;
 }
 
