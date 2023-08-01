@@ -11,11 +11,11 @@ export const renderProductSwiperImage = (src1, src2, alt) => {
   insertLast(productWrapper, createSwiperProduct(src1, src2, alt));
 };
 
-export const renderProductInforamtion = (name, category, summary) => {
+export const renderProductInformation = (name, category, summary) => {
   const infomationSection = getNode('.productInformation');
   infomationSection.insertAdjacentHTML(
     'beforeend',
-    createProductInfomation(name, category, summary)
+    renderProductInformation(name, category, summary)
   );
 };
 
@@ -24,7 +24,7 @@ export const renderProductPrice = (price) => {
   insertLast(productPrice, createProductPrice(price));
 };
 
-export const rederTogetherProduct = async () => {
+export const renderTogetherProduct = async () => {
   const userTogether = getNode('.userTogether__list');
   const templatePromise = createProductTogether();
   const template = await templatePromise;
