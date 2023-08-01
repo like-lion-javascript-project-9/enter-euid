@@ -769,8 +769,6 @@ html {
   height: 32px;
 }
 
-<<<<<<< HEAD
-=======
 .h-\[36\.875rem\] {
   height: 36.875rem;
 }
@@ -779,7 +777,6 @@ html {
   height: 43.125rem;
 }
 
->>>>>>> develop
 .h-\[610px\] {
   height: 610px;
 }
@@ -1455,8 +1452,6 @@ html {
   background-color: #373f67;
 }
 
-<<<<<<< HEAD
-=======
 .swiper-slide {
   aspect-ratio: 1/1;
 }
@@ -1490,7 +1485,6 @@ html {
      object-fit: cover;
 }
 
->>>>>>> develop
 .hover\:bg-primary:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(55 63 103 / var(--tw-bg-opacity));
