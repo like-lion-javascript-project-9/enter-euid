@@ -9,8 +9,13 @@ export function getRandom(n) {
 
 export const randomNumber = () => {
   let random = "" + Math.floor(Math.random() * 10e5);
-  if (random.length === 5) {
-    random = "0" + random;
+  let length = random.length;
+
+  if (random.length < 6) {
+    for (let i = 0; i < 6 - length; i++) {
+      random = "0" + random;
+    }
+    return random;
   }
 
   return random;
