@@ -1,8 +1,8 @@
-import { getNode, insertFirst } from '../lib/index.js';
+import { getNode, insertFirst } from "../lib/index.js";
 
 const today = new Date();
 const hours = today.getHours();
-const minutes = ('0' + today.getMinutes()).slice(-2);
+const minutes = ("0" + today.getMinutes()).slice(-2);
 
 const createPhoneIndicator = () => {
   const template = /* html */ `
@@ -44,8 +44,10 @@ const createNavigator = () => {
       <div class="menu-disabled">채팅</div>
     </li>
     <li class="menu-wrapper">
-      <div class="my"></div>
-      <div class="menu-disabled">나의 이듬</div>
+      <a href="/views/mypage.html" class="menu-wrapper">
+        <div class="my"></div>
+        <div class="menu-disabled">나의 이듬</div>
+      </a>
     </li>
   </ul>
 </nav>
@@ -55,9 +57,9 @@ const createNavigator = () => {
 };
 
 export const renderPhoneIndicator = () => {
-  insertFirst(getNode('#container'), createPhoneIndicator());
+  insertFirst(getNode("#container"), createPhoneIndicator());
 };
 
 export const renderNavigator = () => {
-  insertFirst(getNode('#container'), createNavigator());
+  insertFirst(getNode("#container"), createNavigator());
 };

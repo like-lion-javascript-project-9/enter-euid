@@ -1,7 +1,7 @@
 export const createUserProfile = (src, alt, name, address) => {
   const template = `
   <div class="userInfoProfile flex flex-grow">
-  <div class="userInfoInner flex flex-shrink-0 pr-2">
+  <div class="userInfoInner flex flex-shrink-0 pr-2 w-10 h-10">
     <img src="/${src}.webp"
       alt="${alt}"
       class="userInfo__thumbnail w-10 h-10 object-cover rounded-full"/>
