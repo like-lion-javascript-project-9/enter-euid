@@ -101,7 +101,7 @@
 }
 
 .navigator {
-  @apply fixed bottom-0 h-[70px] w-full border-t pb-5 pl-3 pr-3 pt-3;
+  @apply fixed bottom-0 h-[70px] w-full border-t bg-white pb-5 pl-3 pr-3 pt-3;
 }
 
 .menu-list {
@@ -142,10 +142,6 @@
 
 .is-active {
   @apply bg-primary text-white;
-}
-
-.is-active .category-button-title {
-  color: white;
 }
 
 .is-active .category-button-title {
