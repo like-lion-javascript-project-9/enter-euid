@@ -190,3 +190,8 @@
 .userInfo__thumbnail{
   @apply w-10 h-10
 }
+
+.thumbnail__image {
+  border-radius: 8px;
+  object-fit: cover;
+}

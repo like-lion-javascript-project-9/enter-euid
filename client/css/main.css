@@ -1496,6 +1496,12 @@ html {
   width: 2.5rem;
 }
 
+.thumbnail__image {
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .hover\:bg-primary:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(55 63 103 / var(--tw-bg-opacity));

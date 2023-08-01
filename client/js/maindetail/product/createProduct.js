@@ -18,7 +18,7 @@ export const createProductInfomation = (name, category, summary) => {
     <h2 class="productDetail__title pb-1 text-lg font-bold">
             ${name}
     </h2>
-    <div class="productDetail__category pb-3 text-[0.625rem] text-gray-500">
+    <div class="productDetail__category pb-3 text-xs text-gray-500">
         ${category} • 17분전
     </div>
     <div class="productDetail__description max-h-56 text-sm">
@@ -44,17 +44,17 @@ export const createProductTogether = async () => {
     return ` 
     <li class="userTogetherItem px-3 cursor-pointer">
     <div class="mb-5">
-    <div class="list__thumbnail object-cover aspect-square w-[8.625rem] h-[8.625rem] rounded-[8px]">
+    <div class="list__thumbnail object-cover aspect-square w-[8.625rem] h-[8.625rem]">
       <img
         src="/${item.image.thumbnail_2}.webp"
-        class="w-full h-24 pb-3"
+        class="w-full h-24 pb-3 thumbnail__image"
         loading="lazy"
       />
     </div>
-      <h3 class="userTogetherItem__title text-[0.625rem] font-normal truncate">
+      <h3 class="userTogetherItem__title text-xs font-normal truncate">
         ${item.name}
       </h3>
-      <h3 class="userTogetherItem__price text-[0.625rem]">${item.price}원</h3>
+      <h3 class="userTogetherItem__price text-xs">${item.price}원</h3>
     </div>
   </li>
     `;
