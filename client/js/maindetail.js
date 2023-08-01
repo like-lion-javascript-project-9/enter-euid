@@ -1,6 +1,6 @@
-import { delayP, getNode, getRandom, tiger } from './lib/index.js';
+import { delayP, getNode } from './lib/index.js';
 import {
-  rederTogetherProduct,
+  renderTogetherProduct,
   renderProductInforamtion,
   renderProductPrice,
   renderProductSwiperImage,
@@ -26,10 +26,13 @@ const productIndex = +productId.slice(9, -1) - 1;
 const swiperProductSrc = productList[productIndex].image;
 const { thumbnail_l, thumbnail_2, alt } = swiperProductSrc;
 
+console.log(productList[productIndex]);
+
 const productName = productList[productIndex].name;
 const productCategory = productList[productIndex].category;
 const productPrice = productList[productIndex].price;
-const productDesctiption = productList[productIndex].description;
+const productDescription = productList[productIndex].description;
+console.log(productDescription);
 
 const userData = await getUserList();
 const userList = userData[productIndex];
@@ -38,6 +41,9 @@ const userImage = userList.src;
 const userAlt = userList.alt;
 const userAddress = userList.address;
 const userManner = productList[productIndex].temperature;
+
+const updateDate = new Date(productList[productIndex].date);
+const minute = updateDate.getMinutes();
 
 const hideBodyContent = () => {
   const container = getNode('#container');
@@ -63,9 +69,14 @@ const renderList = async () => {
     });
 
     renderProductSwiperImage(thumbnail_l, thumbnail_2, alt);
-    renderProductInforamtion(productName, productCategory, productDesctiption);
+    renderProductInforamtion(
+      productName,
+      productCategory,
+      minute,
+      productDescription
+    );
     renderProductPrice(productPrice);
-    rederTogetherProduct();
+    renderTogetherProduct();
     renderUserProfile(userImage, userAlt, userName, userAddress);
     renderUserManner(userManner);
   } catch (error) {

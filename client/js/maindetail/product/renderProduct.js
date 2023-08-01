@@ -11,11 +11,11 @@ export const renderProductSwiperImage = (src1, src2, alt) => {
   insertLast(productWrapper, createSwiperProduct(src1, src2, alt));
 };
 
-export const renderProductInformation = (name, category, summary) => {
+export const renderProductInforamtion = (name, category, minute, summary) => {
   const infomationSection = getNode('.productInformation');
   infomationSection.insertAdjacentHTML(
     'beforeend',
-    renderProductInformation(name, category, summary)
+    createProductInfomation(name, category, minute, summary)
   );
 };
 
