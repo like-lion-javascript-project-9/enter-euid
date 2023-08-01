@@ -44,3 +44,12 @@ window.location.href="http://localhost:5500/";
 }
 backButton.addEventListener("click", handleBackClick);
 
+//이대로 저장할래요 버튼 이동 기능
+
+const savedButton = getNode(".saved-button");
+
+const handleSavedClick = event => {
+event.preventDefault();
+window.location.href="http://localhost:5500/views/signUp.html";
+}
+savedButton.addEventListener("click", handleSavedClick);

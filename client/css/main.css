@@ -737,10 +737,6 @@ html {
   height: 6rem;
 }
 
-.h-3 {
-  height: 0.75rem;
-}
-
 .h-4 {
   height: 1rem;
 }
@@ -759,10 +755,6 @@ html {
 
 .h-80 {
   height: 20rem;
-}
-
-.h-9 {
-  height: 2.25rem;
 }
 
 .h-\[284px\] {
@@ -995,10 +987,6 @@ html {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-battery {
-  background-image: url('/assets/icons/battery.svg');
-}
-
 .bg-direction {
   background-image: url('/assets/icons/direction.svg');
 }
@@ -1007,28 +995,12 @@ html {
   background-image: url('/assets/icons/direction-left.svg');
 }
 
-.bg-lte {
-  background-image: url('/assets/icons/lte.svg');
-}
-
 .bg-search {
   background-image: url('/assets/icons/search.svg');
 }
 
-.bg-signal {
-  background-image: url('/assets/icons/signal.svg');
-}
-
-.bg-bottom {
-  background-position: bottom;
-}
-
 .bg-center {
   background-position: center;
-}
-
-.bg-left-bottom {
-  background-position: left bottom;
 }
 
 .bg-no-repeat {
@@ -1099,20 +1071,12 @@ html {
   padding-left: 0.75rem;
 }
 
-.pl-6 {
-  padding-left: 1.5rem;
-}
-
 .pr-2 {
   padding-right: 0.5rem;
 }
 
 .pr-3 {
   padding-right: 0.75rem;
-}
-
-.pr-6 {
-  padding-right: 1.5rem;
 }
 
 .text-center {
@@ -1405,10 +1369,6 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.is-active {
-  background-color: #373F67;
-}
-
 .is-active .category-button-title {
   color: white;
 }
@@ -1427,3 +1387,5 @@ html {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
+
+
