@@ -3,11 +3,11 @@ import { getProductList } from '../async.js';
 
 export const createSwiperProduct = (src1, src2, alt) => {
   const template = `
-        <div class="swiper-slide product__item1 aspect-square h-36 w-[320px]">
-            <img src="/${src1}.webp" alt=${alt} class="h-auto w-full object-cover"/>
+        <div class="swiper-slide product__item1 aspect-square w-[320px]">
+            <img src="/${src1}.webp" alt=${alt} class="w-full swiper-img"/>
         </div>
         <div class="swiper-slide product__item2 h-[284px] aspect-square ">
-            <img src="/${src2}.webp" alt=${alt} class="h-full w-full object-cover"  />
+            <img src="/${src2}.webp" alt=${alt} class="w-full object-contain swiper-img"  />
         </div>
         `;
   return template;
@@ -44,7 +44,7 @@ export const createProductTogether = async () => {
     return ` 
     <li class="userTogetherItem px-3 cursor-pointer">
     <div class="mb-5">
-    <div class="list__thumbnail object-cover aspect-square w-[8.625rem] h-[8.625rem] overflow-auto rounded-[8px]">
+    <div class="list__thumbnail object-cover aspect-square w-[8.625rem] h-[8.625rem] rounded-[8px]">
       <img
         src="/${item.image.thumbnail_2}.webp"
         class="w-full h-24 pb-3"
