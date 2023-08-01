@@ -777,6 +777,15 @@ html {
   height: 100vh;
 }
 
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.h-full {
+  height: 100%;
+}
+
 .max-h-\[21\.125rem\] {
   max-height: 21.125rem;
 }
@@ -787,6 +796,14 @@ html {
 
 .max-h-\[690px\] {
   max-height: 690px;
+}
+
+.max-h-\[697px\] {
+  max-height: 697px;
+}
+
+.min-h-\[697px\] {
+  min-height: 697px;
 }
 
 .w-36 {
@@ -1046,11 +1063,6 @@ html {
 
 .p-4 {
   padding: 1rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 .px-3 {
