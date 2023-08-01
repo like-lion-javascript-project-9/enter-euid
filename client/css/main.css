@@ -777,6 +777,17 @@ html {
   height: 32px;
 }
 
+<<<<<<< HEAD
+=======
+.h-\[36\.875rem\] {
+  height: 36.875rem;
+}
+
+.h-\[43\.125rem\] {
+  height: 43.125rem;
+}
+
+>>>>>>> develop
 .h-\[610px\] {
   height: 610px;
 }
@@ -1461,6 +1472,42 @@ html {
   background-color: #373f67;
 }
 
+<<<<<<< HEAD
+=======
+.swiper-slide {
+  aspect-ratio: 1/1;
+}
+
+.swiper-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.userTogetherItem__title{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.productDetail__description {
+  padding-top: 1rem;
+  line-height: 1.625;
+}
+
+.userInfo__thumbnail {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.thumbnail__image {
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+>>>>>>> develop
 .hover\:bg-primary:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(55 63 103 / var(--tw-bg-opacity));

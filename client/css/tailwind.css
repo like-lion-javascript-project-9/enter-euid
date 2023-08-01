@@ -166,3 +166,32 @@
 .render-bullet.is-active {
   background-color: #373f67;
 }
+
+.swiper-slide {
+  aspect-ratio: 1/1;
+}
+
+.swiper-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%; 
+}
+
+.userTogetherItem__title{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.productDetail__description{
+  @apply pt-4 leading-relaxed
+}
+
+.userInfo__thumbnail{
+  @apply w-10 h-10
+}
+
+.thumbnail__image {
+  border-radius: 8px;
+  object-fit: cover;
+}
