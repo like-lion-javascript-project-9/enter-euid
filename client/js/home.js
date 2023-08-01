@@ -75,7 +75,7 @@ const liElements = await itemlist.map(async (itemlist, index) => {
           class="image h-24 w-full rounded object-cover"
           />
           <figcaption class="list">
-            <h1 class="list-name text-xs py-1">${itemlist.name}</h1>
+            <h1 class="list-name block overflow-hidden overflow-ellipsis whitespace-nowrap py-1 text-xs w-36">${itemlist.name}</h1>
             <p class="list-location text-xs text-gray-500">${itemlist.user.address}</p>
             <strong class="list-price font-bold text-xs">${itemlist.price}원</strong>
           </figcaption>
