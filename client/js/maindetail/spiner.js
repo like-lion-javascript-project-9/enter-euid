@@ -3,7 +3,7 @@ import { insertLast, getNode } from '../lib/index.js';
 const cretateSpinner = () => {
   const template = `
   <figure class="loadingSpinner">
-  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;background:#fff;display:block;" width="200px" height="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;background:none;display:block;" width="200px" height="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
 <g transform="translate(0 18)">
   <path fill="#373f67" d="M53.2,30.3c0.4-1.3,0.6-2.7,0.6-4.2c0-1.2-0.1-2.3-0.4-3.4c-1.5-6-7-10.5-13.5-10.5 c-5.3,0-9.9,3-12.3,7.4c-0.9-0.3-1.8-0.4-2.8-0.4c-5.1,0-9.3,4.1-9.3,9.3c0,0.6,0.1,1.3,0.2,1.9c-4.7,0.7-8.3,4.8-8.3,9.7 c0,5.4,4.4,9.8,9.8,9.8h34.2c3.8,0,7.1-2.2,8.8-5.4c0.7-1.3,1.1-2.9,1.1-4.5C61.4,35.2,57.8,31.1,53.2,30.3z">
     <animateTransform attributeName="transform" type="translate" values="-3 0;3 0;-3 0" keyTimes="0;0.5;1" dur="2" repeatCount="indefinite" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1"></animateTransform>
