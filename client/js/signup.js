@@ -3,17 +3,24 @@ import {
   addClass,
   clearContents,
   getNode,
+  loadStorage,
   randomNumber,
   removeClass,
   saveStorage,
 } from "./lib/index.js";
 
-renderPhoneIndicator();
-
 const phoneNumber = getNode("#phoneNumber");
 const authBtn = getNode("#authBtn");
 const form = getNode("#form");
+let valueObj = {};
+let phoneArr = [];
 let inputValue = "";
+
+const phoneArrPush = async () => {
+  const value = await loadStorage("phoneArr");
+  if (!value) return;
+  phoneArr = [...value];
+};
 
 const handleInput = (e) => {
   inputValue = e.target.value;
@@ -31,11 +38,19 @@ const handleAuth = (e) => {
   const btn = e.target.closest("button");
   if (!btn) return;
 
-  saveStorage("0", inputValue);
+  const random = randomNumber();
+
+  valueObj.phone = inputValue;
+  phoneArr.push(valueObj);
+  saveStorage("phoneArr", phoneArr);
+  saveStorage(inputValue, random);
   clearContents(phoneNumber);
-  if (!alert(randomNumber()))
+  if (!alert(`인증번호: ${random}`))
     location.href = "http://localhost:5500/views/certificate.html";
 };
+
+renderPhoneIndicator();
+phoneArrPush();
 
 phoneNumber.addEventListener("input", handleInput);
 form.addEventListener("click", handleAuth);
