@@ -1212,12 +1212,6 @@ html {
   font-weight: 400;
 }
 
-@media (min-width: 769px) {
-  html {
-    font-size: 20px;
-  }
-}
-
 .bg-battery {
   background-image: url("/assets/icons/battery.svg");
 }
@@ -1393,183 +1387,15 @@ html {
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
-.bg-battery {
-  background-image: url("/assets/icons/battery.svg");
-}
-
-.bg-lte {
-  background-image: url("/assets/icons/lte.svg");
-}
-
-.bg-search {
-  background-image: url("/assets/icons/search.svg");
-}
-
-.bg-signal {
-  background-image: url("/assets/icons/signal.svg");
-}
-
-.bg-board {
-  background-image: url("/assets/icons/board.svg");
-}
-
-.bg-chat {
-  background-image: url("/assets/icons/chat.svg");
-}
-
-.bg-home-fill {
-  background-image: url("/assets/icons/home-fill.svg");
-}
-
-.bg-location-nofill {
-  background-image: url("/assets/icons/location-nofill.svg");
-}
-
-.bg-my {
-  background-image: url("/assets/icons/my.svg");
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
-
-.indicator {
-  display: flex;
-  height: 2.25rem;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.time {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.icon-container {
-  display: flex;
-  align-items: center;
-}
-
-.signal {
-  height: 0.75rem;
-  width: 1.5rem;
-  background-image: url('/assets/icons/signal.svg');
-  background-position: right bottom;
-  background-repeat: no-repeat;
-  background-image: url("/assets/icons/signal.svg");
-}
-
-.lte {
-  height: 0.75rem;
-  width: 1.5rem;
-  background-image: url('/assets/icons/lte.svg');
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-image: url("/assets/icons/lte.svg");
-}
-
-.battery {
-  height: 0.75rem;
-  width: 1.5rem;
-  background-image: url('/assets/icons/battery.svg');
-  background-position: right bottom;
-  background-repeat: no-repeat;
-  background-image: url("/assets/icons/battery.svg");
-}
-
-.navigator {
-  position: fixed;
-  bottom: 0px;
-  height: 70px;
-  width: 100%;
-  border-top-width: 1px;
-  padding-bottom: 1.25rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  padding-top: 0.75rem;
-}
-
-.menu-list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.menu-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.25rem;
-}
-
-.home {
-  height: 1.25rem;
-  width: 1.25rem;
-  background-image: url('/assets/icons/home-fill.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/assets/icons/home-fill.svg");
-}
-
-.board {
-  height: 1.25rem;
-  width: 1.25rem;
-  background-image: url('/assets/icons/board.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/assets/icons/board.svg");
-}
-
-.location {
-  height: 1.25rem;
-  width: 1.25rem;
-  background-image: url('/assets/icons/location-nofill.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/assets/icons/location-nofill.svg");
-}
-
-.chat {
-  height: 1.25rem;
-  width: 1.25rem;
-  background-image: url('/assets/icons/chat.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/assets/icons/chat.svg");
-}
-
-.my {
-  height: 1.25rem;
-  width: 1.25rem;
-  background-image: url('/assets/icons/my.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/assets/icons/my.svg");
-}
-
-.menu-enabled {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
-.menu-disabled {
-  font-size: 0.75rem;
-  line-height: 1rem;
+.is-active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 63 103 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .is-active .category-button-title {
-  color:white;
+  color: white;
 }
 
 .hover\:bg-secondary:hover {
