@@ -701,6 +701,22 @@ html {
   margin-top: 11rem;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.ml-6 {
+  margin-left: 1.5rem;
+}
+
+.ml-8 {
+  margin-left: 2rem;
+}
+
 .block {
   display: block;
 }
@@ -815,6 +831,10 @@ html {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-64 {
+  width: 16rem;
 }
 
 .min-w-\[320px\] {
@@ -943,6 +963,11 @@ html {
   border-color: rgb(55 63 103 / var(--tw-border-opacity));
 }
 
+.border-gray4 {
+  --tw-border-opacity: 1;
+  border-color: rgb(189 189 189 / var(--tw-border-opacity));
+}
+
 .bg-\[\#919191\] {
   --tw-bg-opacity: 1;
   background-color: rgb(145 145 145 / var(--tw-bg-opacity));
@@ -1069,6 +1094,11 @@ html {
 .py-\[14px\] {
   padding-top: 14px;
   padding-bottom: 14px;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .pb-9 {
@@ -1419,3 +1449,5 @@ html {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
+
+
