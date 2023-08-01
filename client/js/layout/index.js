@@ -1,8 +1,8 @@
-import { getNode, insertFirst } from "../lib/index.js";
+import { getNode, insertFirst } from '../lib/index.js';
 
 const today = new Date();
 const hours = today.getHours();
-const minutes = ("0" + today.getMinutes()).slice(-2);
+const minutes = ('0' + today.getMinutes()).slice(-2);
 
 const createPhoneIndicator = () => {
   const template = /* html */ `
@@ -22,42 +22,42 @@ const createPhoneIndicator = () => {
 
 const createNavigator = () => {
   const template = /* html */ `
-    <nav class="navigator">
-      <h2 class="sr-only">하단 네비게이션</h2>
-      <ul class="menu-list">
-        <li>
-          <a href="/views/home.html" class="menu-wrapper">
-            <div class="home"></div>
-            <span class="menu-enabled">홈</span>
-          </a>
-        </li>
-        <li class="menu-wrapper">
-          <div class="board"></div>
-          <div class="menu-disabled">게시판</div>
-        </li>
-        <li class="menu-wrapper">
-            <div class="location"></div>
-            <div class="menu-disabled">내 근처</div>
-        </li>
-        <li class="menu-wrapper">
-          <div class="chat"></div>
-          <div class="menu-disabled">채팅</div>
-        </li>
-        <li class="menu-wrapper">
-          <div class="my"></div>
-          <div class="menu-disabled">나의 이듬</div>
-        </li>
-      </ul>
-    </nav>
+<nav class="navigator">
+  <h2 class="sr-only">하단 네비게이션</h2>
+  <ul class="menu-list">
+    <li>
+      <a href="/views/home.html" class="menu-wrapper">
+        <div class="home"></div>
+        <span class="menu-enabled">홈</span>
+      </a>
+    </li>
+    <li class="menu-wrapper">
+      <div class="board"></div>
+      <div class="menu-disabled">게시판</div>
+    </li>
+    <li class="menu-wrapper">
+        <div class="location"></div>
+        <div class="menu-disabled">내 근처</div>
+    </li>
+    <li class="menu-wrapper">
+      <div class="chat"></div>
+      <div class="menu-disabled">채팅</div>
+    </li>
+    <li class="menu-wrapper">
+      <div class="my"></div>
+      <div class="menu-disabled">나의 이듬</div>
+    </li>
+  </ul>
+</nav>
   `;
 
   return template;
 };
 
 export const renderPhoneIndicator = () => {
-  insertFirst(getNode("#container"), createPhoneIndicator());
+  insertFirst(getNode('#container'), createPhoneIndicator());
 };
 
 export const renderNavigator = () => {
-  insertFirst(getNode("#container"), createNavigator());
+  insertFirst(getNode('#container'), createNavigator());
 };

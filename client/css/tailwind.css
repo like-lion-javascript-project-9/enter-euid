@@ -151,3 +151,17 @@
 .is-active .category-button-title {
   color: white;
 }
+
+.render-bullet {
+ background-color: #82828282;
+ width: 10px;
+ height: 10px;
+ border-radius: 50%;
+ display: inline-block;
+ opacity: 1;
+ margin-right: 8px;
+}
+
+.render-bullet.is-active{
+  background-color: #373F67;
+}

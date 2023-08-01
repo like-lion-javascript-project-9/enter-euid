@@ -701,6 +701,10 @@ html {
   margin-top: 11rem;
 }
 
+.block {
+  display: block;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -733,10 +737,6 @@ html {
   height: 6rem;
 }
 
-.h-3 {
-  height: 0.75rem;
-}
-
 .h-4 {
   height: 1rem;
 }
@@ -757,10 +757,6 @@ html {
   height: 20rem;
 }
 
-.h-9 {
-  height: 2.25rem;
-}
-
 .h-\[284px\] {
   height: 284px;
 }
@@ -769,12 +765,12 @@ html {
   height: 32px;
 }
 
-.h-\[400px\] {
-  height: 400px;
-}
-
 .h-screen {
   height: 100vh;
+}
+
+.max-h-\[21\.125rem\] {
+  max-height: 21.125rem;
 }
 
 .max-h-\[44rem\] {
@@ -783,11 +779,6 @@ html {
 
 .max-h-\[690px\] {
   max-height: 690px;
-}
-
-.max-h-fit {
-  max-height: -moz-fit-content;
-  max-height: fit-content;
 }
 
 .w-36 {
@@ -991,10 +982,6 @@ html {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-battery {
-  background-image: url('/assets/icons/battery.svg');
-}
-
 .bg-direction {
   background-image: url('/assets/icons/direction.svg');
 }
@@ -1003,28 +990,12 @@ html {
   background-image: url('/assets/icons/direction-left.svg');
 }
 
-.bg-lte {
-  background-image: url('/assets/icons/lte.svg');
-}
-
 .bg-search {
   background-image: url('/assets/icons/search.svg');
 }
 
-.bg-signal {
-  background-image: url('/assets/icons/signal.svg');
-}
-
-.bg-bottom {
-  background-position: bottom;
-}
-
 .bg-center {
   background-position: center;
-}
-
-.bg-left-bottom {
-  background-position: left bottom;
 }
 
 .bg-no-repeat {
@@ -1095,10 +1066,6 @@ html {
   padding-left: 0.75rem;
 }
 
-.pl-6 {
-  padding-left: 1.5rem;
-}
-
 .pr-2 {
   padding-right: 0.5rem;
 }
@@ -1107,8 +1074,8 @@ html {
   padding-right: 0.75rem;
 }
 
-.pr-6 {
-  padding-right: 1.5rem;
+.pt-9 {
+  padding-top: 2.25rem;
 }
 
 .text-center {
@@ -1403,6 +1370,20 @@ html {
 
 .is-active .category-button-title {
   color: white;
+}
+
+.render-bullet {
+  background-color: #82828282;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 1;
+  margin-right: 8px;
+}
+
+.render-bullet.is-active{
+  background-color: #373F67;
 }
 
 .hover\:bg-secondary:hover {
