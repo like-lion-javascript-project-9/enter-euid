@@ -1,30 +1,41 @@
-import { getNode, getNodes } from "./lib/dom/index.js";
-import {} from "./layout/index.js";
 
-//버튼 클릭 기능
+import { renderPhoneIndicator } from "./layout/index.js"; 
+renderPhoneIndicator();
+
+import { getNode, getNodes } from "./lib/dom/index.js";
+//버튼 클릭 기능, 로컬 스토리지 값 저장하기 기능
 const buttons = getNode(".buttons");
 
 const handleClick = (event) => {
-  const clicked = "is-active";
-  const target = event.target.closest("button");
 
-  if (!target) {
-    return;
-  }
+const target = event.target.closest("button");
+
+if (!target) {
+  return;
+}
+
+const image = target.querySelector("img");
+const buttonTitle = target.querySelector(".category-button-title")
+const buttonText = target.querySelector(".category-button-text")
+const clicked = "is-active";
+const buttonValue = buttonTitle.innerText;
+const buttonkey = target.id;
 
   if (target.classList.contains(clicked)) {
     target.classList.remove(clicked);
-    const image = target.querySelector("img");
+    localStorage.removeItem(buttonkey,JSON.stringify(buttonValue));
     image.setAttribute("src", "../assets/icons/plus.svg");
+
   } else {
     target.classList.add(clicked);
-    const image = target.querySelector("img");
+    localStorage.setItem(buttonkey,JSON.stringify(buttonValue));
     image.setAttribute("src", "../assets/images/check.png");
+    
   }
 };
 buttons.addEventListener("click", handleClick);
 
-// 뒤로가기 기능
+// 뒤로 가기 기능
 const backButton = getNode(".backLink");
 
 const handleBackClick = event => {
@@ -33,16 +44,3 @@ window.location.href="http://localhost:5500/";
 }
 backButton.addEventListener("click", handleBackClick);
 
-//저장하기 버튼 기능
-
-const submitButton = getNode(".submit-button")
-
-
-function handleBackClick(event) {
-  event.preventDefault()
-  
-
-} 
-
-
-submitButton.addEventListener("click",handleSubmitCick)
