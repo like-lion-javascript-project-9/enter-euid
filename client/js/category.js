@@ -1,43 +1,46 @@
-import { getNode, getNodes } from "./lib/dom/getNode.js";
 
-const buttons =getNode(".buttons")
-const categoryButton = getNode(".category-button")
-const buttonTitle =  getNode(".category-button-title")         
-const buttonImage = getNode(".category-button-img")
+import { renderPhoneIndicator } from "./layout/index.js"; 
+renderPhoneIndicator();
 
-let isClicked = false;
+import { getNode, getNodes } from "./lib/dom/index.js";
+//버튼 클릭 기능, 로컬 스토리지 값 저장하기 기능
+const buttons = getNode(".buttons");
 
-const handleClick = (event)=>{
- 
- const target = event.target.closest("button")
-const imgtarget = event.target.closest("button img")
-const texttarget = event.target.closest(".category-button-title")
+const handleClick = (event) => {
 
-  if(!target)
-  return 
+const target = event.target.closest("button");
 
-
-
-if (isClicked){
-    target.classList.remove("is-active")
-    // imgtarget.setAttribute("src","../assets/icons/plus.svg");
-  }
-  else{
-    target.classList.add("is-active")
-   
-    // imgtarget.setAttribute("src", "../assets/images/check.png");
-  }
-
-  isClicked = !isClicked
+if (!target) {
+  return;
 }
 
+const image = target.querySelector("img");
+const buttonTitle = target.querySelector(".category-button-title")
+const buttonText = target.querySelector(".category-button-text")
+const clicked = "is-active";
+const buttonValue = buttonTitle.innerText;
+const buttonkey = target.id;
+
+  if (target.classList.contains(clicked)) {
+    target.classList.remove(clicked);
+    localStorage.removeItem(buttonkey,JSON.stringify(buttonValue));
+    image.setAttribute("src", "../assets/icons/plus.svg");
+
+  } else {
+    target.classList.add(clicked);
+    localStorage.setItem(buttonkey,JSON.stringify(buttonValue));
+    image.setAttribute("src", "../assets/images/check.png");
+    
+  }
+};
 buttons.addEventListener("click", handleClick);
 
+// 뒤로 가기 기능
+const backButton = getNode(".backLink");
 
-
-
-
-
-
-
+const handleBackClick = event => {
+event.preventDefault();
+window.location.href="http://localhost:5500/";
+}
+backButton.addEventListener("click", handleBackClick);
 

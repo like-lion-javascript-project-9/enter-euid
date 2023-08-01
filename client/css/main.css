@@ -701,6 +701,10 @@ html {
   margin-top: 11rem;
 }
 
+.block {
+  display: block;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -1399,6 +1403,10 @@ html {
   background-color: rgb(55 63 103 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.is-active {
+  background-color: #373F67;
 }
 
 .is-active .category-button-title {

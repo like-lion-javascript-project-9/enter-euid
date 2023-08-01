@@ -12,51 +12,65 @@
     <meta property="og:description" content="설명" />
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="icon" href="/assets/favicon/favicon.ico" type="image/x-icon" />
-    <title>enter-euid-team9</title>
+    <title>enter-euid-team9:검색하기</title>
 
-    <script src="/js/main.js" type="module"></script>
+    <script src="/js/search.js" type="module"></script>
   </head>
 
   <body class="bg-gray-200">
     <div
-      class="absolute left-1/2 top-1/2 h-screen max-h-[690px] min-w-[320px] max-w-max -translate-x-1/2 -translate-y-1/2 bg-white"
+      id="container"
+      class="absolute left-1/2 top-1/2 h-screen max-h-[44rem] min-w-[320px] max-w-max -translate-x-1/2 -translate-y-1/2 bg-white"
     >
-      <header class="flex h-9 items-center justify-between pl-6 pr-6">
-        <time datetime="" class="text-sm">14:29</time>
+      <div>
+        <a href="" class="ml-4 inline-flex"
+          ><img src="../assets/icons/direction-left.svg" alt="뒤로 가기"
+        /></a>
+        <input
+          class="search-form ml-2 inline-flex w-56 rounded bg-gray6 text-base"
+          type="text"
+          placeholder="  장천동 근처에서 검색"
+        />
+      </div>
 
+      <h2 class="mb-2 ml-3 mt-2 text-sm font-bold">
+        친구들이 많이 찾고 있어요!
+      </h2>
 
+      <button
+        class="ml-2 rounded-full border border-primary bg-transparent px-2 py-1 text-xs"
+        type="button"
+      >
+        노트북
+      </button>
 
-        <ul class="flex items-center">
-          <li class="h-3 w-6 bg-signal bg-bottom bg-no-repeat"></li>
-          <li class="h-3 w-6 bg-lte bg-left-bottom bg-no-repeat"></li>
-          <li class="h-3 w-6 bg-battery bg-left-bottom bg-no-repeat"></li>
-        </ul>
-      </header>
+      <button
+        class="rounded-full border border-primary bg-transparent px-2 py-1 text-xs"
+        type="button"
+      >
+        노트북 거치대
+      </button>
 
+      <button
+        class="rounded-full border border-primary bg-transparent px-2 py-1 text-xs"
+        type="button"
+      >
+        키보드
+      </button>
 
-<div>
-  <a href="" class="inline-flex ml-4"><img src="../assets/icons/direction-left.svg" alt="뒤로 가기" /></a>
-<input class="inline-flex ml-2 bg-gray6 rounded text-base w-56" type="text" placeholder="  장천동 근처에서 검색"></input>
-</div>
+      <button
+        class="rounded-full border border-primary bg-transparent px-2 py-1 text-xs"
+        type="button"
+      >
+        마우스
+      </button>
 
-<h2 class="text-sm font-bold ml-3 mb-2 mt-2">친구들이 많이 찾고 있어요!</h2>
-
-<button class="ml-2 bg-transparent py-1 px-2 border border-primary rounded-full text-xs" type="button">노트북</button>
-
-<button class="bg-transparent py-1 px-2 border border-primary rounded-full text-xs" type="button">노트북 거치대</button>
-
-<button class="bg-transparent py-1 px-2 border border-primary rounded-full text-xs"  type="button">키보드</button>
-
-<button class="bg-transparent py-1 px-2 border border-primary rounded-full text-xs" type="button">마우스</button>
-
-<button class="bg-transparent py-1 px-2 border border-primary rounded-full text-xs" type="button">헤드셋</button> 
-
-      
-
-
-
+      <button
+        class="rounded-full border border-primary bg-transparent px-2 py-1 text-xs"
+        type="button"
+      >
+        헤드셋
+      </button>
     </div>
   </body>
 </html>
-
-
