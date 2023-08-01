@@ -4,6 +4,7 @@ import {
   clearContents,
   deleteStorage,
   getNode,
+  goToBack,
   loadStorage,
   randomNumber,
   removeClass,
@@ -21,6 +22,8 @@ let storageObj = {};
 let phoneArr = [];
 
 const renderPhoneNumber = async () => {
+  if (!(await loadStorage("phoneArr"))) return;
+
   phoneArr = [...(await loadStorage("phoneArr"))];
   const obj = phoneArr[phoneArr.length - 1];
   phoneNumber.value = obj.phone.replace(
@@ -84,26 +87,30 @@ const handleAuth = (e) => {
       if (
         !alert("이미 존재하는 휴대폰 번호입니다. 로그인 페이지로 이동합니다.")
       ) {
-        const last = phoneArr[phoneArr.length - 1];
-        if (!Object.hasOwnProperty.call(last, "id")) {
-          phoneArr.pop();
-        }
-        saveStorage("phoneArr", phoneArr);
         clearContents(authNumber);
-        deleteStorage(storageObj.phone);
+        deleteStorage();
+        const filter = phoneArr.filter((el) => el.id && el);
+        saveStorage("phoneArr", filter);
         location.href = "http://localhost:5500/views/signin.html";
         return;
       }
     }
+    if (storageObj.phone === phone && !Object.hasOwnProperty.call(obj, "id")) {
+      storageObj.id = storageObj.phone;
+      clearContents(authNumber);
+      deleteStorage();
+      const filter = phoneArr.filter((el) => el.id && el);
+      filter[0]
+        ? saveStorage("phoneArr", filter)
+        : saveStorage("phoneArr", phoneArr);
+      location.href = "http://localhost:5500/views/home.html";
+      return;
+    }
   }
-  storageObj.id = storageObj.phone;
-  saveStorage("phoneArr", phoneArr);
-  clearContents(authNumber);
-  deleteStorage(storageObj.phone);
-  location.href = "http://localhost:5500/views/home.html";
 };
 
 renderPhoneIndicator();
+goToBack("#back");
 storageObj = await renderPhoneNumber();
 
 countTime(179, againBtn);
