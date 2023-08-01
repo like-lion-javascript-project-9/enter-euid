@@ -17,7 +17,8 @@
         "thumbnail_l": "assets/images/data_img_soap_1",
         "thumbnail_2": "assets/images/data_img_soap_2",
         "alt": "비누"
-      }
+      },
+      "date": "2023-08-01 05:15:23 PST"
     },
     {
       "id": "product-2",
@@ -36,7 +37,8 @@
         "thumbnail_l": "assets/images/data_img_camera_3",
         "thumbnail_2": "assets/images/data_img_camera_4",
         "alt": "카메라"
-      }
+      },
+      "date": "2023-07-01 09:20:23 PST"
     },
 
     {
@@ -56,7 +58,8 @@
         "thumbnail_l": "assets/images/data_img_shoes_5",
         "thumbnail_2": "assets/images/data_img_shoes_6",
         "alt": "신발"
-      }
+      },
+      "date": "2023-08-01 05:42:23 PST"
     },
 
     {
@@ -76,7 +79,8 @@
         "thumbnail_l": "assets/images/data_img_cosmetic_7",
         "thumbnail_2": "assets/images/data_img_cosmetic_8",
         "alt": "화장품"
-      }
+      },
+      "date": "2023-08-01 05:01:23 PST"
     },
 
     {
@@ -96,7 +100,8 @@
         "thumbnail_l": "assets/images/data_img_perfume_9",
         "thumbnail_2": "assets/images/data_img_perfume_10",
         "alt": "향수"
-      }
+      },
+      "date": "2023-08-01 05:29:23 PST"
     },
     {
       "id": "product-6",
@@ -115,7 +120,8 @@
         "thumbnail_l": "assets/images/data_img_chair_11",
         "thumbnail_2": "assets/images/data_img_chair_12",
         "alt": "사무용의자"
-      }
+      },
+      "date": "2023-08-01 05:33:23 PST"
     },
     {
       "id": "product-7",
@@ -134,7 +140,8 @@
         "thumbnail_l": "assets/images/data_img_imac_13",
         "thumbnail_2": "assets/images/data_img_imac_14",
         "alt": "아이맥"
-      }
+      },
+      "date": "2023-08-01 05:44:23 PST"
     },
     {
       "id": "product-8",
@@ -153,7 +160,8 @@
         "thumbnail_l": "assets/images/data_img_cycle_15",
         "thumbnail_2": "assets/images/data_img_cycle_16",
         "alt": "자전거"
-      }
+      },
+      "date": "2023-08-01 05:08:23 PST"
     },
     {
       "id": "product-9",
@@ -172,7 +180,8 @@
         "thumbnail_l": "assets/images/data_img_guitar_17",
         "thumbnail_2": "assets/images/data_img_guitar_18",
         "alt": "기타"
-      }
+      },
+      "date": "2023-08-01 05:41:23 PST"
     },
     {
       "id": "product-10",
@@ -191,7 +200,8 @@
         "thumbnail_l": "assets/images/data_img_cap_19",
         "thumbnail_2": "assets/images/data_img_cap_20",
         "alt": "볼캡"
-      }
+      },
+      "date": "2023-08-01 05:59:23 PST"
     }
   ]
 }

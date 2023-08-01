@@ -6,12 +6,12 @@ renderNavigator();
 console.log('home main js');
 
 const ul = getNode('.ul');
-const li = getNode('.li');
-const list = getNode('.list');
-const figure = getNode('.figure');
-const name = getNode('.list-name');
-const location = getNode('.list-location');
-const price = getNode('.list-price');
+// const li = getNode('.li');
+// const list = getNode('.list');
+// const figure = getNode('.figure');
+// const name = getNode('.list-name');
+// const location = getNode('.list-location');
+// const price = getNode('.list-price');
 
 // tiger.js 유틸 함수로 localhost:3000 를 불러와서 insertadjacentHTML 하여 html 에 넣어준다. 이때 insertadjacentHTML 는 insertAfter insertLast 유틸 함수로 대체 사용 가능하다.
 // response[0-9].name 으로 확인 가능하다.
@@ -62,6 +62,28 @@ const itemlist = response.data;
 // map(첫번째, 두번째) 자체의 기능 : 두번째 인수에 순서 index 를 생성해줌
 const liElements = await itemlist.map(async (itemlist, index) => {
   // map 이 자동으로 순환하기 때문에 차례대로 데이터가 나옴
+  /* -------------------------------------------------------------------------- */
+  // 몇 분 전 정보
+  // 여기에 itemlist.date 순환시키며 넣어주기
+  // const updatedDate = new Date('2023-08-01 05:15:23 PST');
+  // itemlist.date 를 숫자로 변환하기
+
+  const updatedDate = new Date(itemlist.date);
+  const currentDate = new Date();
+
+  // Get the difference between the two dates in milliseconds
+  const differenceInMilliseconds =
+    updatedDate.getTime() - currentDate.getTime();
+
+  // Convert the difference to seconds
+  const differenceInSeconds = differenceInMilliseconds / 1000;
+
+  // Get the minute from the updated date
+  const minute = updatedDate.getMinutes();
+
+  // Print the minute
+  console.log(minute);
+  /* -------------------------------------------------------------------------- */
 
   // 빈 내용 map 함수로 넣기
   // data-index= : 비표준 속성 data-* 속성 사용
@@ -76,7 +98,8 @@ const liElements = await itemlist.map(async (itemlist, index) => {
           />
           <figcaption class="list">
             <h1 class="list-name block overflow-hidden overflow-ellipsis whitespace-nowrap py-1 text-xs w-36">${itemlist.name}</h1>
-            <p class="list-location text-xs text-gray-500">${itemlist.user.address}</p>
+            <span class="list-location text-xs text-gray-500">${itemlist.user.address} &#x2022;</span>
+            <span class="list-date text-xs text-gray-500">${minute} 분 전</span>
             <strong class="list-price font-bold text-xs">${itemlist.price}원</strong>
           </figcaption>
         </figure>
@@ -125,4 +148,32 @@ const handleSetLocalstorage = (e) => {
 
 ul.addEventListener('click', handleSetLocalstorage);
 
+/* -------------------------------------------------------------------------- */
+
+// // 여기에 json date 를 불러와서 넣어줘야 함
+// const updatedDate = new Date('2023-08-01 05:15:23 PST');
+// const currentDate = new Date();
+
+// // Get the difference between the two dates in milliseconds
+// const differenceInMilliseconds = updatedDate.getTime() - currentDate.getTime();
+
+// // Convert the difference to seconds
+// const differenceInSeconds = differenceInMilliseconds / 1000;
+
+// // Get the minute from the updated date
+// const minute = updatedDate.getMinutes();
+
+// // Print the minute
+// console.log(minute);
+
+// const dateTemplate = `
+// <p class="list-date text-xs text-gray-500">${minute} 분 전</p>
+
+// `;
+// console.log(dateTemplate);
+// // console.log(itemlist.date);
+// const listDate = getNode('.list-date');
+// insertLast(listDate, dateTemplate);
+
+// 이 시간값을 받아서 `${differenceInTime} 전` 문자와 합쳐 ui 안에 출력 시키기 혹은 list 안에 insertfirst
 /* -------------------------------------------------------------------------- */
