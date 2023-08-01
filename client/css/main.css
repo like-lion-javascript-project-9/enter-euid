@@ -757,6 +757,10 @@ html {
   height: 1.5rem;
 }
 
+.h-80 {
+  height: 20rem;
+}
+
 .h-9 {
   height: 2.25rem;
 }
@@ -896,6 +900,10 @@ html {
   overflow: auto;
 }
 
+.overflow-scroll {
+  overflow: scroll;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -973,11 +981,6 @@ html {
   background-color: rgb(90 133 238 / var(--tw-bg-opacity));
 }
 
-.bg-slate-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
-}
-
 .bg-transparent {
   background-color: transparent;
 }
@@ -1013,6 +1016,10 @@ html {
 
 .bg-bottom {
   background-position: bottom;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .bg-left-bottom {
