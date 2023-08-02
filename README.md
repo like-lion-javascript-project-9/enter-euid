@@ -41,8 +41,7 @@
 - 최대한 팀원들이 이해하기 쉽게 🥰
 
 ## ⚒️ Skills
-
-![Alt text](../enter-euid/client/assets/images/skillsLogo.png)
+![skills logo](https://github.com/like-lion-javascript-project-9/enter-euid/assets/74365275/08522990-3cc1-41fc-abcd-38db543266f4)
 
 ## 💻 담당 기능
 
@@ -136,4 +135,6 @@
 
 Link: [wiki](https://github.com/like-lion-javascript-project-9/enter-euid/wiki)
 
-Link: [깃헙 페이지 주소](like-lion-javascript-project-9.github.io)
+Link: [깃헙 페이지](like-lion-javascript-project-9.github.io)
+
+Link: [발표 자료](https://docs.google.com/presentation/d/1jyUphLjqV715_fXC8ClOXy9R_TRBCmVgsQYuDT_HrwU/edit?pli=1#slide=id.g25df12edd5c_4_15)
