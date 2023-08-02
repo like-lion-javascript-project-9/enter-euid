@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="enter-euid-team9" />
+    <meta property="og:url" content="https://enter-euid-team9.netlify.app/" />
+    <meta property="og:image" content="url" />
+    <meta property="og:image:alt" content="" />
+    <meta property="og:author" content="JS9haejo" />
+    <meta property="og:description" content="설명" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="icon" href="/assets/favicon/favicon.ico" type="image/x-icon" />
+    <title>enter-euid-team9:카테고리</title>
+
+    <script src="/js/category.js" type="module"></script>
+  </head>
+
+  <body class="bg-gray-200">
+    <div
+      id="container"
+      class="absolute left-1/2 top-1/2 h-screen max-h-[44rem] min-w-[320px] max-w-max -translate-x-1/2 -translate-y-1/2 bg-white"
+    >
+      <!--이름으로 검색하기 -->
+      <div class="ml-4 mt-2 inline-flex items-center justify-center">
+        <button
+          type="button"
+          id="back"
+          class="inline-block h-5 w-5 bg-direction-left"
+        ></button>
+        <div class="ml-2 border-b">
+          <span
+            ><img
+              class="inline-flex h-4"
+              src="../assets/icons/search.svg"
+              alt="돋보기 모양"
+          /></span>
+          <input
+            class="w-56 text-sm"
+            type="text"
+            placeholder="분야 (이름)로 검색 (ex. 프론트)"
+          />
+        </div>
+      </div>
+
+      <!-- 관심분야 버튼 -->
+      <div class="mb-2 ml-4 mt-1">
+        <button
+          type="button"
+          class="m-2 ml-2 w-72 rounded border border-primary bg-primary py-1 font-normal text-white"
+        >
+          <img
+            class="mr-1 inline-flex"
+            src="../assets/icons/position.svg"
+            alt="동그라미 모양"
+          />
+          <span class="text-xs">관심분야 선택하기</span>
+        </button>
+      </div>
+
+      <!-- 분야 버튼 그룹 -->
+      <div
+        class="buttons m-6 mb-2 mt-2 w-72 flex-col items-center justify-around"
+      >
+        <div class="mb-4 flex justify-between">
+          <button
+            id="category1"
+            class="category-button mr-2 flex h-14 w-36 items-center justify-between rounded bg-gray4 pl-2 pr-2"
+          >
+            <span class="block">
+              <span class="category-button-text -ml-4 block text-xs text-white"
+                >프로그래밍</span
+              >
+              <span
+                class="category-button-title block text-base font-bold text-black"
+              >
+                프론트엔드
+              </span>
+            </span>
+            <img
+              class="category-button-img"
+              src="../assets/icons/plus.svg"
+              alt="플러스 모양의 버튼"
+            />
+          </button>
+
+          <button
+            id="category2"
+            class="category-button flex h-14 w-36 items-center justify-between rounded bg-gray4 pl-2 pr-2"
+          >
+            <span class="block">
+              <span class="category-button-text ml-1 block text-xs text-white"
+                >프로그래밍</span
+              >
+              <span
+                class="category-button-title block text-base font-bold text-black"
+              >
+                백 엔드
+              </span>
+            </span>
+            <img
+              class="category-button-img"
+              src="../assets/icons/plus.svg"
+              alt="플러스 모양의 버튼"
+            />
+          </button>
+        </div>
+
+        <div class="mb-4 flex justify-between">
+          <button
+            id="category3"
+            class="mr-2 flex h-14 w-36 items-center justify-between rounded bg-gray4 pl-2 pr-2"
+          >
+            <span class="block">
+              <span class="category-button-text block text-xs text-white"
+                >프로그래밍</span
+              >
+              <span
+                class="category-button-title -ml-2 block text-base font-bold text-black"
+              >
+                리액트</span
+              >
+            </span>
+            <img
+              class="category-button-img"
+              src="../assets/icons/plus.svg"
+              alt="플러스 모양의 버튼"
+            />
+          </button>
+          <button
+            id="category4"
+            class="flex h-14 w-36 items-center justify-between rounded bg-gray4 pl-2 pr-2"
+          >
+            <span class="block">
+              <span class="category-button-text block text-xs text-white"
+                >프로그래밍</span
+              >
+              <span
+                class="category-button-title -ml-2 block text-base font-bold text-black"
+              >
+                풀스택
+              </span>
+            </span>
+            <img
+              class="category-button-img"
+              src="../assets/icons/plus.svg"
+              alt="플러스 모양의 버튼"
+            />
+          </button>
+        </div>
+
+        <div class="mb-4 flex justify-between">
+          <button
+            id="category5"
+            class="mr-2 flex h-14 w-36 items-center justify-between rounded bg-gray4 pl-2 pr-2"
+          >
+            <span class="block">
+              <span class="category-button-text -ml-1 block text-xs text-white"
+                >프로그래밍</span
+              >
+              <span
+                class="category-button-title block text-base font-bold text-black"
+              >
+                알고리즘
+              </span>
+            </span>
+            <img
+              class="category-button-img"
+              src="../assets/icons/plus.svg"
+              alt="플러스 모양의 버튼"
+            />
+          </button>
+          <button
+            id="category6"
+            class="flex h-14 w-36 items-center justify-between rounded bg-gray4 pl-2 pr-2"
+          >
+            <span class="block">
+              <span class="category-button-text -ml-1 block text-xs text-white"
+                >프로그래밍</span
+              >
+              <span
+                class="category-button-title block text-base font-bold text-black"
+              >
+                기초지식
+              </span>
+            </span>
+            <img
+              class="category-button-img"
+              src="../assets/icons/plus.svg"
+              alt="플러스 모양의 버튼"
+            />
+          </button>
+        </div>
+
+        <div class="mb-4 flex justify-between">
+          <button
+            id="category7"
+            class="mr-2 flex h-14 w-36 items-center justify-between rounded bg-gray4 pl-2 pr-2"
+          >
+            <span class="block">
+              <span class="category-button-text -ml-6 block text-xs text-white"
+                >디자인</span
+              >
+              <span
+                class="category-button-title block text-base font-bold text-black"
+              >
+                UI디자인
+              </span>
+            </span>
+            <img
+              class="category-button-img"
+              src="../assets/icons/plus.svg"
+              alt="플러스 모양의 버튼"
+            />
+          </button>
+          <button
+            id="category8"
+            class="flex h-14 w-36 items-center justify-between rounded bg-gray4 pl-2 pr-2"
+          >
+            <span class="block">
+              <span class="category-button-text -ml-8 block text-xs text-white"
+                >디자인</span
+              >
+              <span
+                class="category-button-title block text-base font-bold text-black"
+              >
+                UX디자인
+              </span>
+            </span>
+            <img
+              class="category-button-img"
+              src="../assets/icons/plus.svg"
+              alt="플러스 모양의 버튼"
+            />
+          </button>
+        </div>
+
+        <div class="mb-4 flex justify-between">
+          <button
+            id="category9"
+            class="mr-2 flex h-14 w-36 items-center justify-between rounded bg-gray4 pl-2 pr-2"
+          >
+            <span class="block">
+              <span class="category-button-text -ml-4 block text-xs text-white"
+                >디자인</span
+              >
+              <span
+                class="category-button-title block text-base font-bold text-black"
+              >
+                UI·UX
+              </span>
+            </span>
+            <img
+              class="category-button-img"
+              src="../assets/icons/plus.svg"
+              alt="플러스 모양의 버튼"
+            />
+          </button>
+          <button
+            id="category10"
+            class="flex h-14 w-36 items-center justify-between rounded bg-gray4 pl-2 pr-2"
+          >
+            <span class="block">
+              <span class="category-button-text -ml-10 block text-xs text-white"
+                >데이터</span
+              >
+              <span
+                class="category-button-title block text-base font-bold text-black"
+              >
+                데이터분석
+              </span>
+            </span>
+            <img
+              class="category-button-img"
+              src="../assets/icons/plus.svg"
+              alt="플러스 모양의 버튼"
+            />
+          </button>
+        </div>
+
+        <div class="mb-4 flex justify-between">
+          <button
+            id="category11"
+            class="mr-2 flex h-14 w-36 items-center justify-between rounded bg-gray4 pl-2 pr-2"
+          >
+            <span class="block">
+              <span class="category-button-text -ml-6 block text-xs text-white"
+                >데이터</span
+              >
+              <span
+                class="category-button-title block text-base font-bold text-black"
+              >
+                통계분석
+              </span>
+            </span>
+            <img
+              class="category-button-img"
+              src="../assets/icons/plus.svg"
+              alt="플러스 모양의 버튼"
+            />
+          </button>
+          <button
+            id="category12"
+            class="flex h-14 w-36 items-center justify-between rounded bg-gray4 pl-2 pr-2"
+          >
+            <span class="block">
+              <span class="category-button-text -ml-2 block text-xs text-white"
+                >데이터</span
+              >
+              <span
+                class="category-button-title block text-base font-bold text-black"
+              >
+                시각화
+              </span>
+            </span>
+            <img
+              class="category-button-img"
+              src="../assets/icons/plus.svg"
+              alt="플러스 모양의 버튼"
+            />
+          </button>
+        </div>
+      </div>
+
+      <!--저장하기 버튼 -->
+
+      <div class="flex items-center justify-center">
+        <button
+          class="saved-button w-72 rounded border border-primary bg-primary py-1 text-sm text-white"
+        >
+          이대로 저장할래요
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

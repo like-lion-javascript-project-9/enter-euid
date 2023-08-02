@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="enter-euid-team9" />
+    <meta property="og:url" content="https://enter-euid-team9.netlify.app/" />
+    <meta property="og:image" content="url" />
+    <meta property="og:image:alt" content="" />
+    <meta property="og:author" content="JS9haejo" />
+    <meta property="og:description" content="설명" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="icon" href="/assets/favicon/favicon.ico" type="image/x-icon" />
+    <title>enter-euid-team9:검색하기</title>
+
+    <script src="/js/search.js" type="module"></script>
+  </head>
+
+  <body class="bg-gray-200">
+    <div
+      id="container"
+      class="absolute left-1/2 top-1/2 h-screen max-h-[44rem] w-[320px] -translate-x-1/2 -translate-y-1/2 bg-white"
+    >
+      <div class="ml-4 mt-2 flex items-center">
+        <button
+          type="button"
+          id="back"
+          class="inline-block h-5 w-5 bg-direction-left"
+        ></button>
+        <input
+          class="search-form ml-4 inline-flex h-8 w-64 rounded bg-gray6 p-4 text-base"
+          type="text"
+          placeholder="장천동 근처에서 검색"
+        />
+      </div>
+      <div class="productContainer">
+        <ul class="productWrapper ul grid w-80 grid-cols-2 gap-4 p-4"></ul>
+      </div>
+    </div>
+  </body>
+</html>
