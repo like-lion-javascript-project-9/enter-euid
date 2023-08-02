@@ -3,8 +3,6 @@ import { renderPhoneIndicator, renderNavigator } from './layout/index.js';
 renderPhoneIndicator();
 renderNavigator();
 
-console.log('home main js');
-
 const ul = getNode('.ul');
 // const li = getNode('.li');
 // const list = getNode('.list');
@@ -82,7 +80,7 @@ const liElements = await itemlist.map(async (itemlist, index) => {
   const minute = updatedDate.getMinutes();
 
   // Print the minute
-  console.log(minute);
+
   /* -------------------------------------------------------------------------- */
 
   // 빈 내용 map 함수로 넣기
