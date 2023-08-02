@@ -26,13 +26,10 @@ const productIndex = +productId.slice(9, -1) - 1;
 const swiperProductSrc = productList[productIndex].image;
 const { thumbnail_l, thumbnail_2, alt } = swiperProductSrc;
 
-console.log(productList[productIndex]);
-
 const productName = productList[productIndex].name;
 const productCategory = productList[productIndex].category;
 const productPrice = productList[productIndex].price;
 const productDescription = productList[productIndex].description;
-console.log(productDescription);
 
 const userData = await getUserList();
 const userList = userData[productIndex];
