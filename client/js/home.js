@@ -1,9 +1,9 @@
-import { getNode, insertLast, tiger, saveStorage } from './lib/index.js';
+import { getNode, insertLast, tiger, saveStorage, diff } from './lib/index.js';
 import { renderPhoneIndicator, renderNavigator } from './layout/index.js';
 renderPhoneIndicator();
 renderNavigator();
 
-console.log('home main js');
+// console.log('home main js');
 
 const ul = getNode('.ul');
 // const li = getNode('.li');
@@ -82,7 +82,11 @@ const liElements = await itemlist.map(async (itemlist, index) => {
   const minute = updatedDate.getMinutes();
 
   // Print the minute
-  console.log(minute);
+  // console.log(minute);
+
+  /* -------------------------------------------------------------------------- */
+  console.log(diff('2023-01-01'));
+  console.log(diff(itemlist.date));
   /* -------------------------------------------------------------------------- */
 
   // 빈 내용 map 함수로 넣기
@@ -97,10 +101,18 @@ const liElements = await itemlist.map(async (itemlist, index) => {
           class="image h-24 w-full rounded object-cover"
           />
           <figcaption class="list">
-            <h1 class="list-name block overflow-hidden overflow-ellipsis whitespace-nowrap py-1 text-xs w-36">${itemlist.name}</h1>
-            <span class="list-location text-xs text-gray-500">${itemlist.user.address} &#x2022;</span>
-            <span class="list-date text-xs text-gray-500">${minute} 분 전</span>
-            <strong class="list-price font-bold text-xs">${itemlist.price}원</strong>
+            <h1 class="list-name block overflow-hidden overflow-ellipsis whitespace-nowrap py-1 text-xs w-36">${
+              itemlist.name
+            }</h1>
+            <span class="list-location text-xs text-gray-500">${
+              itemlist.user.address
+            } &#x2022;</span>
+            <span class="list-date text-xs text-gray-500">${diff(
+              itemlist.date
+            )}</span>
+            <strong class="list-price font-bold text-xs">${
+              itemlist.price
+            }원</strong>
           </figcaption>
         </figure>
       </a>

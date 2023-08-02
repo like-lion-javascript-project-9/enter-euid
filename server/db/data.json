@@ -18,11 +18,11 @@
         "thumbnail_2": "assets/images/data_img_soap_2",
         "alt": "비누"
       },
-      "date": "2023-08-01 05:15:23 PST"
+      "date": "2022-07-11 03:15:23 PST"
     },
     {
       "id": "product-2",
-      "name": "2020 nickon 카메라",
+      "name": "2022 nickon 카메라",
       "description": "기능 및 외관상태가 좋은 캐논 카메라 dsla eos-100d 블랙 컬러입니다.",
       "price": 6500,
       "temperature": 36.5,
@@ -38,7 +38,7 @@
         "thumbnail_2": "assets/images/data_img_camera_4",
         "alt": "카메라"
       },
-      "date": "2023-07-01 09:20:23 PST"
+      "date": "2022-10-21 09:20:23 PST"
     },
 
     {
@@ -59,7 +59,7 @@
         "thumbnail_2": "assets/images/data_img_shoes_6",
         "alt": "신발"
       },
-      "date": "2023-08-01 05:42:23 PST"
+      "date": "2022-01-24 05:42:23 PST"
     },
 
     {
@@ -80,7 +80,7 @@
         "thumbnail_2": "assets/images/data_img_cosmetic_8",
         "alt": "화장품"
       },
-      "date": "2023-08-01 05:01:23 PST"
+      "date": "2022-03-28 03:01:23 PST"
     },
 
     {
@@ -101,7 +101,7 @@
         "thumbnail_2": "assets/images/data_img_perfume_10",
         "alt": "향수"
       },
-      "date": "2023-08-01 05:29:23 PST"
+      "date": "2022-04-16 11:29:23 PST"
     },
     {
       "id": "product-6",
@@ -121,7 +121,7 @@
         "thumbnail_2": "assets/images/data_img_chair_12",
         "alt": "사무용의자"
       },
-      "date": "2023-08-01 05:33:23 PST"
+      "date": "2022-09-30 08:33:23 PST"
     },
     {
       "id": "product-7",
@@ -141,11 +141,11 @@
         "thumbnail_2": "assets/images/data_img_imac_14",
         "alt": "아이맥"
       },
-      "date": "2023-08-01 05:44:23 PST"
+      "date": "2022-06-19 12:44:23 PST"
     },
     {
       "id": "product-8",
-      "name": "자전거 첼로 2023 700C 디오 D2 24단 하이브리드 자전거",
+      "name": "자전거 첼로 2022 700C 디오 D2 24단 하이브리드 자전거",
       "description": "이번에 새로 구입한 첼로 디오 D2 M사이즈 다크카멜레온 입니다. 원래목적은 강아지 바스켓을달고 강아지와 함께탈 목적이었으나 포지션상 1인용에 더 적합한것같아 기변을 위해 손해보고 판매합니다.",
       "price": 500000,
       "temperature": 42.1,
@@ -161,7 +161,7 @@
         "thumbnail_2": "assets/images/data_img_cycle_16",
         "alt": "자전거"
       },
-      "date": "2023-08-01 05:08:23 PST"
+      "date": "2022-08-01 07:08:23 PST"
     },
     {
       "id": "product-9",
@@ -181,7 +181,7 @@
         "thumbnail_2": "assets/images/data_img_guitar_18",
         "alt": "기타"
       },
-      "date": "2023-08-01 05:41:23 PST"
+      "date": "2022-12-07 10:41:23 PST"
     },
     {
       "id": "product-10",
@@ -201,7 +201,7 @@
         "thumbnail_2": "assets/images/data_img_cap_20",
         "alt": "볼캡"
       },
-      "date": "2023-08-01 05:59:23 PST"
+      "date": "2022-05-25 05:59:23 PST"
     }
   ]
 }
