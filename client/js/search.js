@@ -4,7 +4,6 @@ import {
   getNode,
   goToBack,
   insertLast,
-  loadStorage,
   saveStorage,
 } from './lib/index.js';
 import { getProductList } from './maindetail/async.js';
@@ -13,10 +12,10 @@ const searchInput = getNode('.search-form');
 const productList = await getProductList();
 const container = getNode('.productContainer');
 
-const createItem = (obj, index) => {
+const createItem = (obj) => {
   const template = `
-    <li class="product-list p-4 border-t border-b" data-index="${index}">
-    <!-- <a href="/views/maindetail.html" class="list w-36"> -->
+    <li class="product-list p-4 border-t border-b" data-index="${obj.id}">
+    <a href="/views/maindetail.html" class="list w-36">
       <figure class="figure flex">
         <img
         src="/${obj.image.thumbnail_l}.webp"
@@ -29,7 +28,7 @@ const createItem = (obj, index) => {
           <strong class="list-price font-bold text-xs">${obj.price}원</strong>
         </figcaption>
       </figure>
-     <!-- </a> -->
+     </a>
   </li>
 `;
   return template;
@@ -65,9 +64,9 @@ const handlePage = (e) => {
   const target = e.target.closest('li');
   if (!target) return;
 
-  // const index = productList.forEach((el) => el.id.slice(8, 10));
+  const index = +target.dataset.index.slice(8) - 1;
 
-  // saveStorage('id', productList[index].id);
+  saveStorage('id', productList[index].id);
 };
 
 goToBack('#back');
