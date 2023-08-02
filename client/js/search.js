@@ -1,3 +1,4 @@
+
 import { renderPhoneIndicator } from './layout/index.js';
 import { debounce, getNode, insertLast } from './lib/index.js';
 import { getProductList } from './maindetail/async.js';
@@ -8,16 +9,16 @@ const container = getNode('#container');
 
 const createItem = (obj) => {
   const template = `
-    <li class="product__list">
-    <a href="maindetail.html" class="list w-36">
-      <figure class="figure">
+    <li class="product__list p-4 border-t border-b">
+    <a href="maindetail.html" class="list">
+      <figure class="figure flex">
         <img
         src="/${obj.image.thumbnail_l}.webp"
         alt="/${obj.image.alt}"
-        class="image h-24 w-full rounded object-cover"
+        class="image h-16 w-16 rounded object-cover mt-4"
         />
-        <figcaption class="list">
-          <h1 class="list-name text-xs py-1">${obj.name}</h1>
+        <figcaption class="list inline-block ml-4 mt-2">
+          <h1 class="list-name text-xs py-1 font-bold">${obj.name}</h1>
           <p class="list-location text-xs text-gray-500">${obj.user.address}</p>
           <strong class="list-price font-bold text-xs">${obj.price}원</strong>
         </figcaption>
