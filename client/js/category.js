@@ -46,6 +46,6 @@ const savedButton = getNode('.saved-button');
 
 const handleSavedClick = (event) => {
   event.preventDefault();
-  window.location.href = '/views/signUp.html';
+  window.location.href = '/views/signup.html';
 };
 savedButton.addEventListener('click', handleSavedClick);
