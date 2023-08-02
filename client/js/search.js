@@ -1,4 +1,3 @@
-
 import { renderPhoneIndicator } from './layout/index.js';
 import { debounce, getNode, insertLast } from './lib/index.js';
 import { getProductList } from './maindetail/async.js';
@@ -6,11 +5,11 @@ import { getProductList } from './maindetail/async.js';
 const searchInput = getNode('.search-form');
 const productList = await getProductList();
 const container = getNode('#container');
+const productItem = getNode('.productWrapper');
 
-const createItem = (obj) => {
+const createItem = (obj, index) => {
   const template = `
-    <li class="product__list p-4 border-t border-b">
-    <a href="maindetail.html" class="list">
+    <li class="product__list p-4 border-t border-b data-index=${index}">
       <figure class="figure flex">
         <img
         src="/${obj.image.thumbnail_l}.webp"
@@ -18,12 +17,11 @@ const createItem = (obj) => {
         class="image h-16 w-16 rounded object-cover mt-4"
         />
         <figcaption class="list inline-block ml-4 mt-2">
-          <h1 class="list-name text-xs py-1 font-bold">${obj.name}</h1>
+          <h1 class="list-name text-xs py-1 font-bold text-ellipsis whitespace-nowrap">${obj.name}</h1>
           <p class="list-location text-xs text-gray-500">${obj.user.address}</p>
           <strong class="list-price font-bold text-xs">${obj.price}원</strong>
         </figcaption>
       </figure>
-    </a>
   </li>
 `;
   return template;
@@ -50,10 +48,17 @@ const handleInput = debounce(async (e) => {
     resetUL(container, ulTemplate);
     return;
   }
-  searchArr.forEach((item) => {
-    insertLast(getNode('.productWrapper'), createItem(item));
+  searchArr.forEach((item, index) => {
+    insertLast(getNode('.productWrapper'), createItem(item, index));
   });
 });
 
+const handlePage = (e) => {
+  const target = e.target.closest('li');
+  if (!target) return;
+  console.log(target);
+};
+
 searchInput.addEventListener('input', handleInput);
+getNode('.productWrapper').addEventListener('click', handlePage);
 renderPhoneIndicator();
