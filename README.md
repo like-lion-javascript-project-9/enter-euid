@@ -1,20 +1,19 @@
 # 🦁 JS에서 9해조 - Enter EUID
 
-## 프론트엔드 스쿨 6기 html/css/Javascript Project - 9조
+**멋쟁이사자처럼 프론트엔드 스쿨 6기 html/css/Javascript Project - 9조**
 
 ## 🎈 프로젝트 목표
 
-서로 서로 도우며 개발하며 같이의 가치를 찾아보자! 👨‍👩‍👧‍👦
+**검색엔진최적화(Search Engine Optimization)**
 
-웹 접근성을 고려하여 aria-label,aria-hidden 등을 활용함.
+웹사이트와 웹페이지를 검색엔진이 쉽게 발견(디스커버리)하고, 읽어가서(크롤링), 색인하고(인덱싱), 상위 노출(랭킹)시켜 자연 유입되는 트래픽의 양과 질을 높일 수 있도록 관련 검색 알고리즘의 특성을 고려해서 웹사이트의 구조나 콘텐츠를 개선하는 작업을 하였습니다.
 
-깃허브를 활용하여 develop 브랜치 만들어서 하위에 팀원들의 브랜치를 만들고 협업함
+**브랜치(branch) 전략**
 
-기간 : 2023년 7월 28일 ~ 2023년 8월 2일
+여러 명의 협업자가 Git의 브랜치(branch)를 사용하여 하나의 공동 저장소를 효율적으로 사용하기 위한 전략 (Work-Flow)을 사용하였습니다.
+첫번째로 main 브랜치 생성후 develop 브랜치로 분리하여 각자의 작업 전용 브랜치를 파생하여 생성한 후 각자 각자 작업을 진행하고, 작업이 끝난 사람은 develop 브랜치에 자신의 브랜치의 변경 사항을 적용함으로써, 다른 사람의 작업에 영향을 받지 않고 독립적으로 특정 작업을 수행하여 그 결과를 하나로 모아 나가도록 하였습니다.
 
-## 🌟 배포 주소
-
-Link: [wiki][깃허 위키 주소]
+🗓️ 기간 : 2023년 7월 28일 ~ 2023년 8월 2일
 
 ## 💻 Git Commit Message 규칙 
 
@@ -49,7 +48,7 @@ Link: [wiki][깃허 위키 주소]
 
 | 이름                   | 맡은 페이지                                          | 맡은 파트                                            |
 | ---------------------- | ---------------------------------------------------- | ---------------------------------------------------- |
-| 고수완 조장 🚩         | 메인디테일 페이지, 검색 페이지                       | 데이터스키마 설계 및 디테일 페이지 구성              |
+| 고수완 조장 🚀         | 메인디테일 페이지, 검색 페이지                       | 데이터스키마 설계 및 디테일 페이지 구성              |
 | 차지훈 스크럼마스터 🚩 | 로그인페이지, 회원가입페이지, 검색페이지, 마이페이지 | 회원가입 페이지 와 로그인페이지 및 공통레이아웃 구성 |
 | 조지현                 | 메인페이지                                           | 데이터스키마 설계 및 메인 페이지 구성                |
 | 이송엽                 | 시작페이지, 카테고리페이지, 검색페이지               | 스타트 페이지,검색 페이지 및 카테고리 페이지 구성    |
@@ -85,9 +84,9 @@ Link: [wiki][깃허 위키 주소]
 - 메인페이지 마크업 및 스타일링
 - swiper.js를 이용한 슬라이드 구현
 - json-server data 기반으로 한 아이템 리스트 비동기 통신으로 동적 렌더링
-- mainpage에서 detailmainpage로 넘어갈 때 클릭한 아이템의
-- product-id를 localStoarge에 저장
+- mainpage에서 detailmainpage로 넘어갈 때 클릭한 아이템의 product-id를 localStoarge에 저장
 - 검색 페이지 내 json-server의 데이터 기반으로 해당하는 데이터 검색 기능
+- 날짜와 시간 정보에 대한 유틸 함수 생성 및 리스트 업데이트 시간 데이터 적용
 
 ### 🦁 이송엽
 
@@ -97,23 +96,47 @@ Link: [wiki][깃허 위키 주소]
 - 페이지 이동 기능 구현
 - 검색 페이지 내 json-server의 데이터 기반으로 해당하는 데이터 검색 기능
 
+## 👨🏼‍💻 git project 진행 상황
+
+![Alt text](image-1.png)
+
+![Alt text](image-2.png)
+
 ## 🌟 Project 구현
 
 ### 1. 시작 페이지
 
-![enter-euid-team9_시작하기_-_Chrome_2023-08-02_09-53-38_AdobeExpress (1)](https://github.com/like-lion-javascript-project-9/enter-euid/assets/90172574/52abd686-c37e-40bf-b130-4e27acb9f273)
+<img src="https://github.com/like-lion-javascript-project-9/enter-euid/assets/90172574/52abd686-c37e-40bf-b130-4e27acb9f273" alt="시작 페이지" width="200"/>
 
 ### 2. 카테고리 페이지
 
-![ezgif com-video-to-gif](https://github.com/like-lion-javascript-project-9/enter-euid/assets/90172574/10ddf495-6828-47b4-9fbc-22929a749d01)
+<img src="https://github.com/like-lion-javascript-project-9/enter-euid/assets/90172574/10ddf495-6828-47b4-9fbc-22929a749d01" alt="카테고리 페이지" width="200"/>
 
-### 메인
+### 3. 회원가입 페이지
 
-![main](https://github.com/like-lion-javascript-project-9/enter-euid/assets/122072365/853e643b-d22d-4cbb-801b-40179f6a430d)
+<img src="https://github.com/like-lion-javascript-project-9/enter-euid/assets/103302206/2ab44a78-7148-4a0a-a5ce-c73414912f8a" alt="회원가입 페이지" width="200"/>
 
-### 메인디테일 페이지
+### 4. 로그인 페이지
 
-![maindetail](https://github.com/like-lion-javascript-project-9/enter-euid/assets/122072365/5cdf4f2a-b47e-4344-ac3e-b20b25622b34)
+<img src="https://github.com/like-lion-javascript-project-9/enter-euid/assets/103302206/0210cebd-cf3a-456f-8943-4ec71267cd7d" alt="로그인 페이지" width="200"/>
+
+### 5. 메인 페이지
+
+<img src="https://github.com/like-lion-javascript-project-9/enter-euid/assets/122072365/853e643b-d22d-4cbb-801b-40179f6a430d" alt="메인 페이지" width="200"/>
+
+### 6. 디테일 페이지
+
+<img src="https://github.com/like-lion-javascript-project-9/enter-euid/assets/122072365/5cdf4f2a-b47e-4344-ac3e-b20b25622b34" alt="디테일 페이지" width="200"/>
+
+### 7.마이 페이지
+
+<img src="https://github.com/like-lion-javascript-project-9/enter-euid/assets/103302206/d5a77690-6fdd-4c3d-b050-34eee5621dc6" alt="마이 페이지" width="200"/>
+
+## 🌟 배포 주소
+
+Link: [wiki](https://github.com/like-lion-javascript-project-9/enter-euid/wiki)
+
+Link: [깃헙 페이지 주소](like-lion-javascript-project-9.github.io)
 
 # JavaScript Project Scaffolding
 
