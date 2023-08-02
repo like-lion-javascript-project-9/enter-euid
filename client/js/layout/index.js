@@ -1,8 +1,8 @@
-import { getNode, insertFirst } from "../lib/index.js";
+import { getNode, insertFirst } from '../lib/index.js';
 
 const today = new Date();
 const hours = today.getHours();
-const minutes = ("0" + today.getMinutes()).slice(-2);
+const minutes = ('0' + today.getMinutes()).slice(-2);
 
 const createPhoneIndicator = () => {
   const template = /* html */ `
@@ -27,8 +27,12 @@ const createNavigator = () => {
   <ul class="menu-list">
     <li>
       <a href="/views/home.html" class="menu-wrapper">
-        <div class="home"></div>
-        <span class="menu-enabled">홈</span>
+        <div class=${
+          location.href.includes('home') ? 'home-fill' : 'home-nofill'
+        }></div>
+        <span class=${
+          location.href.includes('home') ? 'menu-enabled' : 'menu-disabled'
+        }>홈</span>
       </a>
     </li>
     <li class="menu-wrapper">
@@ -45,8 +49,12 @@ const createNavigator = () => {
     </li>
     <li class="menu-wrapper">
       <a href="/views/mypage.html" class="menu-wrapper">
-        <div class="my"></div>
-        <div class="menu-disabled">나의 이듬</div>
+        <div class=${
+          location.href.includes('mypage') ? 'my-fill' : 'my-nofill'
+        }></div>
+        <div class=${
+          location.href.includes('mypage') ? 'menu-enabled' : 'menu-disabled'
+        }>나의 이듬</div>
       </a>
     </li>
   </ul>
@@ -57,9 +65,9 @@ const createNavigator = () => {
 };
 
 export const renderPhoneIndicator = () => {
-  insertFirst(getNode("#container"), createPhoneIndicator());
+  insertFirst(getNode('#container'), createPhoneIndicator());
 };
 
 export const renderNavigator = () => {
-  insertFirst(getNode("#container"), createNavigator());
+  insertFirst(getNode('#container'), createNavigator());
 };

@@ -13,13 +13,13 @@ export const createSwiperProduct = (src1, src2, alt) => {
   return template;
 };
 
-export const createProductInfomation = (name, category, summary) => {
+export const createProductInfomation = (name, category, minute, summary) => {
   const template = `
     <h2 class="productDetail__title pb-1 text-lg font-bold">
             ${name}
     </h2>
     <div class="productDetail__category pb-3 text-xs text-gray-500">
-        ${category} • 17분전
+        ${category} • ${minute}분 전
     </div>
     <div class="productDetail__description max-h-56 text-sm">
           ${summary}

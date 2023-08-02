@@ -85,8 +85,8 @@ const liElements = await itemlist.map(async (itemlist, index) => {
   // console.log(minute);
 
   /* -------------------------------------------------------------------------- */
-  console.log(diff('2023-01-01'));
-  console.log(diff(itemlist.date));
+  // console.log(diff('2023-01-01'));
+  // console.log(diff(itemlist.date));
   /* -------------------------------------------------------------------------- */
 
   // 빈 내용 map 함수로 넣기

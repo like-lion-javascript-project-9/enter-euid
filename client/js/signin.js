@@ -1,4 +1,4 @@
-import { renderPhoneIndicator } from "./layout/index.js";
+import { renderPhoneIndicator } from './layout/index.js';
 import {
   addClass,
   clearContents,
@@ -7,17 +7,17 @@ import {
   loadStorage,
   removeClass,
   saveStorage,
-} from "./lib/index.js";
+} from './lib/index.js';
 
-const phoneNumber = getNode("#phoneNumber");
-const loginBtn = getNode("#loginBtn");
-let inputValue = "";
+const phoneNumber = getNode('#phoneNumber');
+const loginBtn = getNode('#loginBtn');
+let inputValue = '';
 
 const changeDisabled = (boolean) => {
   loginBtn.disabled = boolean;
   boolean
-    ? removeClass(loginBtn, "is-active")
-    : addClass(loginBtn, "is-active");
+    ? removeClass(loginBtn, 'is-active')
+    : addClass(loginBtn, 'is-active');
 };
 
 const handleInput = (e) => {
@@ -31,10 +31,10 @@ const handleInput = (e) => {
 
 const handleLogin = async (e) => {
   e.preventDefault();
-  const phoneArr = await loadStorage("phoneArr");
+  const phoneArr = await loadStorage('phoneArr');
   if (!phoneArr) {
-    if (confirm("등록된 휴대폰 번호가 아닙니다. 회원가입 하시겠습니까?")) {
-      location.href = "http://localhost:5500/views/signup.html";
+    if (confirm('등록된 휴대폰 번호가 아닙니다. 회원가입 하시겠습니까?')) {
+      location.href = '/views/signup.html';
     }
     clearContents(phoneNumber);
     changeDisabled(true);
@@ -44,23 +44,23 @@ const handleLogin = async (e) => {
   for (const obj of phoneArr) {
     const id = obj.id;
     if (id === inputValue) {
-      saveStorage("login", inputValue);
-      location.href = "http://localhost:5500/views/home.html";
+      saveStorage('login', inputValue);
+      location.href = '/views/home.html';
       clearContents(phoneNumber);
       changeDisabled(true);
       return;
     }
   }
 
-  if (confirm("등록된 휴대폰 번호가 아닙니다. 회원가입 하시겠습니까?")) {
-    location.href = "http://localhost:5500/views/signup.html";
+  if (confirm('등록된 휴대폰 번호가 아닙니다. 회원가입 하시겠습니까?')) {
+    location.href = '/views/signup.html';
   }
   clearContents(phoneNumber);
   changeDisabled(true);
 };
 
 renderPhoneIndicator();
-goToBack("#back");
+goToBack('#back');
 
-phoneNumber.addEventListener("input", handleInput);
-loginBtn.addEventListener("click", handleLogin);
+phoneNumber.addEventListener('input', handleInput);
+loginBtn.addEventListener('click', handleLogin);
