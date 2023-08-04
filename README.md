@@ -41,6 +41,7 @@
 - 최대한 팀원들이 이해하기 쉽게 🥰
 
 ## ⚒️ Skills
+
 ![skills logo](https://github.com/like-lion-javascript-project-9/enter-euid/assets/74365275/08522990-3cc1-41fc-abcd-38db543266f4)
 
 ## 💻 담당 기능

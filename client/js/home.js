@@ -68,25 +68,22 @@ const liElements = await itemlist.map(async (itemlist, index) => {
   // const updatedDate = new Date('2023-08-01 05:15:23 PST');
   // itemlist.date 를 숫자로 변환하기
 
-  const updatedDate = new Date(itemlist.date);
-  const currentDate = new Date();
+  // const updatedDate = new Date(itemlist.date);
+  // const currentDate = new Date();
 
-  // Get the difference between the two dates in milliseconds
-  const differenceInMilliseconds =
-    updatedDate.getTime() - currentDate.getTime();
+  // // Get the difference between the two dates in milliseconds
+  // const differenceInMilliseconds =
+  //   updatedDate.getTime() - currentDate.getTime();
 
-  // Convert the difference to seconds
-  const differenceInSeconds = differenceInMilliseconds / 1000;
+  // // Convert the difference to seconds
+  // const differenceInSeconds = differenceInMilliseconds / 1000;
 
-  // Get the minute from the updated date
-  const minute = updatedDate.getMinutes();
+  // // Get the minute from the updated date
+  // const minute = updatedDate.getMinutes();
 
   // Print the minute
   // console.log(minute);
 
-  /* -------------------------------------------------------------------------- */
-  // console.log(diff('2023-01-01'));
-  // console.log(diff(itemlist.date));
   /* -------------------------------------------------------------------------- */
 
   // 빈 내용 map 함수로 넣기
