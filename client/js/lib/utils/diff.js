@@ -13,4 +13,4 @@ export function diff(start_date) {
   return `${minutes}분 전`;
 }
 
-console.log(diff('2023-01-01'));
+// console.log(diff('2023-01-01'));

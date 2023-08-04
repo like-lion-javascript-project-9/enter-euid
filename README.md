@@ -42,7 +42,7 @@
 
 ## ⚒️ Skills
 
-![Alt text](../enter-euid/client/assets/images/skillsLogo.png)
+![skills logo](https://github.com/like-lion-javascript-project-9/enter-euid/assets/74365275/08522990-3cc1-41fc-abcd-38db543266f4)
 
 ## 💻 담당 기능
 
