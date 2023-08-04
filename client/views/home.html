@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="enter-euid-team9" />
+    <meta property="og:url" content="https://enter-euid-team9.netlify.app/" />
+    <meta property="og:image" content="url" />
+    <meta property="og:image:alt" content="" />
+    <meta property="og:author" content="JS9haejo" />
+    <meta property="og:description" content="설명" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="icon" href="/assets/favicon/favicon.ico" type="image/x-icon" />
+    <title>enter-euid-team9</title>
+
+    <script src="/js/home.js" type="module"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body class="bg-gray-200">
+    <div
+      id="container"
+      class="absolute left-1/2 top-1/2 h-screen max-h-[690px] w-[320px] -translate-x-1/2 -translate-y-1/2 bg-white"
+    >
+      <!-- 여기서부터 작업 -->
+
+      <!-- main -->
+      <main class="container">
+        <!-- location -->
+        <div class="flex h-10 justify-between p-2">
+          <div class="flex flex-wrap gap-2">
+            <h1 class="font-bold">남가좌제 2동</h1>
+
+            <button class="h-5 w-5 bg-direction bg-center bg-no-repeat p-3">
+              <!-- direction icon /> -->
+            </button>
+          </div>
+          <a href="search.html" class="location-search">
+            <div class="h-6 w-6 bg-search bg-no-repeat"></div>
+            <!-- search icon /> -->
+          </a>
+        </div>
+        <!-- banner -->
+        <div class="overflow-scroll">
+          <figure class="banner relative h-56 w-full">
+            <figcaption class="absolute z-50 p-4">
+              <h1 class="banner-title text-lg font-bold">
+                안전한 중고거래<br />엔터 이듬과 함께 만들어요!
+              </h1>
+              <span class="banner-description">자세히 보기</span>
+            </figcaption>
+
+            <!-- Swiper -->
+
+            <div class="swiper mySwiper h-56 w-80">
+              <div class="swiper-wrapper w-full">
+                <div class="swiper-slide">
+                  <img
+                    src="../assets/images/banner1.png"
+                    alt="banner"
+                    class="h-56 w-screen object-cover"
+                  />
+                </div>
+                <div class="swiper-slide bg-test2 h-56 w-80 object-cover">
+                  <img
+                    src="../assets/images/banner2.png"
+                    alt="banner"
+                    class="w-80 object-cover"
+                  />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </figure>
+          <!-- contents -->
+          <!-- ul.contents>li>a>figure -->
+          <ul class="ul grid h-80 w-80 grid-cols-2 gap-4 p-4">
+            <!-- <li class="li">
+            <a href="/" class="list w-36">
+              <figure class="figure">
+                <img
+                  src="../assets/images/data_img_soap_1.jpg"
+                  alt="soap"
+                  class="image h-24 w-full rounded object-cover"
+                />
+                <figcaption class="list">
+                  <h1 class="list-name"></h1>
+                  <p class="list-location text-sm text-gray-500"></p>
+                  <strong class="list-price font-bold"></strong>
+                </figcaption>
+              </figure>
+            </a>
+          </li> -->
+          </ul>
+        </div>
+      </main>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        pagination: {
+          el: '.swiper-pagination',
+          dynamicBullets: true,
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -4,23 +4,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-      type="image/xml+svg"
-    />
-    <link rel="stylesheet" href="./css/main.css" />
-    <script src="./js/main.js" type="module"></script>
-    <title>project</title>
+    <meta property="og:title" content="enter-euid-team9" />
+    <meta property="og:url" content="https://enter-euid-team9.netlify.app/" />
+    <meta property="og:image" content="url" />
+    <meta property="og:image:alt" content="" />
+    <meta property="og:author" content="JS9haejo" />
+    <meta property="og:description" content="설명" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="icon" href="/assets/favicon/favicon.ico" type="image/x-icon" />
+    <title>enter-euid-team9:시작하기</title>
+
+    <script src="/js/main.js" type="module"></script>
   </head>
 
-  <body>
-    <h1
-      class="mx-auto bg-gradient-to-r from-cyan-500 to-indigo-700 bg-clip-text text-7xl font-black text-transparent drop-shadow-lg"
+  <body class="bg-gray-200">
+    <div
+      id="container"
+      class="absolute left-1/2 top-1/2 h-screen max-h-[690px] min-w-[320px] max-w-max -translate-x-1/2 -translate-y-1/2 bg-white"
     >
-      Javascript project
-    </h1>
+      <section class="mt-44 flex-col">
+        <div class="flex items-center justify-center">
+          <img src="./assets/images/logo.png" alt="이듬 브랜드 로고" />
+        </div>
+        <div>
+          <h2
+            class="primary mt-10 flex items-center justify-center text-base font-bold text-primary"
+          >
+            당신 곁에 엔터이듬
+          </h2>
+          <p class="mt-1 flex items-center justify-center text-xs text-primary">
+            With EUID's 함께 성장하기
+          </p>
+          <p class="flex items-center justify-center text-xs text-primary">
+            함께 배우고 적용하며 성장해보세요!
+          </p>
+        </div>
+      </section>
 
-    <a href="./login.html">link</a>
+      <div class="flex items-center justify-center">
+        <button
+          class="startButton ml-1 mt-24 w-72 rounded border border-primary bg-primary py-1 text-xs font-bold text-white hover:bg-secondary"
+        >
+          시작하기
+        </button>
+      </div>
+      <div class="mt-4 flex items-center justify-center">
+        <span class="text-xs text-gray3">이미 계정이 있나요?</span>
+        <a href="/views/signin.html" class="ml-2 text-xs font-bold text-primary"
+          >로그인</a
+        >
+      </div>
+    </div>
   </body>
 </html>
